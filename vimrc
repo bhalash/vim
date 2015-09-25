@@ -22,6 +22,15 @@ Plugin 'tpope/vim-fugitive'
 " Snytax checker
 Plugin 'scrooloose/syntastic'
 
+" PHP linter
+Plugin 'nrocco/vim-phplint'
+
+" Colour scheme
+Plugin 'queyenth/oxeded.vim'
+
+" Better SCSS markup
+Plugin 'cakebaker/scss-syntax.vim'
+
 " Start Vundle goodness
 call vundle#end()
 filetype plugin indent on
