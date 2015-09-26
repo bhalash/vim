@@ -37,6 +37,9 @@ Plugin 'jiangmiao/auto-pairs'
 " HTML and CSS auto-completion
 Plugin 'mattn/emmet-vim'
 
+" JSON parse plugin
+Plugin 'elzr/vim-json'
+
 " Start Vundle goodness
 call vundle#end()
 filetype plugin indent on
