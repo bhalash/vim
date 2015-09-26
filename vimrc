@@ -34,6 +34,9 @@ Plugin 'cakebaker/scss-syntax.vim'
 " Autoamtically close braces and brackets
 Plugin 'jiangmiao/auto-pairs'
 
+" HTML and CSS auto-completion
+Plugin 'mattn/emmet-vim'
+
 " Start Vundle goodness
 call vundle#end()
 filetype plugin indent on
