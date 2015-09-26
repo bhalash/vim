@@ -58,6 +58,9 @@ filetype plugin indent on
 " OS X Fixes
 "
 
+" Yank to OS X clipboard
+set clipboard=unnamed
+
 " Enable syntax highlighting
 syntax on
 
