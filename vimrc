@@ -32,13 +32,16 @@ Plugin 'queyenth/oxeded.vim'
 Plugin 'cakebaker/scss-syntax.vim'
 
 " Autoamtically close braces and brackets
-Plugin 'jiangmiao/auto-pairs'
+Plugin 'Raimondi/delimitMate'
 
 " HTML and CSS auto-completion
 Plugin 'mattn/emmet-vim'
 
 " JSON parse plugin
 Plugin 'elzr/vim-json'
+
+" Fuzzy file matchng.
+Plugin 'kien/ctrlp.vim'
 
 " Start Vundle goodness
 call vundle#end()
@@ -56,6 +59,13 @@ filetype plugin indent on
 " let g:syntastic_auto_loc_list = 1
 " let g:syntastic_check_on_open = 1
 " let g:syntastic_check_on_wq = 0
+
+"
+" CtrlP Config
+"
+
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+set wildignore+=node_modules
 
 "
 " OS X Fixes
@@ -83,9 +93,24 @@ set backspace=indent,eol,start
 vmap "+y :!xclip -f -sel clip
 map "+p :r!xclip -o -sel clip
 
+" Search as I type, and highlight results.
+set incsearch
+set hlsearch
+
+" Change vertical scrolling to respect the visual line.
+nnoremap j gj
+nnoremap k gk
+
 " Open splits on right
 set splitbelow
 set splitright
+
+" Remap line-jump keys.
+nnoremap B ^
+nnoremap E $
+
+" Highlight last inserted block of characters.
+nnoremap gV `[v`]`
 
 " Autocomplete CSS.
 set omnifunc=csscomplete#CompleteCSS
