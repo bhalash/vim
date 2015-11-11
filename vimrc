@@ -32,7 +32,10 @@ Plugin 'queyenth/oxeded.vim'
 Plugin 'cakebaker/scss-syntax.vim'
 
 " Autoamtically close braces and brackets
-Plugin 'Raimondi/delimitMate'
+Plugin 'jiangmiao/auto-pairs'
+
+" Supertab
+Plugin 'ervandew/supertab'
 
 " HTML and CSS auto-completion
 Plugin 'mattn/emmet-vim'
@@ -113,7 +116,9 @@ nnoremap E $
 nnoremap gV `[v`]`
 
 " Autocomplete CSS.
+filetype plugin on
 set omnifunc=csscomplete#CompleteCSS
+" set omnifunc=syntaxcomplete#Complete
 
 " Follow auto indent.
 set autoindent
