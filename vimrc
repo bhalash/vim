@@ -117,8 +117,8 @@ nnoremap gV `[v`]`
 
 " Autocomplete CSS.
 filetype plugin on
-set omnifunc=csscomplete#CompleteCSS
-" set omnifunc=syntaxcomplete#Complete
+set omnifunc=syntaxcomplete#Complete
+let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 
 " Follow auto indent.
 set autoindent
