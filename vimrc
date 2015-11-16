@@ -46,6 +46,9 @@ Plugin 'elzr/vim-json'
 " Fuzzy file matchng.
 Plugin 'kien/ctrlp.vim'
 
+" Markdown preview rendering.
+Plugin 'suan/vim-instant-markdown'
+
 " Start Vundle goodness
 call vundle#end()
 filetype plugin indent on
