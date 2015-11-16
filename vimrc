@@ -4,7 +4,6 @@ set nocompatible
 "
 " Vundle
 "
-"
 
 " Required for Vundle
 filetype off 
@@ -127,8 +126,8 @@ set autoindent
 " setlocal spell spelllang=en_us
 
 " Tabs
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 
 " Set padding when scrolling
