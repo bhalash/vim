@@ -149,9 +149,6 @@ set softtabstop=4
 " Replace tabs with spaces.
 set expandtab
 
-au FileType ruby setlocal tabstop=2 shiftwidth=2 softtabstop=2
-au FileType eruby setlocal tabstop=2 shiftwidth=2 softtabstop=2
-
 "
 " Scrolling
 "
