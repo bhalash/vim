@@ -47,6 +47,8 @@ Plugin 'kien/ctrlp.vim'
 
 " Rails autocomplexiton.
 Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-bundler'
 
 " Start Vundle goodness
 call vundle#end()
