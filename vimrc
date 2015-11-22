@@ -119,16 +119,33 @@ filetype plugin on
 set omnifunc=syntaxcomplete#Complete
 let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 
-" Follow auto indent.
-set autoindent
 
 " Enable spell checking.
 " setlocal spell spelllang=en_us
 
+" 
+" Indentation 
+"
+
+" Follow auto indent.
+set autoindent
+
 " Tabs
-set tabstop=2
-set shiftwidth=2
+" Number of columns in a tab.
+set tabstop=4
+" Amount to indent on tab, << or >>
+set shiftwidth=4
+" Columns in insert mode. 
+set softtabstop=4
+" Replace tabs with spaces.
 set expandtab
+
+au FileType ruby setlocal tabstop=2 shiftwidth=2 softtabstop=2
+au FileType eruby setlocal tabstop=2 shiftwidth=2 softtabstop=2
+
+"
+" Scrolling
+"
 
 " Set padding when scrolling
 set scrolloff=5
