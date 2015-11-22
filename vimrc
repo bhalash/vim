@@ -68,6 +68,10 @@ filetype plugin indent on
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 set wildignore+=node_modules
+" Bind CtrlP to...Ctrl + P
+let g:ctrlp_map = '<c-p>'
+" Set default folder to starting folder.
+let g:ctrlp_working_path_mode = 'ra'
 
 "
 " OS X Fixes
