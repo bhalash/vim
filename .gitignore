@@ -1,0 +1,6 @@
+#################
+## Plugin Folders
+#################
+
+bundle/*/
+!bundle/Vundle.vim/
