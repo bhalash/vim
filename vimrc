@@ -45,6 +45,9 @@ Plugin 'elzr/vim-json'
 " Fuzzy file matchng.
 Plugin 'kien/ctrlp.vim'
 
+" Rails autocomplexiton.
+Plugin 'tpope/vim-rails'
+
 " Start Vundle goodness
 call vundle#end()
 filetype plugin indent on
