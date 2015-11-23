@@ -45,7 +45,7 @@ Plugin 'elzr/vim-json'
 " Fuzzy file matchng.
 Plugin 'kien/ctrlp.vim'
 
-" Rails autocompletion.
+" Rails autocompletion and utilities.
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-bundler'
