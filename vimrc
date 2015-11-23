@@ -128,6 +128,12 @@ filetype plugin on
 set omnifunc=syntaxcomplete#Complete
 let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 
+"
+" File Format
+"
+
+" Something I set in git changed line-endings to DOS. Bad Mark!
+set ffs=unix,dos
 
 " Enable spell checking.
 " setlocal spell spelllang=en_us
