@@ -45,7 +45,7 @@ Plugin 'elzr/vim-json'
 " Fuzzy file matchng.
 Plugin 'kien/ctrlp.vim'
 
-" Rails autocompletion and utilities.
+" Ruby and Rails utilities.
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-bundler'
@@ -189,3 +189,11 @@ set laststatus=2
 
 " Change matching bracket style
 highlight MatchParen cterm=bold ctermfg=black ctermbg=white
+
+" 
+" gvim/MacVim
+"
+
+" Disable scrollbars.
+set guioptions-=r
+set guioptions-=L
