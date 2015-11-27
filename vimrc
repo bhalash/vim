@@ -42,13 +42,19 @@ Plugin 'mattn/emmet-vim'
 " JSON parse plugin
 Plugin 'elzr/vim-json'
 
-" Fuzzy file matchng.
+" Fuzzy file matchng
 Plugin 'kien/ctrlp.vim'
 
-" Ruby and Rails utilities.
+" Ruby and Rails utilities
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-bundler'
+
+" Highlight matching HTML tags
+Plugin 'gregsexton/MatchTag'
+
+" HTML5 validation
+Plugin 'bhalash/vim-htmlvalidator'
 
 " Start Vundle goodness
 call vundle#end()
@@ -57,11 +63,11 @@ filetype plugin indent on
 "
 " Syntax Checker Config
 "
-"
+
 " set statusline+=%#warningmsg#
 " set statusline+=%{SyntasticStatuslineFlag()}
 " set statusline+=%*
- 
+"  
 " let g:syntastic_always_populate_loc_list = 1
 " let g:syntastic_auto_loc_list = 1
 " let g:syntastic_check_on_open = 1
@@ -77,6 +83,13 @@ set wildignore+=node_modules
 let g:ctrlp_map = '<c-p>'
 " Set default folder to starting folder.
 let g:ctrlp_working_path_mode = 'ra'
+
+"
+" HTML5 Validator Config
+"
+
+au FileType html compiler html
+
 
 "
 " OS X Fixes
