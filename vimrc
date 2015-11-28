@@ -18,8 +18,6 @@ Plugin 'VundleVim/Vundle.vim'
 " git plugin
 Plugin 'tpope/vim-fugitive'
 
-" Snytax checker
-Plugin 'scrooloose/syntastic'
 
 " PHP linter
 Plugin 'nrocco/vim-phplint'
@@ -61,19 +59,6 @@ call vundle#end()
 filetype plugin indent on
 
 "
-" Syntax Checker Config
-"
-
-" set statusline+=%#warningmsg#
-" set statusline+=%{SyntasticStatuslineFlag()}
-" set statusline+=%*
-"  
-" let g:syntastic_always_populate_loc_list = 1
-" let g:syntastic_auto_loc_list = 1
-" let g:syntastic_check_on_open = 1
-" let g:syntastic_check_on_wq = 0
-
-"
 " CtrlP Config
 "
 
@@ -89,7 +74,6 @@ let g:ctrlp_working_path_mode = 'ra'
 "
 
 au FileType html compiler html
-
 
 "
 " OS X Fixes
@@ -111,7 +95,6 @@ set backspace=indent,eol,start
 
 "
 " Quality of Life
-"
 "
 
 " Change vertical scrolling to respect the visual line.
@@ -143,7 +126,7 @@ set incsearch
 set hlsearch
 
 " Clear search.
-command Cls let @/ = ""
+command! Cls let @/ = ""
 
 "
 " File Format
@@ -153,7 +136,7 @@ command Cls let @/ = ""
 set ffs=unix,dos
 
 " Toggle spell check.
-command Tsp setlocal spell! spelllang=en_us
+command! Tsp setlocal spell! spelllang=en_us
 
 " 
 " Indentation 
