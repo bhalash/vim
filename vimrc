@@ -117,9 +117,6 @@ set backspace=indent,eol,start
 vmap "+y :!xclip -f -sel clip
 map "+p :r!xclip -o -sel clip
 
-" Search as I type, and highlight results.
-set incsearch
-set hlsearch
 
 " Change vertical scrolling to respect the visual line.
 nnoremap j gj
@@ -141,6 +138,17 @@ filetype plugin on
 set omnifunc=syntaxcomplete#Complete
 let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 
+" 
+" Search
+"
+
+" Search as I type, and highlight results.
+set incsearch
+set hlsearch
+
+" Clear search.
+command Cls let @/ = ""
+
 "
 " File Format
 "
@@ -148,8 +156,8 @@ let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 " Something I set in git changed line-endings to DOS. Bad Mark!
 set ffs=unix,dos
 
-" Enable spell checking.
-" setlocal spell spelllang=en_us
+" Toggle spell check.
+command Tsp setlocal spell! spelllang=en_us
 
 " 
 " Indentation 
@@ -167,6 +175,13 @@ set shiftwidth=4
 set softtabstop=4
 " Replace tabs with spaces.
 set expandtab
+
+"
+" Line Wrapping
+"
+
+" Wrap lines outside of words.
+set wrap linebreak nolist
 
 "
 " Scrolling
