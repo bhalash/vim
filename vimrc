@@ -113,10 +113,6 @@ set backspace=indent,eol,start
 " Quality of Life
 "
 "
-"" Clipboard to xclip
-vmap "+y :!xclip -f -sel clip
-map "+p :r!xclip -o -sel clip
-
 
 " Change vertical scrolling to respect the visual line.
 nnoremap j gj
