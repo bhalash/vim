@@ -18,7 +18,6 @@ Plugin 'VundleVim/Vundle.vim'
 " git plugin
 Plugin 'tpope/vim-fugitive'
 
-
 " PHP linter
 Plugin 'nrocco/vim-phplint'
 
