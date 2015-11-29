@@ -1,6 +1,3 @@
-" Set mode for backspace use
-set nocompatible
-
 "
 " Vundle
 "
@@ -58,6 +55,13 @@ call vundle#end()
 filetype plugin indent on
 
 "
+" Compatibility Mode
+"
+
+" No need to be vi compatible.
+set nocompatible
+
+"
 " CtrlP Config
 "
 
@@ -69,10 +73,41 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_working_path_mode = 'ra'
 
 "
+" File Opening
+"
+
+set wildmenu
+set wildmode=list:full 
+set wildignore=*.swp,*.bak,*.pyc,*.class
+
+"
 " HTML5 Validator Config
 "
 
 au FileType html compiler html
+
+"
+" vim History
+"
+
+set history=1000
+set undolevels=1000
+
+if v:version >= 730
+    " Keep a persistent backup file.
+    set undofile                
+    set undodir=~/.vim/.undo,~/tmp,/tmp
+endif
+
+"
+" Temp Files
+"
+
+" Disable swap files.
+set nobackup
+set noswapfile
+" Set a directory in case they *are* turned on.
+set directory=~/.vim/.tmp,~/tmp,/tmp
 
 "
 " OS X Fixes
@@ -95,6 +130,9 @@ set backspace=indent,eol,start
 "
 " Quality of Life
 "
+
+" Change line numbering to be relative to current position.
+set relativenumber
 
 " Change vertical scrolling to respect the visual line.
 nnoremap j gj
@@ -125,7 +163,7 @@ set incsearch
 set hlsearch
 
 " Clear search.
-command! Cls let @/ = ""
+nnoremap <leader><space> :noh<cr>
 
 "
 " File Format
@@ -165,13 +203,23 @@ set wrap linebreak nolist
 " Scrolling
 "
 
-" Set padding when scrolling
+" Set padding when scrolling.
 set scrolloff=5
 set sidescrolloff=5
 
-" Scroll with mouse
+" Scroll with mouse.
 set ttymouse=xterm2
 set mouse=i
+" Increase scroll speed.
+set ttyfast
+" Change how buffer is redrawn. /Should/ increase scroll speed.
+set lazyredraw
+
+"
+" Key Rebind
+"
+
+let mapleader = "\<Space>"
 
 "
 " Appearance
@@ -180,7 +228,7 @@ set mouse=i
 " Enable line numbers.
 set nu
 
-" Highlight the current line and set the colour
+" Highlight the current line and set the colour.
 set cul
 hi CursorLine term=none cterm=none ctermbg=234
 
@@ -195,6 +243,21 @@ set laststatus=2
 
 " Change matching bracket style
 highlight MatchParen cterm=bold ctermfg=black ctermbg=white
+
+"
+" Regex
+"
+nnoremap / /\v
+vnoremap / /\v
+" Searches are assumed to be global on a line.
+set gdefault
+
+"
+" Security
+"
+
+" ex mode reads the top n lines of a file. 
+set modelines=0
 
 " 
 " gvim/MacVim
