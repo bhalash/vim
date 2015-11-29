@@ -94,9 +94,9 @@ set history=1000
 set undolevels=1000
 
 if v:version >= 730
-    " Keep a persistent backup file.
-    set undofile                
-    set undodir=~/.vim/.undo,~/tmp,/tmp
+  " Keep a persistent backup file.
+  set undofile                
+  set undodir=~/.vim/.undo,~/tmp,/tmp
 endif
 
 "
@@ -131,12 +131,7 @@ set backspace=indent,eol,start
 " Quality of Life
 "
 
-" Change line numbering to be relative to current position.
 set relativenumber
-
-" Change vertical scrolling to respect the visual line.
-nnoremap j gj
-nnoremap k gk
 
 " Open splits on right
 set splitbelow
@@ -219,7 +214,7 @@ set lazyredraw
 " Key Rebind
 "
 
-let mapleader = "\<Space>"
+let mapleader=','
 
 "
 " Appearance
@@ -247,8 +242,7 @@ highlight MatchParen cterm=bold ctermfg=black ctermbg=white
 "
 " Regex
 "
-nnoremap / /\v
-vnoremap / /\v
+
 " Searches are assumed to be global on a line.
 set gdefault
 
