@@ -157,9 +157,6 @@ let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 set incsearch
 set hlsearch
 
-" Clear search.
-nnoremap <leader><space> :noh<cr>
-
 "
 " File Format
 "
