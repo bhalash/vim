@@ -74,7 +74,7 @@ let g:ctrlp_working_path_mode = 'ra'
 
 " Ignore Rails temp files.
 let g:ctrlp_custom_ignore = {
-  \ 'dir': '\v[\/](tmp)$',
+  \ 'dir': '\v[\/](tmp|doc)$',
   \ 'file': '\v\.(cache)$', 
   \ }
 
