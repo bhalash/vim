@@ -65,12 +65,18 @@ set nocompatible
 " CtrlP Config
 "
 
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.cache
 set wildignore+=node_modules
 " Bind CtrlP to...Ctrl + P
 let g:ctrlp_map = '<c-p>'
 " Set default folder to starting folder.
 let g:ctrlp_working_path_mode = 'ra'
+
+" Ignore Rails temp files.
+let g:ctrlp_custom_ignore = {
+  \ 'dir': '\v[\/](tmp)$',
+  \ 'file': '\v\.(cache)$', 
+  \ }
 
 "
 " File Opening
