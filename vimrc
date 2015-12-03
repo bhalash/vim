@@ -224,6 +224,7 @@ set lazyredraw
 " Key Rebind
 "
 
+" Remap the leaader key to a comma.
 let mapleader=','
 
 "
