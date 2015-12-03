@@ -142,7 +142,9 @@ set backspace=indent,eol,start
 " Quality of Life
 "
 
+" Set relative numbering and toggle keybind.
 set relativenumber
+nmap \r :set relativenumber!<CR>
 
 " Open splits on right
 set splitbelow
