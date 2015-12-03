@@ -50,6 +50,8 @@ Plugin 'gregsexton/MatchTag'
 " HTML5 validation
 Plugin 'bhalash/vim-htmlvalidator'
 
+Plugin 'scrooloose/nerdtree'
+
 " Start Vundle goodness
 call vundle#end()
 filetype plugin indent on
@@ -59,20 +61,23 @@ filetype plugin indent on
 "
 
 " No need to be vi compatible.
+" I mean, it's almost 2016.
 set nocompatible
 
 "
 " CtrlP Config
 "
 
+" Ignore common temp files and directories.
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.cache
 set wildignore+=node_modules
+
 " Bind CtrlP to...Ctrl + P
 let g:ctrlp_map = '<c-p>'
 " Set default folder to starting folder.
 let g:ctrlp_working_path_mode = 'ra'
 
-" Ignore Rails temp files.
+" Ignore Rails temp and documentation files.
 let g:ctrlp_custom_ignore = {
   \ 'dir': '\v[\/](tmp|doc)$',
   \ 'file': '\v\.(cache)$', 
@@ -162,6 +167,7 @@ let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 " Search as I type, and highlight results.
 set incsearch
 set hlsearch
+nmap \q :nohlsearch<CR>
 
 "
 " File Format
@@ -171,7 +177,7 @@ set hlsearch
 set ffs=unix,dos
 
 " Toggle spell check.
-command! Tsp setlocal spell! spelllang=en_us
+command! Tsp setlocal spell! spellang=en_us
 
 " 
 " Indentation 
