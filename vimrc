@@ -167,7 +167,8 @@ let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 " Search as I type, and highlight results.
 set incsearch
 set hlsearch
-nmap \q :nohlsearch<CR>
+" Toggle highlighted results.
+nmap \h :nohlsearch<CR>
 
 "
 " File Format
@@ -176,8 +177,8 @@ nmap \q :nohlsearch<CR>
 " Something I set in git changed line-endings to DOS. Bad Mark!
 set ffs=unix,dos
 
-" Toggle spell check.
-command! Tsp setlocal spell! spellang=en_us
+" Toggle spellchecking.
+nmap \s :setlocal spell!<CR>
 
 " 
 " Indentation 
