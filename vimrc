@@ -50,6 +50,7 @@ Plugin 'gregsexton/MatchTag'
 " HTML5 validation
 Plugin 'bhalash/vim-htmlvalidator'
 
+" Folder browser.
 Plugin 'scrooloose/nerdtree'
 
 " Start Vundle goodness
