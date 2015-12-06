@@ -172,6 +172,9 @@ set hlsearch
 " Toggle highlighted results.
 nmap \h :nohlsearch<CR>
 
+" Toggle file tree.
+nmap \t :NERDTreeToggle<CR>
+
 "
 " File Format
 "
