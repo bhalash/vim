@@ -220,9 +220,9 @@ let g:gitgutter_realtime = 0
 " Supertab.
 let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 
-"
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Normal-mode Keybinds.
-"
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Toggle spellchecking.
 nmap \s :setlocal spell!<CR>
