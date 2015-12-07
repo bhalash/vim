@@ -177,15 +177,15 @@ set shortmess=a
 " Appearance (as related to the oxeded theme)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" Default theme.
+colors oxeded
+
 " Highlight the current line and set the colour.
 set cul
 hi CursorLine term=none cterm=none ctermbg=234
 
-" Default theme.
-colors oxeded
-
 " Change matching bracket style.
-highlight MatchParen cterm=bold ctermfg=black ctermbg=white
+hi MatchParen cterm=bold ctermfg=black ctermbg=white
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin Configuration
