@@ -105,20 +105,12 @@ syntax on
 " Backspace will delete.
 set backspace=indent,eol,start
 
-
 " Set relative numbering and toggle keybind.
 set relativenumber
 
 " Open split below and to the right instead of up and to the left.
 set splitbelow
 set splitright
-
-" Remap line-jump keys.
-nnoremap B ^
-nnoremap E $
-
-" Highlight last inserted block of characters.
-nnoremap gV `[v`]`
 
 " Search as I type, and highlight results.
 set incsearch
@@ -158,9 +150,6 @@ set ttyfast
 
 " Change how buffer is redrawn. /Should/ increase scroll speed.
 set lazyredraw
-
-" Remap the leaader key to a comma.
-let mapleader=','
 
 " Enable line numbers.
 set nu
@@ -221,8 +210,18 @@ let g:gitgutter_realtime = 0
 let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Normal-mode Keybinds.
+" Keybinds.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Remap the leaader key to a comma.
+let mapleader=','
+
+" Remap line-jump keys.
+nnoremap B ^
+nnoremap E $
+
+" Highlight last inserted block of characters.
+nnoremap gV `[v`]`
 
 " Toggle spellchecking.
 nmap \s :setlocal spell!<CR>
