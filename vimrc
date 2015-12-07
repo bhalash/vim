@@ -238,5 +238,8 @@ nmap \r :set relativenumber!<CR>
 " Toggle file tree.
 nmap \t :NERDTreeToggle<CR>
 
+" Find current open file.
+nmap \f :NERDTreeFind<CR>
+
 " Toggle gutter vim diff highlights.
 nmap \g :GitGutterToggle<CR>
