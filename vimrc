@@ -174,8 +174,7 @@ set omnifunc=syntaxcomplete#Complete
 set shortmess=a
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Appearance
-" (tied/related to the oxeded theme)
+" Appearance (as related to the oxeded theme)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Highlight the current line and set the colour.
