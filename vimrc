@@ -204,8 +204,7 @@ let g:ctrlp_custom_ignore = {
   \ }
 
 " Disable git gutter out of the box: I only want to see it when I toggle on.
-let g:gitgutter_realtime = 0
-let g:gitgutter_signs = 0
+let g:gitgutter_enabled = 0
 
 " Supertab.
 let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
