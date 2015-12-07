@@ -209,6 +209,9 @@ let g:gitgutter_realtime = 0
 " Supertab.
 let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 
+" Disable git gutter out of the box-I only want to see it when I toggle on.
+GitGutterDisable
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Keybinds.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
