@@ -178,12 +178,12 @@ set shortmess=a
 " (tied/related to the oxeded theme)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Default theme.
-colors oxeded
-
 " Highlight the current line and set the colour.
 set cul
 hi CursorLine term=none cterm=none ctermbg=234
+
+" Default theme.
+colors oxeded
 
 " Change matching bracket style.
 highlight MatchParen cterm=bold ctermfg=black ctermbg=white
