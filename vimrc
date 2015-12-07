@@ -133,13 +133,15 @@ set ffs=unix,dos
 " Follow auto indent
 set autoindent
 
-" Tabs
 " Number of columns in a tab
 set tabstop=4
+
 " Amount to indent on tab, << or >>
 set shiftwidth=4
+
 " Columns in insert mode. 
 set softtabstop=4
+
 " Replace tabs with spaces
 set expandtab
 
@@ -153,8 +155,10 @@ set sidescrolloff=5
 " Scroll with mouse
 set ttymouse=xterm2
 set mouse=i
+
 " Increase scroll speed
 set ttyfast
+
 " Change how buffer is redrawn. /Should/ increase scroll speed
 set lazyredraw
 
@@ -175,6 +179,13 @@ set gdefault
 
 " ex mode reads the top n lines of a file
 set modelines=0
+
+" Autocomplete CSS
+set omnifunc=syntaxcomplete#Complete
+
+" Stop annoying problem on OS X
+" Arrow keybinds cause a status popup to appear when I tab back to vim
+set shortmess=a
 
 "
 " Appearance
@@ -206,13 +217,10 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\v\.(cache)$', 
   \ }
 
-" Stop annoying problem on OS X
-" Arrow keybinds cause a status popup to appear when I tab back to vim
-set shortmess=a
+" Gitgutter.
 let g:gitgutter_realtime = 0
 
-" Autocomplete CSS
-set omnifunc=syntaxcomplete#Complete
+" Supertab.
 let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 
 "
