@@ -216,6 +216,9 @@ GitGutterDisable
 " Keybinds.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" Disable the keybind to access ex mode.
+nnoremap Q <Nop>
+
 " Remap the leaader key to a comma.
 let mapleader=','
 
