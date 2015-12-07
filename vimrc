@@ -1,6 +1,6 @@
-"
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vundle
-"
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Required for Vundle.
 filetype off 
@@ -63,9 +63,9 @@ Plugin 'airblade/vim-gitgutter'
 call vundle#end()
 filetype plugin indent on
 
-"
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Core Vim Configuration
-"
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " No need to be vi compatible. I mean, it's almost 2016.
 set nocompatible
@@ -184,10 +184,10 @@ set omnifunc=syntaxcomplete#Complete
 " Arrow keybinds cause a status popup to appear when I tab back to vim.
 set shortmess=a
 
-"
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Appearance
 " (tied/related to the oxeded theme)
-" 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Default theme.
 colors oxeded
@@ -199,9 +199,9 @@ hi CursorLine term=none cterm=none ctermbg=234
 " Change matching bracket style.
 highlight MatchParen cterm=bold ctermfg=black ctermbg=white
 
-"
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin Configuration
-"
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Bind CtrlP to...Ctrl + P.
 let g:ctrlp_map = '<c-p>'
