@@ -56,6 +56,9 @@ Plugin 'scrooloose/nerdtree'
 " Toggle comments.
 Plugin 'tomtom/tcomment_vim'
 
+" Diff git files live.
+Plugin 'airblade/vim-gitgutter'
+
 " Start Vundle goodness
 call vundle#end()
 filetype plugin indent on
