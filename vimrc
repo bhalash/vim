@@ -242,3 +242,6 @@ nmap \f :NERDTreeFind<CR>
 
 " Toggle gutter vim diff highlights.
 nmap \g :GitGutterToggle<CR>
+
+" Open new tab.
+nnoremap \n :tabnew<CR>
