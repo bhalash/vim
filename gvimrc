@@ -3,7 +3,7 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Font family and size.
-set guifont=Source\ Code\ Pro:h13
+set guifont=Source\ Code\ Pro:h14
 
 colors smpl
 
