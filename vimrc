@@ -214,7 +214,7 @@ let g:gitgutter_enabled = 0
 let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 
 " Disable markdown folding on load.
-let g:vim_markdown_folding_disabled=1
+let g:vim_markdown_folding_disabled = 1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Keybinds
