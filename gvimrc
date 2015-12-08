@@ -4,7 +4,7 @@
 
 if has('gui_running')
   " Disable audible bells.
-  set noerrorbells visualbell t_vb=
+  set noerrorbells visualbell
 
   " Theme.
   set background=light
