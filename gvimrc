@@ -3,7 +3,9 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Font family and size.
-set guifont=Source\ Code\ Pro:h11
+set guifont=Source\ Code\ Pro:h13
+
+colors smpl
 
 if has('gui_running')
   " Remove vertical spacing between lines.
