@@ -12,9 +12,6 @@ call vundle#begin()
 " Vundle plugins.
 Plugin 'VundleVim/Vundle.vim'
 
-" git plugin.
-Plugin 'tpope/vim-fugitive'
-
 " PHP linter.
 Plugin 'nrocco/vim-phplint'
 
@@ -42,7 +39,8 @@ Plugin 'elzr/vim-json'
 " Fuzzy file matchng.
 Plugin 'kien/ctrlp.vim'
 
-" Ruby and Rails utilities. Tim Pope is God, apparently.
+" Ruby and Rails utilities. Tim Pope is God.
+Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-bundler'
