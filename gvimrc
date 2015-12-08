@@ -3,6 +3,10 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 if has('gui_running')
+  " Disable audible bells.
+  set noerrorbells visualbell t_vb=
+
+  " Theme.
   set background=light
   colors sprinkles
 
