@@ -21,6 +21,9 @@ Plugin 'nrocco/vim-phplint'
 " Colour scheme.
 Plugin 'queyenth/oxeded.vim'
 
+" gvim/MacVim colour scheme.
+Plugin 'ikaros/smpl-vim'
+
 " Better SCSS markup.
 Plugin 'cakebaker/scss-syntax.vim'
 
