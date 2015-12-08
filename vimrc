@@ -1,5 +1,5 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Vundle
+" Vundle Init
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Required for Vundle.
@@ -9,17 +9,25 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Themes
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Primary for terminal.
+Plugin 'queyenth/oxeded.vim'
+
+" Primary for gvim/MacVim
+Plugin 'ajgrf/sprinkles'
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugins
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 " Vundle plugins.
 Plugin 'VundleVim/Vundle.vim'
 
 " PHP linter.
 Plugin 'nrocco/vim-phplint'
-
-" Colour scheme.
-Plugin 'queyenth/oxeded.vim'
-
-" gvim/MacVim colour scheme.
-Plugin 'ajgrf/sprinkles'
 
 " Better SCSS markup.
 Plugin 'cakebaker/scss-syntax.vim'
@@ -184,7 +192,7 @@ set shortmess=a
 
 " Highlight the current line and set the colour.
 set cul
-hi CursorLine term=none cterm=none ctermbg=234
+hi CursorLine term=none cterm=none gui=none ctermbg=234 guibg=#1c1c1c guifg=#ffffff
 
 " Change matching bracket style.
 hi MatchParen cterm=bold ctermfg=black ctermbg=white
