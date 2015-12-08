@@ -3,7 +3,8 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 if has('gui_running')
-  colors smpl
+  set background=light
+  colors sprinkles
 
   " Remove vertical spacing between lines.
   set lsp=0
