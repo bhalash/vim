@@ -15,7 +15,7 @@ if has('gui_running')
 endif
 
 " Font family and size.
-set guifont=Source\ Code\ Pro:h14
+set guifont=Source\ Code\ Pro:h12
 
 " Hide the scrollbars.
 set guioptions-=r
