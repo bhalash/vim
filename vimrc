@@ -59,6 +59,10 @@ Plugin 'tomtom/tcomment_vim'
 " Diff git files live.
 Plugin 'airblade/vim-gitgutter'
 
+" Markdown.
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+
 " End of Vundle goodness.
 call vundle#end()
 filetype plugin indent on
@@ -207,6 +211,9 @@ let g:gitgutter_enabled = 0
 
 " Supertab.
 let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
+
+" Disable markdown folding on load.
+let g:vim_markdown_folding_disabled=1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Keybinds
