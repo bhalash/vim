@@ -193,7 +193,7 @@ if !has('gui_running')
   hi CursorLine term=none cterm=none gui=none ctermbg=234 guibg=#1c1c1c guifg=#ffffff
 
   " Change matching bracket style.
-  hi MatchParen cterm=bold ctermfg=black ctermbg=white
+  hi MatchParen cterm=bold ctermfg=0 ctermbg=15
 
   " Default theme.
   colors oxeded
