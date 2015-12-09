@@ -68,10 +68,6 @@ Plugin 'tomtom/tcomment_vim'
 " Diff git files live.
 Plugin 'airblade/vim-gitgutter'
 
-" Markdown.
-Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
-
 " End of Vundle goodness.
 call vundle#end()
 filetype plugin indent on
@@ -192,13 +188,16 @@ set shortmess=a
 
 " Highlight the current line and set the colour.
 set cul
-hi CursorLine term=none cterm=none gui=none ctermbg=234 guibg=#1c1c1c guifg=#ffffff
 
-" Change matching bracket style.
-hi MatchParen cterm=bold ctermfg=black ctermbg=white
+if !has('gui_running')
+  hi CursorLine term=none cterm=none gui=none ctermbg=234 guibg=#1c1c1c guifg=#ffffff
 
-" Default theme.
-colors oxeded
+  " Change matching bracket style.
+  hi MatchParen cterm=bold ctermfg=black ctermbg=white
+
+  " Default theme.
+  colors oxeded
+endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin Configuration
