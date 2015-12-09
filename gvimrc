@@ -7,8 +7,11 @@ if has('gui_running')
   set noerrorbells visualbell
 
   " Theme.
-  set background=light
   colors sprinkles
+  set background=light
+  
+  " Sprinkles underlines the current line. Looks ugly. 
+  hi CursorLine gui=none
 
   " Remove vertical spacing between lines.
   set lsp=0
