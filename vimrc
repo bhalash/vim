@@ -246,14 +246,18 @@ nmap <leader>h :nohlsearch<CR>
 " Toggle line numbering style.
 nmap <leader>r :set relativenumber!<CR>
 
-" Toggle file tree.
-nmap <leader>t :NERDTreeToggle<CR>
-
-" Find current open file.
-nmap <leader>f :NERDTreeFind<CR>
-
 " Toggle gutter vim diff highlights.
 nmap <leader>g :GitGutterToggle<CR>
 
+" Tabs
+
 " Open new tab.
-nnoremap <leader>n :tabnew<CR>
+nnoremap <leader>tn :tabnew<CR>
+nnoremap <leader>tc :tabclose<CR>
+
+" NERDTree
+
+" Toggle file tree.
+nmap <leader>nt :NERDTreeToggle<CR>
+" Find current open file.
+nmap <leader>nf :NERDTreeFind<CR>
