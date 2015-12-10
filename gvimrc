@@ -21,5 +21,5 @@ endif
 set guifont=Source\ Code\ Pro:h12
 
 " Hide the scrollbars.
-set guioptions-=r
-set guioptions-=l
+set guioptions-=R
+set guioptions-=L
