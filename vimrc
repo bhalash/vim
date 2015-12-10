@@ -68,6 +68,9 @@ Plugin 'tomtom/tcomment_vim'
 " Diff git files live.
 Plugin 'airblade/vim-gitgutter'
 
+" Nicer welcome screen.
+Plugin 'mhinz/vim-startify'
+
 " End of Vundle goodness.
 call vundle#end()
 filetype plugin indent on
@@ -230,33 +233,27 @@ let g:vim_markdown_folding_disabled = 1
 " Disable the keybind to access ex mode.
 nnoremap Q <Nop>
 
-" Remap the leaader key to a comma.
-let mapleader=','
-
 " Remap line-jump keys.
 nnoremap B ^
 nnoremap E $
 
-" Highlight last inserted block of characters.
-nnoremap gV `[v`]`
-
 " Toggle spellchecking.
-nmap \s :setlocal spell!<CR>
+nmap <leader>s :setlocal spell!<CR>
 
 " Toggle highlighted results.
-nmap \h :nohlsearch<CR>
+nmap <leader>h :nohlsearch<CR>
 
 " Toggle line numbering style.
-nmap \r :set relativenumber!<CR>
+nmap <leader>r :set relativenumber!<CR>
 
 " Toggle file tree.
-nmap \t :NERDTreeToggle<CR>
+nmap <leader>t :NERDTreeToggle<CR>
 
 " Find current open file.
-nmap \f :NERDTreeFind<CR>
+nmap <leader>f :NERDTreeFind<CR>
 
 " Toggle gutter vim diff highlights.
-nmap \g :GitGutterToggle<CR>
+nmap <leader>g :GitGutterToggle<CR>
 
 " Open new tab.
-nnoremap \n :tabnew<CR>
+nnoremap <leader>n :tabnew<CR>
