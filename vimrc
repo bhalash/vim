@@ -247,17 +247,16 @@ nmap <leader>h :nohlsearch<CR>
 nmap <leader>r :set relativenumber!<CR>
 
 " Toggle gutter vim diff highlights.
-nmap <leader>g :GitGutterToggle<CR>
+nmap <leader>gg :GitGutterToggle<CR>
 
 " Tabs
 
 " Open new tab.
-nnoremap <leader>tn :tabnew<CR>
-nnoremap <leader>tc :tabclose<CR>
+nnoremap gn :tabnew<CR>
 
 " NERDTree
 
 " Toggle file tree.
-nmap <leader>nt :NERDTreeToggle<CR>
+nmap <leader>nn :NERDTreeToggle<CR>
 " Find current open file.
 nmap <leader>nf :NERDTreeFind<CR>
