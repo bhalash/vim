@@ -9,8 +9,8 @@ if has('gui_running')
   " Theme.
   colors sprinkles
   set background=light
-  
-  " Sprinkles underlines the current line. Looks ugly. 
+
+  " Sprinkles underlines the current line. Looks ugly.
   hi CursorLine gui=none
 
   " Remove vertical spacing between lines.
