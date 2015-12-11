@@ -188,6 +188,10 @@ set omnifunc=syntaxcomplete#Complete
 " Arrow keybinds cause a status popup to appear when I tab back to vim.
 set shortmess=a
 
+" Reduce timeout length on keystrokes. This is mostly for vim-airline's mode
+" changes.
+set ttimeoutlen=50
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Appearance (as related to the oxeded theme)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
