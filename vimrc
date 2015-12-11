@@ -190,6 +190,7 @@ set shortmess=a
 
 " Reduce timeout length on keystrokes. This is mostly for vim-airline's mode
 " changes.
+set ttimeout
 set ttimeoutlen=50
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -229,6 +230,35 @@ let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 
 " Disable markdown folding on load.
 let g:vim_markdown_folding_disabled = 1
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Startify
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+let g:startify_custom_header = [
+  \ '             __                  ',
+  \ '    __  __  /\_\     ___ ___     ',
+  \ '   /\ \/\ \ \/\ \  /` __` __`\   ',
+  \ '   \ \ \_/ | \ \ \ /\ \/\ \/\ \  ',
+  \ '    \ \___/   \ \_\\ \_\ \_\ \_\ ',
+  \ '     \/__/     \/_/ \/_/\/_/\/_/ v.' . version,
+  \ '   -----------------------------------',
+  \ '   ' . system('echo -n "${USERNAME}@$(hostname -s) in ${PWD}"'),
+  \ ''
+  \ ]
+
+let g:startify_custom_footer = [
+  \ '',
+  \ "   Vim is charityware. Please read ':help uganda'.",
+  \ '',
+  \ ''
+  \ ]
+
+let g:startify_bookmarks = [
+  \ {'v': '~/.vim/vimrc'},
+  \ {'g': '~/.vim/gvimrc'},
+  \ {'z': '~/.zsh/zshrc'}
+  \ ]
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Keybinds
@@ -276,26 +306,3 @@ nmap <leader>nf :NERDTreeFind<CR>
 
 " Return to Startify screen.
 nmap <leader>s :Startify<CR>
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Startify
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-let g:startify_custom_header = [
-  \ '             __                  ',
-  \ '    __  __  /\_\     ___ ___     ',
-  \ '   /\ \/\ \ \/\ \  /` __` __`\   ',
-  \ '   \ \ \_/ | \ \ \ /\ \/\ \/\ \  ',
-  \ '    \ \___/   \ \_\\ \_\ \_\ \_\ ',
-  \ '     \/__/     \/_/ \/_/\/_/\/_/ v.' . version,
-  \ '   -----------------------------------',
-  \ '   ' . system('echo -n "${USERNAME}@$(hostname -s) in ${PWD}"'),
-  \ ''
-  \ ]
-
-let g:startify_custom_footer = [
-  \ '',
-  \ "   Vim is charityware. Please read ':help uganda'.",
-  \ '',
-  \ ''
-  \ ]
