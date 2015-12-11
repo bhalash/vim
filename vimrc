@@ -71,6 +71,9 @@ Plugin 'airblade/vim-gitgutter'
 " Nicer welcome screen.
 Plugin 'mhinz/vim-startify'
 
+" Uber statusline.
+Plugin 'bling/vim-airline'
+
 " End of Vundle goodness.
 call vundle#end()
 filetype plugin indent on
