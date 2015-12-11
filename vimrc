@@ -3,7 +3,7 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Required for Vundle.
-filetype off 
+filetype off
 
 " Start of Vundle goodness.
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -88,7 +88,7 @@ set wildignore+=node_modules
 
 " Menu display output.
 set wildmenu
-set wildmode=list:full 
+set wildmode=list:full
 
 " HTML validation.
 au FileType html compiler html
@@ -98,7 +98,7 @@ set history=1000
 set undolevels=1000
 
 " Keep a persistent backup file.
-set undofile                
+set undofile
 set undodir=~/.vim/.undo,~/tmp,/tmp
 
 " Disable swap files.
@@ -140,7 +140,7 @@ set tabstop=4
 " Amount to indent on tab, << or >>.
 set shiftwidth=4
 
-" Columns in insert mode. 
+" Columns in insert mode.
 set softtabstop=4
 
 " Replace tabs with spaces.
@@ -207,14 +207,14 @@ endif
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Bind CtrlP to...Ctrl + P.
-let g:ctrlp_map = '<c-p>'
+let g:ctrlp_map = '<leader>p'
 " Set default folder to starting folder.
 let g:ctrlp_working_path_mode = 'ra'
 
 " Ignore Rails temp and documentation files.
 let g:ctrlp_custom_ignore = {
   \ 'dir': '\v[\/](tmp|doc)$',
-  \ 'file': '\v\.(cache)$', 
+  \ 'file': '\v\.(cache)$',
   \ }
 
 " Supertab.
@@ -227,6 +227,8 @@ let g:vim_markdown_folding_disabled = 1
 " Keybinds
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+let mapleader = "\<Space>"
+
 " Disable the keybind to access ex mode.
 nnoremap Q <Nop>
 
@@ -235,7 +237,7 @@ nnoremap B ^
 nnoremap E $
 
 " Toggle spellchecking.
-nmap <leader>s :setlocal spell!<CR>
+nmap <leader>sp :setlocal spell!<CR>
 
 " Toggle highlighted results.
 nmap <leader>h :nohlsearch<CR>
@@ -245,6 +247,9 @@ nmap <leader>r :set relativenumber!<CR>
 
 " Toggle gutter vim diff highlights.
 nmap <leader>gg :GitGutterToggle<CR>
+
+" Strip trailing whitespace from the file.
+nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
 " Tabs
 
