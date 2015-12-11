@@ -233,11 +233,11 @@ let mapleader = "\<Space>"
 nnoremap Q <Nop>
 
 " Remap line-jump keys.
-nnoremap B ^
-nnoremap E $
+nmap B ^
+nmap E $
 
 " Split file.
-nnoremap <leader>v <C-w>v<C-w>l
+nmap <leader>v <C-w>v<C-w>l
 
 " Toggle spellchecking.
 nmap <leader>sp :setlocal spell!<CR>
@@ -252,13 +252,13 @@ nmap <leader>r :set relativenumber!<CR>
 nmap <leader>gg :GitGutterToggle<CR>
 
 " Strip trailing whitespace from the file.
-nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
+nmap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
 " Tabs
 
 " Open and close new tab.
-nnoremap <leader>t :tabnew<CR>
-nnoremap <leader>w :tabclose<CR>
+nmap <leader>t :tabnew<CR>
+nmap <leader>w :tabclose<CR>
 
 " NERDTree
 
