@@ -236,6 +236,9 @@ nnoremap Q <Nop>
 nnoremap B ^
 nnoremap E $
 
+" Bind w to split file.
+nnoremap <leader>w <C-w>v<C-w>l
+
 " Toggle spellchecking.
 nmap <leader>sp :setlocal spell!<CR>
 
