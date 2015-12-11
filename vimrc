@@ -236,8 +236,8 @@ nnoremap Q <Nop>
 nnoremap B ^
 nnoremap E $
 
-" Bind w to split file.
-nnoremap <leader>w <C-w>v<C-w>l
+" Split file.
+nnoremap <leader>v <C-w>v<C-w>l
 
 " Toggle spellchecking.
 nmap <leader>sp :setlocal spell!<CR>
@@ -256,8 +256,9 @@ nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
 " Tabs
 
-" Open new tab.
-nnoremap gn :tabnew<CR>
+" Open and close new tab.
+nnoremap <leader>t :tabnew<CR>
+nnoremap <leader>w :tabclose<CR>
 
 " NERDTree
 
