@@ -33,7 +33,7 @@ Plugin 'nrocco/vim-phplint'
 Plugin 'cakebaker/scss-syntax.vim'
 
 " Autoamtically close braces and brackets.
-Plugin 'jiangmiao/auto-pairs'
+Plugin 'tpope/vim-surround'
 
 " Supertab.
 Plugin 'ervandew/supertab'
