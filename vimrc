@@ -305,4 +305,4 @@ nmap <leader>nn :NERDTreeToggle<CR>
 nmap <leader>nf :NERDTreeFind<CR>
 
 " Return to Startify screen.
-nmap <leader>s :Startify<CR>
+nmap <leader>ss :Startify<CR>
