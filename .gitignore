@@ -6,6 +6,12 @@ bundle/*/
 !bundle/Vundle.vim/
 
 #################
+## Session Folder
+#################
+
+session/
+
+#################
 ## Plugin-generated Files
 #################
 
