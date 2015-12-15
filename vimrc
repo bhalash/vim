@@ -280,6 +280,10 @@ let g:startify_bookmarks = [
   \ {'z': '~/.zsh/zshrc'}
   \ ]
 
+" Reuse the Startify window when files are opened with CtrlP, instead of
+" opening them inside a split.
+autocmd FileType startify setlocal buftype=
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Keybinds
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
