@@ -119,9 +119,6 @@ set ruler
 " Enable statusbar.
 set laststatus=2
 
-" Searches are assumed to be global on a line.
-set gdefault
-
 " ex mode reads the top n lines of a file.
 set modelines=0
 
@@ -167,6 +164,9 @@ set wildmode=list:full
 " Search as I type, and highlight results.
 set incsearch
 set hlsearch
+
+" Searches are assumed to be global on a line.
+set gdefault
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " File Types
