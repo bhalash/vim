@@ -85,33 +85,7 @@ filetype plugin indent on
 " No need to be vi compatible. I mean, it's almost 2016.
 set nocompatible
 
-" Ignore common temp files and directories.
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.cache,*.bak,*.pyc,*.class
-set wildignore+=node_modules
-
-" Menu display output.
-set wildmenu
-set wildmode=list:full
-
-" HTML validation.
-au FileType html compiler html
-
-" Undo history.
-set history=1000
-set undolevels=1000
-
-" Keep a persistent backup file.
-set undofile
-set undodir=~/.vim/.undo,~/tmp,/tmp
-
-" Disable swap files.
-set nobackup
-set noswapfile
-
-" Set a directory in case they *are* turned on.
-set directory=~/.vim/.tmp,~/tmp,/tmp
-
-" Yank to clipboard.
+" Yank to system clipboard.
 set clipboard=unnamed
 
 " Enable syntax highlighting.
@@ -127,44 +101,14 @@ set relativenumber
 set splitbelow
 set splitright
 
-" Search as I type, and highlight results.
-set incsearch
-set hlsearch
-
 " Something I set in git changed line-endings to DOS. Bad Mark!
 set ffs=unix,dos
 
 " Follow auto indent.
 set autoindent
 
-" Number of columns in a tab.
-set tabstop=4
-
-" Amount to indent on tab, << or >>.
-set shiftwidth=4
-
-" Columns in insert mode.
-set softtabstop=4
-
-" Replace tabs with spaces.
-set expandtab
-
 " Wrap lines outside of words.
 set wrap linebreak nolist
-
-" Set padding when scrolling.
-set scrolloff=5
-set sidescrolloff=5
-
-" Scroll with mouse.
-set ttymouse=xterm2
-set mouse=i
-
-" Increase scroll speed.
-set ttyfast
-
-" Change how buffer is redrawn. /Should/ increase scroll speed.
-set lazyredraw
 
 " Enable line numbers.
 set nu
@@ -181,9 +125,6 @@ set gdefault
 " ex mode reads the top n lines of a file.
 set modelines=0
 
-" Autocomplete CSS.
-set omnifunc=syntaxcomplete#Complete
-
 " Stop annoying problem on OS X.
 " Arrow keybinds cause a status popup to appear when I tab back to vim.
 set shortmess=a
@@ -192,6 +133,85 @@ set shortmess=a
 " changes.
 set ttimeout
 set ttimeoutlen=50
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Scrolling and Mice
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Set padding when scrolling.
+set scrolloff=5
+set sidescrolloff=5
+
+" Scroll with mouse.
+set ttymouse=xterm2
+set mouse=i
+
+" Increase scroll speed.
+set ttyfast
+
+" Change how buffer is redrawn. /Should/ increase scroll speed.
+set lazyredraw
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Completion
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Ignore common temp files and directories.
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.cache,*.bak,*.pyc,*.class
+set wildignore+=node_modules
+
+" Menu display output.
+set wildmenu
+set wildmode=list:full
+
+" Search as I type, and highlight results.
+set incsearch
+set hlsearch
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" File Types
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" HTML validation.
+au FileType html compiler html
+
+" Autocomplete CSS.
+set omnifunc=syntaxcomplete#Complete
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Filesystem
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Undo history.
+set history=1000
+set undolevels=1000
+
+" Keep a persistent backup file.
+set undofile
+set undodir=~/.vim/.undo,~/tmp,/tmp
+
+" Disable swap files.
+set nobackup
+set noswapfile
+
+" Set a directory in case they *are* turned on.
+set directory=~/.vim/.tmp,~/tmp,/tmp
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Tabbing
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Number of columns in a tab.
+set tabstop=4
+
+" Amount to indent on tab, << or >>.
+set shiftwidth=4
+
+" Columns in insert mode.
+set softtabstop=4
+
+" Replace tabs with spaces.
+set expandtab
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Appearance (as related to the oxeded theme)
