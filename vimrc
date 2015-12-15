@@ -308,8 +308,16 @@ nmap <leader>r :set relativenumber!<CR>
 " Toggle gutter vim diff highlights.
 nmap <leader>gg :GitGutterToggle<CR>
 
+" Replacements
+
+" Delete all leading spaces on a line.
+nmap <leader>d<Space> :s/^\s\+//<CR> :noh<CR>
+
 " Strip trailing whitespace from the file.
-nmap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
+nmap <leader>W :%s/\s\+$//<CR>:let @/=''<CR> :noh<CR>
+
+" Empty line of content without removing line ending.
+nmap <leader>d<space> s/^\s+//<CR> :noh<CR>
 
 " Tabs
 
