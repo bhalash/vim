@@ -251,6 +251,10 @@ let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 " Disable markdown folding on load.
 let g:vim_markdown_folding_disabled = 1
 
+" Reuse the Startify window when files are opened with CtrlP, instead of
+" opening them inside a split.
+let g:ctrlp_reuse_window  = 'startify'
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Startify
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -279,10 +283,6 @@ let g:startify_bookmarks = [
   \ {'g': '~/.vim/gvimrc'},
   \ {'z': '~/.zsh/zshrc'}
   \ ]
-
-" Reuse the Startify window when files are opened with CtrlP, instead of
-" opening them inside a split.
-autocmd FileType startify setlocal buftype=
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Keybinds
