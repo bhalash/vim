@@ -310,14 +310,14 @@ nmap <leader>gg :GitGutterToggle<CR>
 
 " Replacements
 
-" Delete all leading spaces on a line.
-nmap <leader>d<Space> :s/^\s\+//<CR> :noh<CR>
+" Empty line of content without removing line ending.
+nmap <leader>dl :s/.*//<CR> :noh<CR>
 
 " Strip trailing whitespace from the file.
 nmap <leader>W :%s/\s\+$//<CR>:let @/=''<CR> :noh<CR>
 
-" Empty line of content without removing line ending.
-nmap <leader>d<space> s/^\s+//<CR> :noh<CR>
+" Delete all leading spaces on a line.
+nmap <leader>d<space> :s/^\s\+//<CR> :noh<CR>
 
 " Tabs
 
