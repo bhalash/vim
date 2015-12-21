@@ -329,6 +329,10 @@ nmap <leader>d<space> :s/^\s\+//<CR> :noh<CR>
 nmap <leader>tt :tabnew<CR>
 nmap <leader>tw :tabclose<CR>
 
+" Next/previous tab.
+nmap <leader><Left> :tabprevious<CR>
+nmap <leader><Right> :tabnext<CR>
+
 " NERDTree
 
 " Toggle file tree.
