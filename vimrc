@@ -326,8 +326,8 @@ nmap <leader>d<space> :s/^\s\+//<CR> :noh<CR>
 " Tabs
 
 " Open and close new tab.
-nmap <leader>t :tabnew<CR>
-nmap <leader>w :tabclose<CR>
+nmap <leader>tt :tabnew<CR>
+nmap <leader>tw :tabclose<CR>
 
 " NERDTree
 
