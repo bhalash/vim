@@ -74,6 +74,10 @@ Plugin 'mhinz/vim-startify'
 " Uber statusline.
 Plugin 'bling/vim-airline'
 
+" Markdown
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+
 " End of Vundle goodness.
 call vundle#end()
 filetype plugin indent on
@@ -246,7 +250,8 @@ let g:ctrlp_custom_ignore = {
   \ }
 
 " Supertab.
-let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
+let g:SuperTabDefaultCompletionType = 'context'
+let g:SuperTabContextDefaultCompletionType = "<c-n>"
 
 " Disable markdown folding on load.
 let g:vim_markdown_folding_disabled = 1
