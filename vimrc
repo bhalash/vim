@@ -26,9 +26,6 @@ Plugin 'ajgrf/sprinkles'
 " Vundle plugins.
 Plugin 'VundleVim/Vundle.vim'
 
-" PHP linter.
-Plugin 'nrocco/vim-phplint'
-
 " Better SCSS markup.
 Plugin 'cakebaker/scss-syntax.vim'
 
