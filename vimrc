@@ -334,6 +334,8 @@ nmap <leader>tw :tabclose<CR>
 " Next/previous tab.
 nmap <leader><Left> :tabprevious<CR>
 nmap <leader><Right> :tabnext<CR>
+nmap <leader>h :tabprevious<CR>
+nmap <leader>l :tabnext<CR>
 
 " NERDTree
 
