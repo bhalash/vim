@@ -71,9 +71,12 @@ Plugin 'mhinz/vim-startify'
 " Uber statusline.
 Plugin 'bling/vim-airline'
 
-" Markdown
+" Markdown.
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+
+" ZSH syntax.
+Plugin 'clones/vim-zsh'
 
 " End of Vundle goodness.
 call vundle#end()
