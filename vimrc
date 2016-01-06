@@ -251,7 +251,7 @@ let g:ctrlp_custom_ignore = {
 
 " Supertab.
 let g:SuperTabDefaultCompletionType = 'context'
-let g:SuperTabContextDefaultCompletionType = "<c-p>"
+let g:SuperTabContextDefaultCompletionType = '<c-p>'
 
 " Disable markdown folding on load.
 let g:vim_markdown_folding_disabled = 1
