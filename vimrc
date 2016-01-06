@@ -179,9 +179,6 @@ set gdefault
 " HTML validation.
 au FileType html compiler html
 
-" Autocomplete CSS.
-set omnifunc=syntaxcomplete#Complete
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Filesystem
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -244,14 +241,22 @@ let g:ctrlp_map = '<leader>p'
 let g:ctrlp_working_path_mode = 'ra'
 
 " Ignore Rails temp and documentation files.
-let g:ctrlp_custom_ignore = {
-  \ 'dir': '\v[\/](tmp|doc)$',
-  \ 'file': '\v\.(cache)$',
-  \ }
+let g:ctrlp_custom_ignore = { 'dir': '\v[\/](tmp|doc)$', 'file': '\v\.(cache)$' }
 
 " Supertab.
-let g:SuperTabDefaultCompletionType = 'context'
-let g:SuperTabContextDefaultCompletionType = '<c-p>'
+let g:SuperTabDefaultCompletionType = "context"
+let g:SuperTabCompletionContexts = ['s:ContextText', 's:ContextDiscover']
+let g:SuperTabContextTextOmniPrecedence = ['&completefunc', '&omnifunc']
+let g:SuperTabContextDiscoverDiscovery = ['&completefunc:<c-x><c-u>', '&omnifunc:<c-x><c-o>']
+let g:SuperTabContextDefaultCompletionType = "<c-p>"
+" let g:SuperTabLongestHighlight = 1
+" let g:SuperTabLongestEnhanced = 1
+
+autocmd FileType *
+  \ if &omnifunc != '' |
+  \ call SuperTabChain(&omnifunc, "<c-p>") |
+  \ call SuperTabSetDefaultCompletionType("<c-x><c-u>") |
+  \ endif
 
 " Disable markdown folding on load.
 let g:vim_markdown_folding_disabled = 1
