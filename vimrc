@@ -235,7 +235,7 @@ endif
 " Plugin Configuration
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Bind CtrlP to...Ctrl + P.
+" Bind CtrlP to <leader>
 let g:ctrlp_map = '<leader>p'
 " Set default folder to starting folder.
 let g:ctrlp_working_path_mode = 'ra'
