@@ -249,8 +249,8 @@ let g:SuperTabCompletionContexts = ['s:ContextText', 's:ContextDiscover']
 let g:SuperTabContextTextOmniPrecedence = ['&completefunc', '&omnifunc']
 let g:SuperTabContextDiscoverDiscovery = ['&completefunc:<c-x><c-u>', '&omnifunc:<c-x><c-o>']
 let g:SuperTabContextDefaultCompletionType = "<c-p>"
-" let g:SuperTabLongestHighlight = 1
-" let g:SuperTabLongestEnhanced = 1
+let g:SuperTabLongestHighlight = 1
+let g:SuperTabLongestEnhanced = 1
 
 autocmd FileType *
   \ if &omnifunc != '' |
