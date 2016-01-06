@@ -240,30 +240,50 @@ let g:ctrlp_map = '<leader>p'
 " Set default folder to starting folder.
 let g:ctrlp_working_path_mode = 'ra'
 
-" Ignore Rails temp and documentation files.
-let g:ctrlp_custom_ignore = { 'dir': '\v[\/](tmp|doc)$', 'file': '\v\.(cache)$' }
+" Reuse the Startify window when files are opened with CtrlP, instead of
+" opening them inside a split.
+let g:ctrlp_reuse_window  = 'startify'
 
-" Supertab.
-let g:SuperTabDefaultCompletionType = "context"
-let g:SuperTabCompletionContexts = ['s:ContextText', 's:ContextDiscover']
-let g:SuperTabContextTextOmniPrecedence = ['&completefunc', '&omnifunc']
-let g:SuperTabContextDiscoverDiscovery = ['&completefunc:<c-x><c-u>', '&omnifunc:<c-x><c-o>']
+" Ignore Rails temp and documentation files.
+let g:ctrlp_custom_ignore = {
+  \ 'dir': '\v[\/](tmp|doc)$',
+  \ 'file': '\v\.(cache)$'
+  \ }
+
+" Disable markdown folding on load.
+let g:vim_markdown_folding_disabled = 1
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Supertab
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 let g:SuperTabContextDefaultCompletionType = "<c-p>"
 let g:SuperTabLongestHighlight = 1
 let g:SuperTabLongestEnhanced = 1
+
+" Supertab.
+let g:SuperTabDefaultCompletionType = "context"
+
+let g:SuperTabCompletionContexts = [
+  \ 's:ContextText',
+  \ 's:ContextDiscover'
+  \ ]
+
+let g:SuperTabContextTextOmniPrecedence = [
+  \ '&completefunc',
+  \ '&omnifunc'
+  \ ]
+
+let g:SuperTabContextDiscoverDiscovery = [
+  \ '&completefunc:<c-x><c-u>',
+  \ '&omnifunc:<c-x><c-o>'
+  \ ]
 
 autocmd FileType *
   \ if &omnifunc != '' |
   \ call SuperTabChain(&omnifunc, "<c-p>") |
   \ call SuperTabSetDefaultCompletionType("<c-x><c-u>") |
   \ endif
-
-" Disable markdown folding on load.
-let g:vim_markdown_folding_disabled = 1
-
-" Reuse the Startify window when files are opened with CtrlP, instead of
-" opening them inside a split.
-let g:ctrlp_reuse_window  = 'startify'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Startify
