@@ -16,6 +16,8 @@ call vundle#begin()
 " Primary for terminal.
 Plugin 'queyenth/oxeded.vim'
 
+Plugin 'mkarmona/colorsbox'
+
 " Primary for gvim/MacVim
 Plugin 'ajgrf/sprinkles'
 
@@ -43,6 +45,7 @@ Plugin 'elzr/vim-json'
 
 " Fuzzy file matchng.
 Plugin 'kien/ctrlp.vim'
+
 
 " Ruby and Rails utilities. Tim Pope is God.
 Plugin 'tpope/vim-fugitive'
@@ -228,7 +231,8 @@ if !has('gui_running')
   hi MatchParen cterm=bold ctermfg=0 ctermbg=15
 
   " Default theme.
-  colors oxeded
+  " colors oxeded
+  colors colorsbox-material
 endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
