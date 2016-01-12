@@ -44,6 +44,9 @@ Plugin 'elzr/vim-json'
 " Fuzzy file matchng.
 Plugin 'kien/ctrlp.vim'
 
+" CTAGS.
+Plugin 'szw/vim-tags'
+
 " Ruby and Rails utilities. Tim Pope is God.
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rails'
@@ -252,6 +255,9 @@ let g:ctrlp_custom_ignore = {
 
 " Disable markdown folding on load.
 let g:vim_markdown_folding_disabled = 1
+
+" Generate CTAGS upon file save.
+let g:vim_tags_auto_generate = 1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Supertab
