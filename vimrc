@@ -19,6 +19,8 @@ Plugin 'queyenth/oxeded.vim'
 " Primary for gvim/MacVim
 Plugin 'ajgrf/sprinkles'
 
+Plugin 'marcopaganini/termschool-vim-theme'
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -225,10 +227,15 @@ set expandtab
 set cul
 
 if !has('gui_running')
+  " Why is this set?
   hi CursorLine term=none cterm=none gui=none ctermbg=234 guibg=#1c1c1c guifg=#ffffff
 
   " Change matching bracket style.
   hi MatchParen cterm=bold ctermfg=0 ctermbg=15
+
+  " TODO FIXME
+  " colors termschool
+  " hi LineNr ctermfg=15 ctermbg=none 
 
   " Default theme.
   colors oxeded
