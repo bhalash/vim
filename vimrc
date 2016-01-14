@@ -238,7 +238,6 @@ if !has('gui_running')
 
   function Oxeded()
     " Oxeded theme.
-    " Change matching bracket style.
     hi MatchParen cterm=bold ctermfg=0 ctermbg=15
     hi CursorLine term=none cterm=none ctermbg=234
     colors oxeded
