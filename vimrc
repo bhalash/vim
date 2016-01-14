@@ -228,17 +228,23 @@ set expandtab
 set cul
 
 if !has('gui_running')
-  " Termschool theme.
-  " hi LineNr ctermfg=15 ctermbg=none
-  " hi CursorLine ctermbg=238
-  " hi SignColumn ctermbg=238
-  " colors termschool
+  function Termschool()
+    " Termschool theme.
+    colors termschool
+    hi LineNr ctermfg=15 ctermbg=none
+    hi CursorLine ctermbg=238
+    hi SignColumn ctermbg=238
+  endfunction
 
-  " Oxeded theme.
-  " Change matching bracket style.
-  hi MatchParen cterm=bold ctermfg=0 ctermbg=15
-  hi CursorLine term=none cterm=none ctermbg=234
-  colors oxeded
+  function Oxeded()
+    " Oxeded theme.
+    " Change matching bracket style.
+    hi MatchParen cterm=bold ctermfg=0 ctermbg=15
+    hi CursorLine term=none cterm=none ctermbg=234
+    colors oxeded
+  endfunction
+
+  call Oxeded()
 endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
