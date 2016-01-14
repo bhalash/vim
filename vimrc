@@ -231,9 +231,15 @@ if !has('gui_running')
   function Termschool()
     " Termschool theme.
     colors termschool
-    hi LineNr ctermfg=15 ctermbg=none
-    hi CursorLine ctermbg=238
-    hi SignColumn ctermbg=238
+    hi LineNr ctermfg=250 ctermbg=none
+    hi CursorLine ctermfg=none ctermbg=238
+
+    " For GitGutter
+    hi clear SignColumn
+    hi GitGutterAdd ctermfg=green
+    hi GitGutterChange ctermfg=yellow
+    hi GitGutterDelete ctermfg=red
+    hi GitGutterChangeDelete ctermfg=yellow
   endfunction
 
   function Oxeded()
