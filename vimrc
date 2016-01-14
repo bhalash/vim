@@ -249,7 +249,8 @@ if !has('gui_running')
     colors oxeded
   endfunction
 
-  call Oxeded()
+  " call Oxeded()
+  call Termschool()
 endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
