@@ -260,7 +260,7 @@ endif
 " Bind CtrlP to <leader>
 let g:ctrlp_map = '<leader>p'
 " Set default folder to starting folder.
-let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_working_path_mode = 0
 
 " Reuse the Startify window when files are opened with CtrlP, instead of
 " opening them inside a split.
