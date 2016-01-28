@@ -367,6 +367,9 @@ nmap <leader>r :set relativenumber!<CR>
 " Toggle gutter vim diff highlights.
 nmap <leader>gg :GitGutterToggle<CR>
 
+" Reset current file to its last committed state.
+nmap <leader>gr :!git checkout %<CR>
+
 " Replacements
 
 " Empty line of content without removing line ending.
