@@ -1,6 +1,5 @@
-setlocal tabstop=2
-setlocal shiftwidth=2
-setlocal softtabstop=2
+" Ruby tabstops.
+setlocal expandtab ts=2 sw=2 sts=2
 
 " Helps with syntax highlighting performance in certain files.
 " See: https://stackoverflow.com/questions/22949067/
