@@ -6,7 +6,9 @@ setlocal softtabstop=2
 " See: https://stackoverflow.com/questions/22949067/
 " See: https://stackoverflow.com/questions/16902317/
 set re=1
-set foldmethod=syntax
+
+" May boost performance when operating under rbenv.
+let g:ruby_path = system('echo $HOME/.rbenv/shims')
 
 if has("autocmd")
   autocmd FileType ruby set omnifunc=rubycomplete#Complete
