@@ -95,10 +95,9 @@ set backspace=indent,eol,start
 set relativenumber
 
 " Open split below and to the right instead of up and to the left.
-set splitbelow
-set splitright
+set splitbelow splitright
 
-" Something I set in git changed line-endings to DOS. Bad Mark!
+" Something I set in git changed line-endings to be DOS-only. Bad Mark!
 set ffs=unix,dos
 
 " Follow auto indent.
@@ -123,22 +122,15 @@ set modelines=0
 " Arrow keybinds cause a status popup to appear when I tab back to vim.
 set shortmess=a
 
-" Reduce timeout length on keystrokes. This is mostly for vim-airline's mode
-" changes.
-set ttimeout
-set ttimeoutlen=50
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Scrolling and Mice
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Set padding when scrolling.
-set scrolloff=5
-set sidescrolloff=5
+set scrolloff=5 sidescrolloff=5
 
 " Scroll with mouse.
-set ttymouse=xterm2
-set mouse=i
+set ttymouse=xterm2 mouse=i
 
 " Increase scroll speed.
 set ttyfast
@@ -155,38 +147,26 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.cache,*.bak,*.pyc,*.class
 set wildignore+=node_modules
 
 " Menu display output.
-set wildmenu
-set wildmode=list:full
+set wildmenu wildmode=list:full
 
 " Search as I type, and highlight results.
-set incsearch
-set hlsearch
+set incsearch hlsearch
 
 " Searches are assumed to be global on a line.
 set gdefault
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" File Types
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" HTML validation.
-au FileType html compiler html
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Filesystem
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Undo history.
-set history=1000
-set undolevels=1000
+set history=1000 undolevels=1000
 
 " Keep a persistent backup file.
-set undofile
-set undodir=~/.vim/.undo,~/tmp,/tmp
+set undofile undodir=~/.vim/.undo,~/tmp,/tmp
 
 " Disable swap files.
-set nobackup
-set noswapfile
+set nobackup noswapfile
 
 " Set a directory in case they *are* turned on.
 set directory=~/.vim/.tmp,~/tmp,/tmp
@@ -195,17 +175,7 @@ set directory=~/.vim/.tmp,~/tmp,/tmp
 " Tabbing
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Number of columns in a tab.
-set tabstop=4
-
-" Amount to indent on tab, << or >>.
-set shiftwidth=4
-
-" Columns in insert mode.
-set softtabstop=4
-
-" Replace tabs with spaces.
-set expandtab
+set expandtab ts=4 sw=4 sts=4
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Appearance (as related to the oxeded theme)
@@ -244,7 +214,12 @@ endif
 " Plugin Configuration
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" Reduce timeout length on keystrokes. This is mostly for vim-airline.
+set ttimeout ttimeoutlen=50
+
 if exists('g:ctrl_user_command')
+  " Remove any blockers which prevent wildignore from not working.
+  " May lead to a dramatic increase in CtrlP performance.
   unlet g:ctrlp_user_command
 endif
 
