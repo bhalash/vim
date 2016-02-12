@@ -32,7 +32,7 @@ Plugin 'VundleVim/Vundle.vim'
 " Better SCSS markup.
 Plugin 'cakebaker/scss-syntax.vim'
 
-" Autoamtically close braces and brackets.
+" Quickly change wrapping characters.
 Plugin 'tpope/vim-surround'
 
 " Supertab.
@@ -56,15 +56,6 @@ Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-bundler'
 
-" Highlight matching HTML tags.
-Plugin 'gregsexton/MatchTag'
-
-" HTML5 validation.
-Plugin 'bhalash/vim-htmlvalidator'
-
-" Folder browser.
-Plugin 'scrooloose/nerdtree'
-
 " Toggle comments.
 Plugin 'tomtom/tcomment_vim'
 
@@ -76,10 +67,6 @@ Plugin 'mhinz/vim-startify'
 
 " Uber statusline.
 Plugin 'bling/vim-airline'
-
-" Markdown.
-Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
 
 " ZSH syntax.
 Plugin 'clones/vim-zsh'
@@ -390,16 +377,8 @@ nmap <leader>tw :tabclose<CR>
 " Next/previous tab.
 nmap <leader><Left> :tabprevious<CR>
 nmap <leader><Right> :tabnext<CR>
-" FIXME
-" nmap <leader>h :tabprevious<CR>
-" nmap <leader>l :tabnext<CR>
 
-" NERDTree
-
-" Toggle file tree.
-nmap <leader>nn :NERDTreeToggle<CR>
-" Find current open file.
-nmap <leader>nf :NERDTreeFind<CR>
+" Miscellaneous Plugins
 
 " Return to Startify screen.
 nmap <leader>ss :Startify<CR>
