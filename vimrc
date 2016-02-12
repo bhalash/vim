@@ -45,7 +45,7 @@ Plugin 'mattn/emmet-vim'
 Plugin 'elzr/vim-json'
 
 " Fuzzy file matchng.
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 " CTAGS.
 Plugin 'szw/vim-tags'
