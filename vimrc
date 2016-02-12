@@ -244,6 +244,10 @@ endif
 " Plugin Configuration
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+if exists('g:ctrl_user_command')
+  unlet g:ctrlp_user_command
+endif
+
 " Bind CtrlP to <leader>
 let g:ctrlp_map = '<leader>p'
 " Set default folder to starting folder.
