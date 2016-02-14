@@ -156,11 +156,14 @@ set incsearch hlsearch
 set gdefault
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Filesystem
+" Filesystem and History
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" More frequent saves.
+set updatecount=50
+
 " Undo history.
-set history=1000 undolevels=1000
+set history=2000 undolevels=2000
 
 " Keep a persistent backup file.
 set undofile undodir=~/.vim/.undo,~/tmp,/tmp
@@ -325,7 +328,7 @@ nmap <leader>v <C-w>v<C-w>l
 nmap <leader>sp :setlocal spell!<CR>
 
 " Toggle highlighted results.
-nmap <leader>h :nohlsearch<CR>
+nmap <silent> <BS>  :nohlsearch<CR>
 
 " Toggle line numbering style.
 nmap <leader>r :set relativenumber!<CR>
