@@ -188,7 +188,7 @@ set expandtab ts=4 sw=4 sts=4
 set cul
 
 if !has('gui_running')
-  function Termschool()
+  function! Termschool()
     " Termschool theme.
     colors termschool
     hi LineNr ctermfg=250 ctermbg=none
@@ -202,7 +202,7 @@ if !has('gui_running')
     hi GitGutterChangeDelete ctermfg=yellow
   endfunction
 
-  function Oxeded()
+  function! Oxeded()
     " Oxeded theme.
     hi MatchParen cterm=bold ctermfg=0 ctermbg=15
     hi CursorLine term=none cterm=none ctermbg=234
@@ -322,16 +322,16 @@ nmap B ^
 nmap E $
 
 " Split file.
-nmap <leader>v <C-w>v<C-w>l
+nmap <silent><leader>v <C-w>v<C-w>l
 
 " Toggle spellchecking.
 nmap <leader>sp :setlocal spell!<CR>
 
 " Toggle highlighted results.
-nmap <silent> <BS>  :nohlsearch<CR>
+nmap <silent><BS>  :nohlsearch<CR>
 
 " Toggle line numbering style.
-nmap <leader>r :set relativenumber!<CR>
+nmap <silent><leader>r :set relativenumber!<CR>
 
 " Toggle gutter vim diff highlights.
 nmap <leader>gg :GitGutterToggle<CR>
@@ -348,17 +348,17 @@ nmap <leader>dl :s/.*//<CR> :noh<CR>
 nmap <leader>W :%s/\s\+$//<CR>:let @/=''<CR> :noh<CR>
 
 " Delete all leading spaces on a line.
-nmap <leader>d<space> :s/^\s\+//<CR> :noh<CR>
+nmap <silent><leader>d<space> :s/^\s\+//<CR> :noh<CR>
 
 " Tabs
 
 " Open and close new tab.
-nmap <leader>tt :tabnew<CR>
-nmap <leader>tw :tabclose<CR>
+nmap <silent><leader>tt :tabnew<CR>
+nmap <silent><leader>tw :tabclose<CR>
 
 " Next/previous tab.
-nmap <leader><Left> :tabprevious<CR>
-nmap <leader><Right> :tabnext<CR>
+nmap <silent><leader><Left> :tabprevious<CR>
+nmap <silent><leader><Right> :tabnext<CR>
 
 " Miscellaneous Plugins
 
