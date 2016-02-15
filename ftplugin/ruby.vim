@@ -10,7 +10,7 @@ set re=1
 let g:ruby_path = system('echo $HOME/.rbenv/shims')
 
 " Insert FIXME notice.
-nmap <leader>fm O# FIXME<space>
+nmap <leader>fm O# FIXME:<space>
 
 if has("autocmd")
   " Assists with supertab functioning.
