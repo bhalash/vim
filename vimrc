@@ -328,10 +328,10 @@ nmap E $
 nmap <silent><leader>v <c-w>v<c-w>l
 
 " Rebind arrows keys to navigate between buffers.
-nmap <silent><UP> <c-w>k
-nmap <silent><DOWN> <c-w>j
-nmap <silent><LEFT> <c-w>h
-nmap <silent><RIGHT> <c-w>l
+" nmap <silent><UP> <c-w>k
+" nmap <silent><DOWN> <c-w>j
+" nmap <silent><LEFT> <c-w>h
+" nmap <silent><RIGHT> <c-w>l
 
 " Next/previous tab.
 nmap <silent><leader><LEFT> :tabprevious<CR>
@@ -376,3 +376,13 @@ nmap <silent><leader>tw :tabclose<CR>
 
 " Return to Startify screen.
 nmap <leader>ss :Startify<CR>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Shorthand Colorcolumn Option
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+function! RightRuler(...)
+  let &l:colorcolumn = a:0 > 0 ? 0 + a:1 : 0
+endfunction
+
+command! -nargs=? CC call RightRuler(<f-args>)
