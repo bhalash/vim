@@ -150,7 +150,7 @@ set wildignore+=node_modules
 set wildmenu wildmode=list:full
 
 " Search as I type, and highlight results.
-set incsearch  ignorecase  smartcase  hlsearch
+set incsearch smartcase hlsearch
 
 " Searches are assumed to be global on a line.
 set gdefault
