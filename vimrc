@@ -150,14 +150,17 @@ set wildignore+=node_modules
 set wildmenu wildmode=list:full
 
 " Search as I type, and highlight results.
-set incsearch hlsearch
+set incsearch  ignorecase  smartcase  hlsearch
 
 " Searches are assumed to be global on a line.
 set gdefault
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Filesystem and History
+" Saving, Filesystem and History
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Save file when it loses focus.
+set autowrite
 
 " More frequent saves.
 set updatecount=50
@@ -322,13 +325,26 @@ nmap B ^
 nmap E $
 
 " Split file.
-nmap <silent><leader>v <C-w>v<C-w>l
+nmap <silent><leader>v <c-w>v<c-w>l
+
+" Rebind arrows keys to navigate between buffers.
+nmap <silent><UP> <c-w>k
+nmap <silent><DOWN> <c-w>j
+nmap <silent><LEFT> <c-w>h
+nmap <silent><RIGHT> <c-w>l
+
+" Next/previous tab.
+nmap <silent><leader><LEFT> :tabprevious<CR>
+nmap <silent><leader><RIGHT> :tabnext<CR>
 
 " Toggle spellchecking.
 nmap <leader>sp :setlocal spell!<CR>
 
 " Toggle highlighted results.
-nmap <silent><BS>  :nohlsearch<CR>
+nmap <silent><BS> :nohlsearch<CR>
+
+" Shorter global search.
+nmap S :%s//g<LEFT><LEFT>
 
 " Toggle line numbering style.
 nmap <silent><leader>r :set relativenumber!<CR>
@@ -350,18 +366,11 @@ nmap <leader>W :%s/\s\+$//<CR>:let @/=''<CR> :noh<CR>
 " Delete all leading spaces on a line.
 nmap <silent><leader>d<space> :s/^\s\+//<CR> :noh<CR>
 
-" Insert FIXME notice.
-nmap <leader>fm O# FIXME<space>
-
 " Tabs
 
 " Open and close new tab.
 nmap <silent><leader>tt :tabnew<CR>
 nmap <silent><leader>tw :tabclose<CR>
-
-" Next/previous tab.
-nmap <silent><leader><Left> :tabprevious<CR>
-nmap <silent><leader><Right> :tabnext<CR>
 
 " Miscellaneous Plugins
 
