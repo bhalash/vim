@@ -350,6 +350,9 @@ nmap <leader>W :%s/\s\+$//<CR>:let @/=''<CR> :noh<CR>
 " Delete all leading spaces on a line.
 nmap <silent><leader>d<space> :s/^\s\+//<CR> :noh<CR>
 
+" Insert FIXME notice.
+nmap <leader>fm O# FIXME<space>
+
 " Tabs
 
 " Open and close new tab.
