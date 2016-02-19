@@ -10,7 +10,8 @@ set re=1
 let g:ruby_path = system('echo $HOME/.rbenv/shims')
 
 " Insert dated FIXME notice.
-nmap <leader>fm :exe ':normal O# FIXME ' . strftime('%Y-%m-%d') . ':  '<CR>i
+" nmap <leader>fm :exe ':normal O# FIXME ' . strftime('%Y-%m-%d') . ':  '<CR>i
+nmap <leader>fm O# FIXME<space>
 
 if has("autocmd")
   " Assists with supertab functioning.
