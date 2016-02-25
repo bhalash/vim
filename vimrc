@@ -202,7 +202,11 @@ endfunction
 
 function! Colorsbox()
   colors colorsbox-stnight
-  
+
+  " Tabs.
+  hi TabLineFill guifg=White guibg=#1d1f21
+  hi TabLineSel guifg=#1d1f21 guibg=White
+
   " For GitGutter.
   hi clear SignColumn
   hi GitGutterAdd ctermfg=green
