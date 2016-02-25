@@ -13,14 +13,11 @@ call vundle#begin()
 " Themes
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Primary for terminal.
-Plugin 'queyenth/oxeded.vim'
-
-" Primary for gvim/MacVim
-Plugin 'ajgrf/sprinkles'
-
-" Termschool Theme
+" Primary for terminal vim.
 Plugin 'marcopaganini/termschool-vim-theme'
+
+" Primary for gvim/MacVim.
+Plugin 'mkarmona/colorsbox'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugins
@@ -79,7 +76,7 @@ filetype plugin indent on
 " Core Vim Configuration
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" No need to be vi compatible. I mean, it's almost 2016.
+" No need to be vi compatible. I mean, it's 2016.
 set nocompatible
 
 " Yank to system clipboard.
@@ -184,36 +181,40 @@ set directory=~/.vim/.tmp,~/tmp,/tmp
 set expandtab ts=4 sw=4 sts=4
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Appearance (as related to the oxeded theme)
+" Appearance
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Highlight the current line and set the colour.
 set cul
 
+function! Termschool()
+  colors termschool
+  hi LineNr ctermfg=250 ctermbg=none
+  hi CursorLine ctermfg=none ctermbg=238
+
+  " For GitGutter.
+  hi clear SignColumn
+  hi GitGutterAdd ctermfg=green
+  hi GitGutterDelete ctermfg=red
+  hi GitGutterChange ctermfg=yellow
+  hi GitGutterChangeDelete ctermfg=yellow
+endfunction
+
+function! Colorsbox()
+  colors colorsbox-stnight
+  
+  " For GitGutter.
+  hi clear SignColumn
+  hi GitGutterAdd ctermfg=green
+  hi GitGutterDelete ctermfg=red
+  hi GitGutterChange ctermfg=yellow
+  hi GitGutterChangeDelete ctermfg=yellow
+endfunction
+
 if !has('gui_running')
-  function! Termschool()
-    " Termschool theme.
-    colors termschool
-    hi LineNr ctermfg=250 ctermbg=none
-    hi CursorLine ctermfg=none ctermbg=238
-
-    " For GitGutter
-    hi clear SignColumn
-    hi GitGutterAdd ctermfg=green
-    hi GitGutterChange ctermfg=yellow
-    hi GitGutterDelete ctermfg=red
-    hi GitGutterChangeDelete ctermfg=yellow
-  endfunction
-
-  function! Oxeded()
-    " Oxeded theme.
-    hi MatchParen cterm=bold ctermfg=0 ctermbg=15
-    hi CursorLine term=none cterm=none ctermbg=234
-    colors oxeded
-  endfunction
-
-  " call Oxeded()
   call Termschool()
+else
+  call Colorsbox()
 endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
