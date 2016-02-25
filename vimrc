@@ -213,6 +213,10 @@ function! Colorsbox()
   hi GitGutterDelete ctermfg=red
   hi GitGutterChange ctermfg=yellow
   hi GitGutterChangeDelete ctermfg=yellow
+
+  " Airline statusbase theme.
+  " See: https://github.com/vim-airline/vim-airline/wiki/Screenshots
+  :AirlineTheme base16
 endfunction
 
 if !has('gui_running')
@@ -254,10 +258,6 @@ let g:vim_markdown_folding_disabled = 1
 
 " Generate CTAGS upon file save.
 let g:vim_tags_auto_generate = 1
-
-" Airline statusbase theme.
-" See: https://github.com/vim-airline/vim-airline/wiki/Screenshots
-:AirlineTheme base16
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Supertab
