@@ -13,7 +13,7 @@ let g:ruby_path = system('echo $HOME/.rbenv/shims')
 " nmap <leader>fm :exe ':normal O# FIXME ' . strftime('%Y-%m-%d') . ':  '<CR>i
 
 nmap <leader>fm O# FIXME<space>
-nmap <leader>fd I# FIXME DEPRECATED<space>
+nmap <leader>fd I# FIXME DEPRECATED<space><esc>
 
 if has("autocmd")
   " Assists with supertab functioning.
