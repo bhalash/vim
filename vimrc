@@ -187,42 +187,21 @@ set expandtab ts=4 sw=4 sts=4
 " Highlight the current line and set the colour.
 set cul
 
-function! Termschool()
-  colors termschool
-  hi LineNr ctermfg=250 ctermbg=none guifg=#bcbcbc guibg=none
-  hi CursorLine ctermfg=none ctermbg=238 guifg=none guibg=#444444
-
-  " For GitGutter.
-  hi clear SignColumn
-  hi GitGutterAdd ctermfg=green
-  hi GitGutterDelete ctermfg=red
-  hi GitGutterChange ctermfg=yellow
-  hi GitGutterChangeDelete ctermfg=yellow
-endfunction
-
-function! Colorsbox()
-  colors colorsbox-stnight
-
-  " Tabs.
-  hi TabLineFill guifg=White guibg=#1d1f21
-  hi TabLineSel guifg=#1d1f21 guibg=White
-
-  " For GitGutter.
-  hi clear SignColumn
-  hi GitGutterAdd ctermfg=green
-  hi GitGutterDelete ctermfg=red
-  hi GitGutterChange ctermfg=yellow
-  hi GitGutterChangeDelete ctermfg=yellow
-
-  " Airline statusbase theme.
-  " See: https://github.com/vim-airline/vim-airline/wiki/Screenshots
-  :AirlineTheme base16
-endfunction
-
 if !has('gui_running')
+  function! Termschool()
+    colors termschool
+    hi LineNr ctermfg=250 ctermbg=none guifg=#bcbcbc guibg=none
+    hi CursorLine ctermfg=none ctermbg=238 guifg=none guibg=#444444
+
+    " For GitGutter.
+    hi clear SignColumn
+    hi GitGutterAdd ctermfg=green
+    hi GitGutterDelete ctermfg=red
+    hi GitGutterChange ctermfg=yellow
+    hi GitGutterChangeDelete ctermfg=yellow
+  endfunction
+
   call Termschool()
-else
-  call Colorsbox()
 endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
