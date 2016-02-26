@@ -303,7 +303,7 @@ let g:startify_bookmarks = [
 " Keybinds
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-let mapleader = "\<Space>"
+let mapleader = "\<space>"
 
 " Disable the keybind to access ex mode.
 nnoremap Q <Nop>
@@ -325,10 +325,10 @@ nmap <silent><leader>v <c-w>v<c-w>l
 nmap <leader>sp :setlocal spell!<CR>
 
 " Toggle highlighted results.
-nmap <silent><BS> :nohlsearch<CR>
+nmap <silent><bs> :nohlsearch<CR>
 
 " Shorter global search.
-nmap S :%s//g<LEFT><LEFT>
+nmap S :%s//g<left><left>
 
 " Toggle line numbering style.
 nmap <silent><leader>r :set relativenumber!<CR>
