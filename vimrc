@@ -353,17 +353,8 @@ nmap <silent><leader>d<space> :s/^\s\+//<CR> :noh<CR>
 " Tabs
 
 " Open and close new tab.
-nmap <silent><leader>tt :tabnew<CR>
+nmap <leader>tt :tabnew<CR>:Startify<CR>
 nmap <silent><leader>tw :tabclose<CR>
-
-" Next/previous tab.
-" nmap <silent><leader><LEFT> :tabprevious<CR>
-" nmap <silent><leader><RIGHT> :tabnext<CR>
-
-" Miscellaneous Plugins
-
-" Return to Startify screen.
-nmap <leader>ss :Startify<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Shorthand Colorcolumn Option
