@@ -350,6 +350,9 @@ nmap <leader>W :%s/\s\+$//<CR>:let @/=''<CR> :noh<CR>
 " Delete all leading spaces on a line.
 nmap <silent><leader>d<space> :s/^\s\+//<CR> :noh<CR>
 
+" Quickly yank all lines in the file.
+nmap <leader>yy :%y+<CR>
+
 " Tabs
 
 " Open and close new tab.
