@@ -359,6 +359,9 @@ nmap <leader>yy :%y+<CR>
 nmap <leader>tt :tabnew<CR>:Startify<CR>
 nmap <silent><leader>tw :tabclose<CR>
 
+" Startify
+nmap <leader>SS :Startify<CR>
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Shorthand Colorcolumn Option
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
