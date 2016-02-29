@@ -29,6 +29,9 @@ Plugin 'VundleVim/Vundle.vim'
 " Better SCSS markup.
 Plugin 'cakebaker/scss-syntax.vim'
 
+" Filebrowser.
+Plugin 'scrooloose/nerdtree'
+
 " Quickly change wrapping characters.
 Plugin 'tpope/vim-surround'
 
