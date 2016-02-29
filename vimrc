@@ -359,11 +359,11 @@ nmap <leader>yy :%y+<CR>
 " Tabs
 
 " Open and close new tab.
-nmap <leader>tt :tabnew<CR>:Startify<CR>
+nmap <silent><leader>tt :tabnew<CR>:Startify<CR>
 nmap <silent><leader>tw :tabclose<CR>
 
 " Startify
-nmap <leader>SS :Startify<CR>
+nmap <silent><leader>SS :Startify<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Shorthand Colorcolumn Option
