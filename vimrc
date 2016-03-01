@@ -356,6 +356,9 @@ nmap <silent><leader>d<space> :s/^\s\+//<CR> :noh<CR>
 " Quickly yank all lines in the file.
 nmap <leader>yy :%y+<CR>
 
+" Replace all lines in the file with the contents of the clipboard.
+nmap <silent><leader>rp gg"_dGVp
+
 " Tabs
 
 " Open and close new tab.
