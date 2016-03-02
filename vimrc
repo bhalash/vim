@@ -231,9 +231,9 @@ let g:ctrlp_reuse_window  = 'startify'
 
 " Ignore Rails temp and documentation files.
 let g:ctrlp_custom_ignore = {
-  \ 'dir': '\v[\/](tmp|doc)$',
-  \ 'file': '\v\.(cache)$'
-  \ }
+      \ 'dir': '\v[\/](tmp|doc)$',
+      \ 'file': '\v\.(cache)$'
+      \ }
 
 " Disable markdown folding on load.
 let g:vim_markdown_folding_disabled = 1
@@ -253,54 +253,54 @@ let g:SuperTabLongestEnhanced = 1
 let g:SuperTabDefaultCompletionType = "context"
 
 let g:SuperTabCompletionContexts = [
-  \ 's:ContextText',
-  \ 's:ContextDiscover'
-  \ ]
+      \ 's:ContextText',
+      \ 's:ContextDiscover'
+      \ ]
 
 let g:SuperTabContextTextOmniPrecedence = [
-  \ '&completefunc',
-  \ '&omnifunc'
-  \ ]
+      \ '&completefunc',
+      \ '&omnifunc'
+      \ ]
 
 let g:SuperTabContextDiscoverDiscovery = [
-  \ '&completefunc:<c-x><c-u>',
-  \ '&omnifunc:<c-x><c-o>'
-  \ ]
+      \ '&completefunc:<c-x><c-u>',
+      \ '&omnifunc:<c-x><c-o>'
+      \ ]
 
 autocmd FileType *
-  \ if &omnifunc != '' |
-  \ call SuperTabChain(&omnifunc, "<c-p>") |
-  \ call SuperTabSetDefaultCompletionType("<c-x><c-u>") |
-  \ endif
+      \ if &omnifunc != '' |
+      \ call SuperTabChain(&omnifunc, "<c-p>") |
+      \ call SuperTabSetDefaultCompletionType("<c-x><c-u>") |
+      \ endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Startify
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 let g:startify_custom_header = [
-  \ '             __                  ',
-  \ '    __  __  /\_\     ___ ___     ',
-  \ '   /\ \/\ \ \/\ \  /` __` __`\   ',
-  \ '   \ \ \_/ | \ \ \ /\ \/\ \/\ \  ',
-  \ '    \ \___/   \ \_\\ \_\ \_\ \_\ ',
-  \ '     \/__/     \/_/ \/_/\/_/\/_/ v.' . version,
-  \ '   -----------------------------------',
-  \ '   ' . system('echo -n "${USERNAME}@$(hostname -s) in ${PWD}"'),
-  \ ''
-  \ ]
+      \ '             __                  ',
+      \ '    __  __  /\_\     ___ ___     ',
+      \ '   /\ \/\ \ \/\ \  /` __` __`\   ',
+      \ '   \ \ \_/ | \ \ \ /\ \/\ \/\ \  ',
+      \ '    \ \___/   \ \_\\ \_\ \_\ \_\ ',
+      \ '     \/__/     \/_/ \/_/\/_/\/_/ v.' . version,
+      \ '   -----------------------------------',
+      \ '   ' . system('echo -n "${USERNAME}@$(hostname -s) in ${PWD}"'),
+      \ ''
+      \ ]
 
 let g:startify_custom_footer = [
-  \ '',
-  \ "   Vim is charityware. Please read ':help uganda'.",
-  \ '',
-  \ ''
-  \ ]
+      \ '',
+      \ "   Vim is charityware. Please read ':help uganda'.",
+      \ '',
+      \ ''
+      \ ]
 
 let g:startify_bookmarks = [
-  \ {'v': '~/.vim/vimrc'},
-  \ {'g': '~/.vim/gvimrc'},
-  \ {'z': '~/.zsh/zshrc'}
-  \ ]
+      \ {'v': '~/.vim/vimrc'},
+      \ {'g': '~/.vim/gvimrc'},
+      \ {'z': '~/.zsh/zshrc'}
+      \ ]
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Keybinds
@@ -358,6 +358,9 @@ nmap <leader>yy :%y+<CR>
 
 " Replace all lines in the file with the contents of the clipboard.
 nmap <silent><leader>rp gg"_dGVp
+
+" Fix the entire indentation of a file according to your tab rules.
+nmap <leader>ind gg=G
 
 " Tabs
 
