@@ -1,6 +1,13 @@
 # .vimrc
 This is my current [vimrc](/vimrc) file. 
 
+# Useage
+
+    rm -r ~/.vim/
+    rm ~/.vimrc
+    git pull <repo url> ~/.vim
+    ln -s ~/.vim/vimrc ~/.vimrc
+
 ## License
 All of the code in the project is licensed under the GPL v3 or later, except as otherwise noted.
 
