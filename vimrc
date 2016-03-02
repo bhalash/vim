@@ -23,6 +23,9 @@ Plugin 'mkarmona/colorsbox'
 " Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" Auto CD to project root.
+Plugin 'airblade/vim-rooter'
+
 " Vundle plugins.
 Plugin 'VundleVim/Vundle.vim'
 
@@ -241,6 +244,9 @@ let g:vim_markdown_folding_disabled = 1
 " Generate CTAGS upon file save.
 let g:vim_tags_auto_generate = 1
 
+" Silently auto CD.
+let g:rooter_silent_chdir = 1
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Supertab
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -380,17 +386,3 @@ function! RightRuler(...)
 endfunction
 
 command! -nargs=? CC call RightRuler(<f-args>)
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Auto CD to Git Root (not working good!)
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" function! CdToRoot()
-"   if system('git rev-parse --git-dir > /dev/null 2>&1; echo $?') == 0
-"     cd `=system('git rev-parse --show-toplevel')`
-"   else
-"     cd %:p:h
-"   endif
-" endfunction
-"
-" autocmd BufWinEnter * call CdToRoot()
