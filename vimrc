@@ -380,3 +380,17 @@ function! RightRuler(...)
 endfunction
 
 command! -nargs=? CC call RightRuler(<f-args>)
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Auto CD to Git Root (not working good!)
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" function! CdToRoot()
+"   if system('git rev-parse --git-dir > /dev/null 2>&1; echo $?') == 0
+"     cd `=system('git rev-parse --show-toplevel')`
+"   else
+"     cd %:p:h
+"   endif
+" endfunction
+"
+" autocmd BufWinEnter * call CdToRoot()
