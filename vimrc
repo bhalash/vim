@@ -324,12 +324,6 @@ nmap E $
 " Split file.
 nmap <silent><leader>v <c-w>v<c-w>l
 
-" Rebind arrows keys to navigate between buffers.
-" nmap <silent><UP> <c-w>k
-" nmap <silent><DOWN> <c-w>j
-" nmap <silent><LEFT> <c-w>h
-" nmap <silent><RIGHT> <c-w>l
-
 " Toggle spellchecking.
 nmap <leader>sp :setlocal spell!<CR>
 
