@@ -371,6 +371,9 @@ nmap <silent><leader>tw :tabclose<CR>
 " Startify
 nmap <silent><leader>SS :Startify<CR>
 
+" CtrlP
+nmap <leader>5 :CtrlPClearCache<CR>
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Shorthand Colorcolumn Option
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
