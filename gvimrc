@@ -8,11 +8,11 @@ set noerrorbells visualbell
 " Font family and size.
 set guifont=Source\ Code\ Pro:h12
 
-" 1. Hide scrollbars.
-" 2. Use vim tabbar.
-set guioptions-=rlLRe
+" 1. Hide scrollbars (LlRr).
+" 2. Use vim tabbar (e).
+set guioptions-=lLRre
 
-" 1. Use vim-style dialogues.
+" 1. Use vim-style dialogues (c).
 set guioptions+=c
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
