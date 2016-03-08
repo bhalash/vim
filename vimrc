@@ -13,10 +13,11 @@ call vundle#begin()
 " Themes
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Primary for terminal vim.
+" Colours for terminal vim.
 Plugin 'marcopaganini/termschool-vim-theme'
+Plugin 'scwood/vim-hybrid'
 
-" Primary for gvim/MacVim.
+" Colours for gvim/MacVim.
 Plugin 'mkarmona/colorsbox'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -193,21 +194,40 @@ set expandtab ts=4 sw=4 sts=4
 " Highlight the current line and set the colour.
 set cul
 
+function! ResetGG()
+  " For GitGutter.
+  hi clear SignColumn
+  hi GitGutterAdd ctermfg=green
+  hi GitGutterDelete ctermfg=red
+  hi GitGutterChange ctermfg=yellow
+  hi GitGutterChangeDelete ctermfg=yellow
+endfunction
+
 if !has('gui_running')
   function! Termschool()
+    " termschool colourscheme.
     colors termschool
+
+    call ResetGG()
+
+    " Tweaks.
     hi LineNr ctermfg=250 ctermbg=none guifg=#bcbcbc guibg=none
     hi CursorLine ctermfg=none ctermbg=238 guifg=none guibg=#444444
-
-    " For GitGutter.
-    hi clear SignColumn
-    hi GitGutterAdd ctermfg=green
-    hi GitGutterDelete ctermfg=red
-    hi GitGutterChange ctermfg=yellow
-    hi GitGutterChangeDelete ctermfg=yellow
   endfunction
 
-  call Termschool()
+  function! Hybrid()
+    " vim-hybrid colourscheme.
+    colors hybrid
+
+    call ResetGG()
+
+    " Tweaks.
+    set background=dark
+    highlight LineNr ctermfg=247
+  endfunction
+
+  " call Termschool()
+  call Hybrid()
 endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -369,7 +389,7 @@ nmap <silent><leader>tt :tabnew<CR>:Startify<CR>
 nmap <silent><leader>tw :tabclose<CR>
 
 " Startify
-nmap <silent><leader>SS :Startify<CR>
+nmap <silent><leader>ss :Startify<CR>
 
 " CtrlP
 nmap <leader>5 :CtrlPClearCache<CR>
