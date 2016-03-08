@@ -211,8 +211,8 @@ if !has('gui_running')
     call ResetGG()
 
     " Tweaks.
-    hi LineNr ctermfg=250 ctermbg=none guifg=#bcbcbc guibg=none
-    hi CursorLine ctermfg=none ctermbg=238 guifg=none guibg=#444444
+    hi LineNr ctermfg=250 ctermbg=none
+    hi CursorLine ctermfg=none ctermbg=238
   endfunction
 
   function! Hybrid()
