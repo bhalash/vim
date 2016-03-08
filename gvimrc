@@ -21,18 +21,14 @@ set guioptions+=c
 
 if has('gui_running')
   function! Colorsbox()
+    " colorsbox colourscheme.
     colors colorsbox-stnight
 
-    " Tabs.
+    call ResetGG()
+
+    " Tweaks.
     hi TabLineFill guifg=White guibg=#1d1f21
     hi TabLineSel guifg=#1d1f21 guibg=White
-
-    " For GitGutter.
-    hi clear SignColumn
-    hi GitGutterAdd ctermfg=green
-    hi GitGutterDelete ctermfg=red
-    hi GitGutterChange ctermfg=yellow
-    hi GitGutterChangeDelete ctermfg=yellow
 
     " Airline statusbase theme.
     " See: https://github.com/vim-airline/vim-airline/wiki/Screenshots
