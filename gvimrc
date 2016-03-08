@@ -10,10 +10,12 @@ set guifont=Source\ Code\ Pro:h12
 
 " 1. Hide scrollbars (LlRr).
 " 2. Use vim tabbar (e).
-set guioptions-=lLRre
+set guioptions-=r
+set guioptions-=l
+set guioptions-=e
 
 " 1. Use vim-style dialogues (c).
-set guioptions+=c
+set guioptions=c
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Appearance
