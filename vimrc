@@ -70,7 +70,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'mhinz/vim-startify'
 
 " Uber statusline.
-Plugin 'bling/vim-airline'
+Plugin 'itchyny/lightline.vim'
 
 " ZSH syntax.
 Plugin 'clones/vim-zsh'
@@ -234,7 +234,7 @@ endif
 " Plugin Configuration
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Reduce timeout length on keystrokes. This is mostly for vim-airline.
+" Reduce timeout length on keystrokes. This is mostly for vim-statusline.
 set ttimeout ttimeoutlen=50
 
 if exists('g:ctrl_user_command')
