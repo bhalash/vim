@@ -4,7 +4,7 @@ This is my current [vimrc][1], gvimrc and filetype files. My day job and hobbies
 # Usage
 1. Move or otherwise rename your existing `.vim` folder:
 
-    `mv ~/.vim ~/.vim.vak`
+    `mv ~/.vim ~/.vim.bak`
 
 2. Recursively clone this repository to `.vim`:
 
