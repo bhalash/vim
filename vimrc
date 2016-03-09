@@ -131,7 +131,7 @@ set shortmess=a
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Set padding when scrolling.
-set scrolloff=5 sidescrolloff=5
+set scrolloff=10 sidescrolloff=10
 
 " Scroll with mouse.
 set ttymouse=xterm2 mouse=i
