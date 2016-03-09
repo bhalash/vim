@@ -353,13 +353,8 @@ nmap S :%s//g<left><left>
 " Toggle line numbering style.
 nmap <silent><leader>r :set relativenumber!<CR>
 
-" Toggle gutter vim diff highlights.
-nmap <leader>gg :GitGutterToggle<CR>
-
 " Reset current file to its last committed state.
 nmap <leader>gr :!git checkout %<CR>
-
-" Replacements
 
 " Empty line of content without removing line ending.
 nmap <leader>dl :s/.*//<CR> :noh<CR>
@@ -379,14 +374,19 @@ nmap <silent><leader>rp gg"_dGVp
 " Fix the entire indentation of a file according to your tab rules.
 nmap <leader>ind gg=G
 
-" Tabs
-
 " Open and close new tab.
 nmap <silent><leader>tt :tabnew<CR>:Startify<CR>
 nmap <silent><leader>tw :tabclose<CR>
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugin Keybinds
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 " Startify
 nmap <silent><leader>ss :Startify<CR>
+
+" GitGutter
+nmap <leader>gg :GitGutterToggle<CR>
 
 " CtrlP
 nmap <leader>5 :CtrlPClearCache<CR>
