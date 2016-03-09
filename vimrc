@@ -143,7 +143,7 @@ set ttyfast
 set lazyredraw
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Completion
+" Completion and Indentation
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Ignore common temp files and directories.
@@ -158,6 +158,9 @@ set incsearch smartcase hlsearch
 
 " Searches are assumed to be global on a line.
 set gdefault
+
+" Tabbing
+set expandtab ts=4 sw=4 sts=4
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Saving, Filesystem and History
@@ -180,12 +183,6 @@ set nobackup noswapfile
 
 " Set a directory in case they *are* turned on.
 set directory=~/.vim/.tmp,~/tmp,/tmp
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Tabbing
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-set expandtab ts=4 sw=4 sts=4
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Appearance
