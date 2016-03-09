@@ -1,23 +1,37 @@
-# .vimrc
-This is my current [vimrc](/vimrc) file. 
+# Vimrc
+This is my current [vimrc][1], gvimrc and filetype files. My day job and hobbies alike encompass JavaScript, Sass, Ruby and Rails development, which this set of configurations has evolved to encompass.
 
-# Useage
+# Usage
+1. Move or otherwise rename your existing `.vim` folder:
 
-    rm -r ~/.vim/
-    rm ~/.vimrc
-    git pull <repo url> ~/.vim
-    ln -s ~/.vim/vimrc ~/.vimrc
+    mv ~/.vim ~/.vim.vak
+
+2. Recursively clone this repository to `.vim`:
+
+    git clone --recursive https://github.com/bhalash/vimrc.git .vim
+
+3. Run [Vundle's][2] `:PluginInstall` command: 
+
+    vim +PluginInstall +qall
 
 ## License
-All of the code in the project is licensed under the GPL v3 or later, except as otherwise noted.
+All of the code in the project is licensed under the GPLv3 or later.
 
 > This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public > License, version 3, as published by the Free Software Foundation.
 > 
->This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+> This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 > 
 > You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
-
-A copy of the license is included in the root of the plugin’s directory. The file is named LICENSE.
+ 
+A copy of the license is included in the project's root directory. The file is named [LICENSE][3].
 
 ## Credit
-All credit goes to me, [Mark Grealish](http://www.bhalash.com). Tall and handome, I am.
+[Mark Grealish](http://www.bhalash.com) is my name,
+And this is my configuration,
+[Vim][4] is my dwelling place,
+And this repo's its destination.
+
+[1]: /vimrc
+[2]: https://github.com/VundleVim/Vundle.vim
+[3]: /LICENSE
+[4]: https://github.com/vim/vim
