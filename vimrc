@@ -228,6 +228,82 @@ if !has('gui_running')
 endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Keybinds
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+let mapleader = "\<space>"
+
+" Disable the keybind to access ex mode.
+nnoremap Q <Nop>
+
+" Remap line-jump keys.
+nmap B ^
+nmap E $
+
+" Split file.
+nmap <silent><leader>v <c-w>v<c-w>l
+
+" Toggle spellchecking.
+nmap <leader>sp :setlocal spell!<CR>
+
+" Toggle highlighted results.
+nmap <silent><bs> :nohlsearch<CR>
+
+" Shorter global search.
+nmap S :%s//g<left><left>
+
+" Toggle line numbering style.
+nmap <silent><leader>r :set relativenumber!<CR>
+
+" Reset current file to its last committed state.
+nmap <leader>gr :!git checkout %<CR>
+
+" Empty line of content without removing line ending.
+nmap <leader>dl :s/.*//<CR> :noh<CR>
+
+" Strip trailing whitespace from the file.
+nmap <leader>W :%s/\s\+$//<CR>:let @/=''<CR> :noh<CR>
+
+" Delete all leading spaces on a line.
+nmap <silent><leader>d<space> :s/^\s\+//<CR> :noh<CR>
+
+" Quickly yank all lines in the file.
+nmap <leader>yy :%y+<CR>
+
+" Replace all lines in the file with the contents of the clipboard.
+nmap <silent><leader>rp gg"_dGVp
+
+" Fix the entire indentation of a file according to your tab rules.
+nmap <leader>ind gg=G
+
+" Open and close new tab.
+nmap <silent><leader>tt :tabnew<CR>:Startify<CR>
+nmap <silent><leader>tw :tabclose<CR>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugin Keybinds
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Startify
+nmap <silent><leader>ss :Startify<CR>
+
+" GitGutter
+nmap <leader>gg :GitGutterToggle<CR>
+
+" CtrlP
+nmap <leader>5 :CtrlPClearCache<CR>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Shorthand Colorcolumn Option
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+function! RightRuler(...)
+  let &l:colorcolumn = a:0 > 0 ? 0 + a:1 : 0
+endfunction
+
+command! -nargs=? CC call RightRuler(<f-args>)
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin Configuration
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -324,79 +400,3 @@ let g:startify_bookmarks = [
       \ {'g': '~/.vim/gvimrc'},
       \ {'z': '~/.zsh/zshrc'}
       \ ]
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Keybinds
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-let mapleader = "\<space>"
-
-" Disable the keybind to access ex mode.
-nnoremap Q <Nop>
-
-" Remap line-jump keys.
-nmap B ^
-nmap E $
-
-" Split file.
-nmap <silent><leader>v <c-w>v<c-w>l
-
-" Toggle spellchecking.
-nmap <leader>sp :setlocal spell!<CR>
-
-" Toggle highlighted results.
-nmap <silent><bs> :nohlsearch<CR>
-
-" Shorter global search.
-nmap S :%s//g<left><left>
-
-" Toggle line numbering style.
-nmap <silent><leader>r :set relativenumber!<CR>
-
-" Reset current file to its last committed state.
-nmap <leader>gr :!git checkout %<CR>
-
-" Empty line of content without removing line ending.
-nmap <leader>dl :s/.*//<CR> :noh<CR>
-
-" Strip trailing whitespace from the file.
-nmap <leader>W :%s/\s\+$//<CR>:let @/=''<CR> :noh<CR>
-
-" Delete all leading spaces on a line.
-nmap <silent><leader>d<space> :s/^\s\+//<CR> :noh<CR>
-
-" Quickly yank all lines in the file.
-nmap <leader>yy :%y+<CR>
-
-" Replace all lines in the file with the contents of the clipboard.
-nmap <silent><leader>rp gg"_dGVp
-
-" Fix the entire indentation of a file according to your tab rules.
-nmap <leader>ind gg=G
-
-" Open and close new tab.
-nmap <silent><leader>tt :tabnew<CR>:Startify<CR>
-nmap <silent><leader>tw :tabclose<CR>
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Plugin Keybinds
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" Startify
-nmap <silent><leader>ss :Startify<CR>
-
-" GitGutter
-nmap <leader>gg :GitGutterToggle<CR>
-
-" CtrlP
-nmap <leader>5 :CtrlPClearCache<CR>
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Shorthand Colorcolumn Option
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-function! RightRuler(...)
-  let &l:colorcolumn = a:0 > 0 ? 0 + a:1 : 0
-endfunction
-
-command! -nargs=? CC call RightRuler(<f-args>)
