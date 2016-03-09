@@ -26,9 +26,9 @@ All of the code in the project is licensed under the GPLv3 or later.
 A copy of the license is included in the project's root directory. The file is named [LICENSE][3].
 
 ## Credit
-[Mark Grealish](http://www.bhalash.com) is my name,
-And this is my configuration,
-[Vim][4] is my dwelling place,
+[Mark Grealish](http://www.bhalash.com) is my name,  
+And this is my configuration,  
+[Vim][4] is my dwelling place,  
 And this repo's its destination.
 
 [1]: /vimrc
