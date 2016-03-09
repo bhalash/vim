@@ -4,15 +4,15 @@ This is my current [vimrc][1], gvimrc and filetype files. My day job and hobbies
 # Usage
 1. Move or otherwise rename your existing `.vim` folder:
 
-    mv ~/.vim ~/.vim.vak
+    `mv ~/.vim ~/.vim.vak`
 
 2. Recursively clone this repository to `.vim`:
 
-    git clone --recursive https://github.com/bhalash/vimrc.git .vim
+    `git clone --recursive https://github.com/bhalash/vimrc.git .vim`
 
 3. Run [Vundle's][2] `:PluginInstall` command: 
 
-    vim +PluginInstall +qall
+    `vim +PluginInstall +qall`
 
 ## License
 All of the code in the project is licensed under the GPLv3 or later.
