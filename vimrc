@@ -133,7 +133,7 @@ set shortmess=a
 " Set padding when scrolling.
 set scrolloff=10 sidescrolloff=10
 
-" Scroll with mouse.
+" Scroll with mouse in insert mode.
 set ttymouse=xterm2 mouse=i
 
 " Increase scroll speed.
@@ -169,11 +169,8 @@ set expandtab ts=4 sw=4 sts=4
 " Save file when it loses focus.
 set autowrite
 
-" More frequent saves.
-set updatecount=50
-
-" Undo history.
-set history=2000 undolevels=2000
+" More frequent saves and bigger undo history.
+set updatecount=50 history=2000 undolevels=2000
 
 " Keep a persistent backup file.
 set undofile undodir=~/.vim/.undo,~/tmp,/tmp
