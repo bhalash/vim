@@ -70,7 +70,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'mhinz/vim-startify'
 
 " Uber statusline.
-Plugin 'itchyny/lightline.vim'
+Plugin 'vim-airline/vim-airline'
 
 " ZSH syntax.
 Plugin 'clones/vim-zsh'
