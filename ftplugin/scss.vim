@@ -1,5 +1,3 @@
-setlocal expandtab ts=4 sw=4 sts=4
-
 if exists('b:did_indent') && b:did_indent
   finish
 endif
