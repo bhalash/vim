@@ -230,6 +230,9 @@ endif
 
 let mapleader = "\<space>"
 
+" <c-w> is difficult for me to reach given my handedness and keyboard.
+nmap <leader><space> <c-w>
+
 " Disable the keybind to access ex mode.
 nnoremap Q <Nop>
 
