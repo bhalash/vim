@@ -75,6 +75,10 @@ Plugin 'vim-airline/vim-airline'
 " ZSH syntax.
 Plugin 'clones/vim-zsh'
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" End Vundle Init
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 " End of Vundle goodness.
 call vundle#end()
 filetype plugin indent on
