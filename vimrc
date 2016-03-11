@@ -337,7 +337,7 @@ let g:vim_markdown_folding_disabled = 1
 " Generate CTAGS upon file save.
 let g:vim_tags_auto_generate = 1
 
-" Silently auto CD.
+" Silently auto CD to the root folder of the current git project.
 let g:rooter_silent_chdir = 1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
