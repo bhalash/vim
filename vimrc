@@ -344,6 +344,9 @@ let g:vim_tags_auto_generate = 1
 " Silently auto CD to the root folder of the current git project.
 let g:rooter_silent_chdir = 1
 
+" Enable Airline for buffers.
+let g:airline#extensions#tabline#enabled = 1
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Supertab
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
