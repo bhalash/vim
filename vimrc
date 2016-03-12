@@ -217,8 +217,7 @@ function! Colorsbox()
   hi TabLineFill guifg=White guibg=#1d1f21
   hi TabLineSel guifg=#1d1f21 guibg=White
 
-  " Airline statusbase theme.
-  " See: https://github.com/vim-airline/vim-airline/wiki/Screenshots
+  " Airline.
   :AirlineTheme jellybeans
 endfunction
 
@@ -246,6 +245,9 @@ function! Hybrid()
   call ResetGG()
   set background=dark
   highlight LineNr ctermfg=247
+
+  " Airline.
+  :AirlineTheme lucius
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -375,6 +377,7 @@ let g:rooter_silent_chdir = 1
 " Enable Airline for buffers.
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#tab_nr_type = 1
+let g:airline#extensions#branch#format = 0
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Supertab
