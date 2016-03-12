@@ -218,7 +218,7 @@ function! Colorsbox()
   hi TabLineSel guifg=#1d1f21 guibg=White
 
   " Airline.
-  AirlineTheme jellybeans
+  let g:airline_theme='jellybeans'
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -247,7 +247,7 @@ function! Hybrid()
   highlight LineNr ctermfg=247
 
   " Airline.
-  AirlineTheme lucius
+  let g:airline_theme='lucius'
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
