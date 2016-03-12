@@ -71,6 +71,7 @@ Plugin 'mhinz/vim-startify'
 
 " Uber statusline.
 Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 " ZSH syntax.
 Plugin 'clones/vim-zsh'
@@ -86,6 +87,9 @@ filetype plugin indent on
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Core Vim Configuration
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Set term colours.
+set t_Co=256
 
 " No need to be vi compatible. I mean, it's 2016.
 set nocompatible
@@ -201,32 +205,56 @@ function! ResetGG()
   hi GitGutterChangeDelete ctermfg=yellow
 endfunction
 
-if !has('gui_running')
-  function! Termschool()
-    " termschool colourscheme.
-    colors termschool
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Colorsbox
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-    call ResetGG()
+function! Colorsbox()
+  colors colorsbox-stnight
 
-    " Tweaks.
-    hi LineNr ctermfg=250 ctermbg=none
-    hi CursorLine ctermfg=none ctermbg=238
-  endfunction
+  " Tweaks.
+  call ResetGG()
+  hi TabLineFill guifg=White guibg=#1d1f21
+  hi TabLineSel guifg=#1d1f21 guibg=White
 
-  function! Hybrid()
-    " vim-hybrid colourscheme.
-    colors hybrid
+  " Airline statusbase theme.
+  " See: https://github.com/vim-airline/vim-airline/wiki/Screenshots
+  :AirlineTheme jellybeans
+endfunction
 
-    call ResetGG()
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Termschool
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-    " Tweaks.
-    set background=dark
-    highlight LineNr ctermfg=247
-  endfunction
+function! Termschool()
+  colors termschool
 
-  " call Termschool()
-  call Hybrid()
-endif
+  " Tweaks.
+  call ResetGG()
+  hi LineNr ctermfg=250 ctermbg=none
+  hi CursorLine ctermfg=none ctermbg=238
+endfunction
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Hybrid
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+function! Hybrid()
+  colors hybrid
+
+  " Tweaks.
+  call ResetGG()
+  set background=dark
+  highlight LineNr ctermfg=247
+endfunction
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Call Colourscheme
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" call Termschool()
+" call Colorsbox()
+call Hybrid()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Keybinds
@@ -346,6 +374,7 @@ let g:rooter_silent_chdir = 1
 
 " Enable Airline for buffers.
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#tab_nr_type = 1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Supertab
