@@ -244,7 +244,9 @@ function! Hybrid()
   highlight LineNr ctermfg=247
 
   " Airline.
-  let g:airline_theme='jellybeans'
+  if has('gui_running')
+    let g:airline_theme='jellybeans'
+  endif
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
