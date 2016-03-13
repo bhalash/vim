@@ -1,4 +1,4 @@
-[Screenshot][5] "Vim Screenshot"
+![Screenshot][5] "Vim Screenshot"
 
 # Vimrc
 This is my current [vimrc][1], gvimrc and filetype files. My day job and hobbies alike encompass JavaScript, Sass, Ruby and Rails development, which this set of configurations has evolved to encompass.
@@ -37,4 +37,4 @@ And this repo's its destination.
 [2]: https://github.com/VundleVim/Vundle.vim
 [3]: /LICENSE
 [4]: https://github.com/vim/vim
-[5]: /screenshot.png
+[5]: /screenshot.png?raw=true
