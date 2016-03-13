@@ -1,7 +1,9 @@
+[Screenshot][5] "Vim Screenshot"
+
 # Vimrc
 This is my current [vimrc][1], gvimrc and filetype files. My day job and hobbies alike encompass JavaScript, Sass, Ruby and Rails development, which this set of configurations has evolved to encompass.
 
-# Usage
+## Usage
 1. Move or otherwise rename your existing `.vim` folder:
 
     `mv ~/.vim ~/.vim.bak`
@@ -10,7 +12,7 @@ This is my current [vimrc][1], gvimrc and filetype files. My day job and hobbies
 
     `git clone --recursive https://github.com/bhalash/vimrc.git .vim`
 
-3. Run [Vundle's][2] `:PluginInstall` command: 
+3. Run [Vundle's][2] `:PluginInstall` command:
 
     `vim +PluginInstall +qall`
 
@@ -18,11 +20,11 @@ This is my current [vimrc][1], gvimrc and filetype files. My day job and hobbies
 All of the code in the project is licensed under the GPLv3 or later.
 
 > This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public > License, version 3, as published by the Free Software Foundation.
-> 
+>
 > This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-> 
+>
 > You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
- 
+
 A copy of the license is included in the project's root directory. The file is named [LICENSE][3].
 
 ## Credit
@@ -35,3 +37,4 @@ And this repo's its destination.
 [2]: https://github.com/VundleVim/Vundle.vim
 [3]: /LICENSE
 [4]: https://github.com/vim/vim
+[5]: /screenshot.png
