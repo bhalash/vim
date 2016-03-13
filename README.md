@@ -9,8 +9,8 @@ My vim config requires that the [patched Powerline fonts][6] be installed and yo
 ## Setup
 1. Move or otherwise rename your existing `.vim` folder:
 
-    `cd ~`
-    `mv .vim .vim.bak`
+    `cd ~`  
+    `mv .vim .vim.bak`  
     `mv .vimrc .vimrc.bak`
 
 2. Recursively clone this repository to `.vim`:
