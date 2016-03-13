@@ -1,4 +1,4 @@
-![Screenshot][5] "Vim Screenshot"
+![Screenshot][5]
 
 # Vimrc
 This is my current [vimrc][1], gvimrc and filetype files. My day job and hobbies alike encompass JavaScript, Sass, Ruby and Rails development, which this set of configurations has evolved to encompass.
