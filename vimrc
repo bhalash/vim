@@ -216,9 +216,6 @@ function! Colorsbox()
   call ResetGG()
   hi TabLineFill guifg=White guibg=#1d1f21
   hi TabLineSel guifg=#1d1f21 guibg=White
-
-  " Airline.
-  let g:airline_theme='jellybeans'
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -247,7 +244,7 @@ function! Hybrid()
   highlight LineNr ctermfg=247
 
   " Airline.
-  let g:airline_theme='lucius'
+  let g:airline_theme='jellybeans'
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -338,11 +335,24 @@ endfunction
 command! -nargs=? CC call RightRuler(<f-args>)
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Plugin Configuration
+" General Plugin Configuration
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Reduce timeout length on keystrokes. This is mostly for vim-statusline.
 set ttimeout ttimeoutlen=50
+
+" Disable markdown folding on load.
+let g:vim_markdown_folding_disabled = 1
+
+" Generate CTAGS upon file save.
+let g:vim_tags_auto_generate = 1
+
+" Silently auto CD to the root folder of the current git project.
+let g:rooter_silent_chdir = 1
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" CtrlP
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 if exists('g:ctrl_user_command')
   " Remove any blockers which prevent wildignore from not working.
@@ -365,30 +375,32 @@ let g:ctrlp_custom_ignore = {
       \ 'file': '\v\.(cache)$'
       \ }
 
-" Disable markdown folding on load.
-let g:vim_markdown_folding_disabled = 1
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Airline
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Generate CTAGS upon file save.
-let g:vim_tags_auto_generate = 1
-
-" Silently auto CD to the root folder of the current git project.
-let g:rooter_silent_chdir = 1
-
-" Enable Airline for buffers.
+" Enable Airline for buffers in the tablike.
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#tab_nr_type = 1
 let g:airline#extensions#branch#format = 0
+
+" Enable powerline fonts.
+let g:airline_powerline_fonts = 1
+
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Supertab
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-let g:SuperTabContextDefaultCompletionType = "<c-p>"
+let g:SuperTabContextDefaultCompletionType = '<c-p>'
 let g:SuperTabLongestHighlight = 1
 let g:SuperTabLongestEnhanced = 1
 
 " Supertab.
-let g:SuperTabDefaultCompletionType = "context"
+let g:SuperTabDefaultCompletionType = 'context'
 
 let g:SuperTabCompletionContexts = [
       \ 's:ContextText',
@@ -407,8 +419,8 @@ let g:SuperTabContextDiscoverDiscovery = [
 
 autocmd FileType *
       \ if &omnifunc != '' |
-      \ call SuperTabChain(&omnifunc, "<c-p>") |
-      \ call SuperTabSetDefaultCompletionType("<c-x><c-u>") |
+      \ call SuperTabChain(&omnifunc, '<c-p>') |
+      \ call SuperTabSetDefaultCompletionType('<c-x><c-u>') |
       \ endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
