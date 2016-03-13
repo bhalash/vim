@@ -5,8 +5,8 @@
 " Disable audible bells.
 set noerrorbells visualbell
 
-" Font family and size.
-set guifont=Source\ Code\ Pro:h12
+" Font family.
+set guifont=Source\ Code\ Pro\ for\ Powerline:h12,Source\ Code\ Pro:h12
 
 " 1. Hide scrollbars (LlRr).
 " 2. Use vim tabbar (e).
