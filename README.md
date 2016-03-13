@@ -3,7 +3,10 @@
 # Vimrc
 This is my current [vimrc][1], gvimrc and filetype files. My day job and hobbies alike encompass JavaScript, Sass, Ruby and Rails development, which this set of configurations has evolved to encompass.
 
-## Usage
+## Powerline
+My vim config requires that the [patched Powerline fonts][6] be installed and your terminal configured to use them. You should expect strange behaviour if not, although I have tried to set graceful fallbacks.
+
+## Setup
 1. Move or otherwise rename your existing `.vim` folder:
 
     `mv ~/.vim ~/.vim.bak`
@@ -38,3 +41,4 @@ And this repo's its destination.
 [3]: /LICENSE
 [4]: https://github.com/vim/vim
 [5]: /screenshot.png?raw=true
+[6]: https://github.com/powerline/fonts
