@@ -253,9 +253,12 @@ endfunction
 " Call Colourscheme
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" call Termschool()
-" call Colorsbox()
-call Hybrid()
+if !has('gui_running')
+  call Hybrid()
+else
+  " call Termschool()
+  call Colorsbox()
+endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Keybinds
