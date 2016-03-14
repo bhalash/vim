@@ -216,6 +216,11 @@ function! Colorsbox()
   call ResetGG()
   hi TabLineFill guifg=White guibg=#1d1f21
   hi TabLineSel guifg=#1d1f21 guibg=White
+
+  " Airline.
+  if has('gui_running')
+    let g:airline_theme='jellybeans'
+  endif
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
