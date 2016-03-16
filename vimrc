@@ -246,7 +246,8 @@ function! Hybrid()
   " Tweaks.
   call ResetGG()
   set background=dark
-  highlight LineNr ctermfg=247
+  hi LineNr ctermfg=247
+  hi CursorLine ctermbg=238
 
   " Airline.
   if has('gui_running')
