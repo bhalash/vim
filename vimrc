@@ -214,8 +214,8 @@ function! Colorsbox()
 
   " Tweaks.
   call ResetGG()
-  hi TabLineFill guifg=White guibg=#1d1f21
-  hi TabLineSel guifg=#1d1f21 guibg=White
+  hi TabLineFill guifg=#ffffff guibg=#1d1f21
+  hi TabLineSel guifg=#1d1f21 guibg=#ffffff
 
   " Airline.
   if has('gui_running')
@@ -232,8 +232,8 @@ function! Termschool()
 
   " Tweaks.
   call ResetGG()
-  hi LineNr ctermfg=250 ctermbg=none
-  hi CursorLine ctermfg=none ctermbg=238
+  hi LineNr ctermfg=250 ctermbg=none guifg=#bcbcbc guibg=none
+  hi CursorLine ctermfg=none ctermbg=238 guifg=none guibg=#444444
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -246,7 +246,7 @@ function! Hybrid()
   " Tweaks.
   call ResetGG()
   set background=dark
-  hi LineNr ctermfg=247
+  hi LineNr ctermfg=247 guifg=#9e9e9e
   hi CursorLine ctermbg=238 guibg=#444444
 
   " Airline.
