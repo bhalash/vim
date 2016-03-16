@@ -247,7 +247,7 @@ function! Hybrid()
   call ResetGG()
   set background=dark
   hi LineNr ctermfg=247
-  hi CursorLine ctermbg=238
+  hi CursorLine ctermbg=238 guibg=#444444
 
   " Airline.
   if has('gui_running')
