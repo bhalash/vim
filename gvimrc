@@ -1,5 +1,5 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" GUI Core Options
+" GUI Options
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Disable audible bells.
@@ -9,10 +9,11 @@ set noerrorbells visualbell
 set guifont=Source\ Code\ Pro\ for\ Powerline:h12,Source\ Code\ Pro:h12
 
 " 1. Hide scrollbars (LlRr).
-" 2. Use vim tabbar (e).
 set guioptions-=r
 set guioptions-=l
+
+" 2. Use vim tabbar (e).
 set guioptions-=e
 
-" 1. Use vim-style dialogues (c).
+" 3. Use vim-style dialogues (c).
 set guioptions=c
