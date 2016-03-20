@@ -27,6 +27,9 @@ Plugin 'mkarmona/colorsbox'
 " Auto CD to project root.
 Plugin 'airblade/vim-rooter'
 
+" For WordPress development.
+Plugin 'dsawardekar/wordpress.vim'
+
 " Vundle plugins.
 Plugin 'VundleVim/Vundle.vim'
 
