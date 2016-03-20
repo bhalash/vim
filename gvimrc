@@ -6,7 +6,7 @@
 set noerrorbells visualbell
 
 " Font family.
-set guifont=Source\ Code\ Pro\ for\ Powerline:h12,Source\ Code\ Pro:h12
+set guifont=Hack:h11,Source\ Code\ Pro\ for\ Powerline:h12,Source\ Code\ Pro:h12
 
 " 1. Hide scrollbars (LlRr).
 set guioptions-=r
