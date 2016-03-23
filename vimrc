@@ -33,6 +33,9 @@ Plugin 'dsawardekar/wordpress.vim'
 " Vundle plugins.
 Plugin 'VundleVim/Vundle.vim'
 
+" Distraction-free writing.
+Plugin 'junegunn/goyo.vim'
+
 " Better SCSS markup.
 Plugin 'cakebaker/scss-syntax.vim'
 
@@ -370,6 +373,13 @@ let g:vim_tags_auto_generate = 1
 
 " Silently auto CD to the root folder of the current git project.
 let g:rooter_silent_chdir = 1
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Goyo
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+let g:goyo_width = 160
+let g:goyo_height = 90
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " CtrlP
