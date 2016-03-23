@@ -259,9 +259,9 @@ function! Hybrid()
 
   " Airline.
   if has('gui_running')
-    let g:airline_theme='jellybeans'
-  else
     let g:airline_theme='distinguished'
+  else
+    let g:airline_theme='jellybeans'
   endif
 endfunction
 
