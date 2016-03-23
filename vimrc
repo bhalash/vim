@@ -237,6 +237,11 @@ function! Termschool()
   call ResetGG()
   hi LineNr ctermfg=250 ctermbg=none guifg=#bcbcbc guibg=none
   hi CursorLine ctermfg=none ctermbg=238 guifg=none guibg=#444444
+  "
+  " Airline.
+  if has('gui_running')
+    let g:airline_theme='distinguished'
+  endif
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -267,8 +272,8 @@ endfunction
 if !has('gui_running')
   call Hybrid()
 else
-  " call Termschool()
-  call Colorsbox()
+  call Termschool()
+  " call Colorsbox()
 endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
