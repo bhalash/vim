@@ -23,7 +23,8 @@ Plugin 'mkarmona/colorsbox'
 " Turn off all the things.
 Plugin 'pbrisbin/vim-colors-off'
 
-Plugin 'hewo/vim-colorscheme-deepsea'
+" Temp terminal colorscheme.
+Plugin 'bhalash/oxeded.vim'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugins
@@ -460,34 +461,7 @@ function! Termschool()
   hi CursorLine ctermfg=none ctermbg=238 guifg=none guibg=#444444
 
   " Airline.
-  if has('gui_running')
-    let g:airline_theme='distinguished'
-  else
-    let g:airline_theme='drjova'
-  endif
-endfunction
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Deepsea
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" Term first theme!
-
-function! Deepsea()
-  colors deepsea
-
-  " Tweaks.
-  call ResetGG()
-  hi Comment ctermfg=248 guifg=#a8a8a8
-  hi LineNr ctermfg=250 ctermbg=none guifg=#bcbcbc guibg=none
-  hi CursorLine ctermfg=none ctermbg=238 guifg=none guibg=#444444
-
-  " Airline.
-  if has('gui_running')
-    let g:airline_theme='distinguished'
-  else
-    let g:airline_theme='drjova'
-  endif
+  let g:airline_theme='drjova'
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -541,5 +515,5 @@ endfunction
 if has('gui_running')
   call Colorsbox()
 else
-  call Deepsea()
+  call Termschool()
 endif
