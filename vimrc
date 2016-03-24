@@ -20,6 +20,11 @@ Plugin 'scwood/vim-hybrid'
 " Colours for gvim/MacVim.
 Plugin 'mkarmona/colorsbox'
 
+" Turn off all the things.
+Plugin 'pbrisbin/vim-colors-off'
+
+Plugin 'hewo/vim-colorscheme-deepsea'
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -78,6 +83,7 @@ Plugin 'mhinz/vim-startify'
 " Uber statusline.
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'drjova/airline-drjova'
 
 " ZSH syntax.
 Plugin 'clones/vim-zsh'
@@ -194,90 +200,6 @@ set nobackup noswapfile
 
 " Set a directory in case they *are* turned on.
 set directory=~/.vim/.tmp,~/tmp,/tmp
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Appearance
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" Highlight the current line and set the colour.
-set cul
-
-function! ResetGG()
-  " For GitGutter.
-  hi clear SignColumn
-  hi GitGutterAdd ctermfg=green
-  hi GitGutterDelete ctermfg=red
-  hi GitGutterChange ctermfg=yellow
-  hi GitGutterChangeDelete ctermfg=yellow
-endfunction
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Colorsbox
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-function! Colorsbox()
-  colors colorsbox-stnight
-
-  " Tweaks.
-  call ResetGG()
-  hi TabLineFill guifg=#ffffff guibg=#1d1f21
-  hi TabLineSel guifg=#1d1f21 guibg=#ffffff
-
-  " Airline.
-  if has('gui_running')
-    let g:airline_theme='jellybeans'
-  endif
-endfunction
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Termschool
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-function! Termschool()
-  colors termschool
-
-  " Tweaks.
-  call ResetGG()
-  hi LineNr ctermfg=250 ctermbg=none guifg=#bcbcbc guibg=none
-  hi CursorLine ctermfg=none ctermbg=238 guifg=none guibg=#444444
-  "
-  " Airline.
-  if has('gui_running')
-    let g:airline_theme='distinguished'
-  endif
-endfunction
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Hybrid
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-function! Hybrid()
-  colors hybrid
-
-  " Tweaks.
-  call ResetGG()
-  set background=dark
-  hi LineNr ctermfg=247 guifg=#9e9e9e
-  hi CursorLine ctermbg=238 guibg=#444444
-
-  " Airline.
-  if has('gui_running')
-    let g:airline_theme='distinguished'
-  else
-    let g:airline_theme='jellybeans'
-  endif
-endfunction
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Call Colourscheme
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-if !has('gui_running')
-  call Hybrid()
-else
-  call Termschool()
-  " call Colorsbox()
-endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Keybinds
@@ -482,3 +404,138 @@ let g:startify_bookmarks = [
       \ {'g': '~/.vim/gvimrc'},
       \ {'z': '~/.zsh/zshrc'}
       \ ]
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Appearance
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Highlight the current line and set the colour.
+set cul
+
+function! ResetGG()
+  " For GitGutter.
+  hi clear SignColumn
+  hi GitGutterAdd ctermfg=green
+  hi GitGutterDelete ctermfg=red
+  hi GitGutterChange ctermfg=yellow
+  hi GitGutterChangeDelete ctermfg=yellow
+endfunction
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Colorsbox
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" GUI first theme!
+
+function! Colorsbox()
+  colors colorsbox-stnight
+
+  " Tweaks.
+  call ResetGG()
+  hi TabLineFill guifg=#ffffff guibg=#1d1f21
+  hi TabLineSel guifg=#1d1f21 guibg=#ffffff
+
+  " Airline.
+  if has('gui_running')
+    let g:airline_theme='jellybeans'
+  endif
+endfunction
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Termschool
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Term first theme!
+
+function! Termschool()
+  colors termschool
+
+  " Tweaks.
+  call ResetGG()
+  hi LineNr ctermfg=250 ctermbg=none guifg=#bcbcbc guibg=none
+  hi CursorLine ctermfg=none ctermbg=238 guifg=none guibg=#444444
+
+  " Airline.
+  if has('gui_running')
+    let g:airline_theme='distinguished'
+  else
+    let g:airline_theme='drjova'
+  endif
+endfunction
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Deepsea
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Term first theme!
+
+function! Deepsea()
+  colors deepsea
+
+  " Tweaks.
+  call ResetGG()
+  hi Comment ctermfg=248 guifg=#a8a8a8
+  hi LineNr ctermfg=250 ctermbg=none guifg=#bcbcbc guibg=none
+  hi CursorLine ctermfg=none ctermbg=238 guifg=none guibg=#444444
+
+  " Airline.
+  if has('gui_running')
+    let g:airline_theme='distinguished'
+  else
+    let g:airline_theme='drjova'
+  endif
+endfunction
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Hybrid
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" GUI first theme!
+
+function! Hybrid()
+  colors hybrid
+
+  " Tweaks.
+  call ResetGG()
+  set background=dark
+  hi LineNr ctermfg=247 guifg=#9e9e9e
+  hi CursorLine ctermbg=238 guibg=#444444
+
+  " Airline.
+  if has('gui_running')
+    let g:airline_theme='jellybeans'
+  else
+    let g:airline_theme='distinguished'
+  endif
+endfunction
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Disabled Colours
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+function! Off()
+  colors off
+
+  " Tweaks.
+  call ResetGG()
+  set background=dark
+  hi LineNr ctermfg=250 ctermbg=none guifg=#bcbcbc guibg=none
+  hi CursorLine ctermfg=none ctermbg=238 guifg=none guibg=#444444
+
+  " Airline.
+  if has('gui_running')
+    let g:airline_theme='distinguished'
+  else
+    let g:airline_theme='drjova'
+  endif
+endfunction
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Call Default Colourscheme
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+if has('gui_running')
+  call Colorsbox()
+else
+  call Deepsea()
+endif
