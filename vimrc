@@ -257,6 +257,10 @@ nmap <leader>ind gg=G
 nmap <silent><leader>tt :tabnew<CR>:Startify<CR>
 nmap <silent><leader>tw :tabclose<CR>
 
+" Progress forward and backwards with multiple panes open.
+nmap <silent><leader>r :prev<CR>
+nmap <silent><leader>n :n<CR>
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin Keybinds
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
