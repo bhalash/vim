@@ -26,6 +26,9 @@ Plugin 'pbrisbin/vim-colors-off'
 " Temp terminal colorscheme.
 Plugin 'bhalash/oxeded.vim'
 
+Plugin 'jonathanfilip/vim-lucius'
+Plugin 'sjl/badwolf'
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -86,6 +89,8 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'drjova/airline-drjova'
 
+" Airline
+
 " ZSH syntax.
 Plugin 'clones/vim-zsh'
 
@@ -102,7 +107,7 @@ filetype plugin indent on
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Set term colours.
-set t_Co=256
+set t_Co=256 background=dark
 
 " No need to be vi compatible. I mean, it's 2016.
 set nocompatible
@@ -441,9 +446,7 @@ function! Colorsbox()
   hi TabLineSel guifg=#1d1f21 guibg=#ffffff
 
   " Airline.
-  if has('gui_running')
-    let g:airline_theme='jellybeans'
-  endif
+  let g:airline_theme='jellybeans'
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -453,7 +456,9 @@ endfunction
 " Term first theme!
 
 function! Termschool()
-  colors termschool
+  " FIXME TODO
+  " colors termschool
+  colorscheme oxeded
 
   " Tweaks.
   call ResetGG()
@@ -488,7 +493,31 @@ function! Hybrid()
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Disabled Colours
+" Lucius
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+function! Lucius()
+    colorscheme lucius
+    LuciusBlackHighContrast
+
+    " Tweaks
+    call ResetGG()
+    hi LineNr ctermfg=245 ctermbg=none guifg=#bcbcbc guibg=none
+    hi CursorLineNr ctermbg=none ctermfg=255
+    hi CursorLine ctermfg=none ctermbg=240 guifg=none guibg=#444444
+    hi Comment ctermbg=none ctermfg=250
+    hi clear SignColumn
+    hi GitGutterAdd ctermfg=green ctermbg=none
+    hi GitGutterDelete ctermfg=red ctermbg=none
+    hi GitGutterChange ctermfg=yellow ctermbg=none
+    hi GitGutterChangeDelete ctermfg=yellow ctermbg=none
+
+    " Airline
+    let g:airline_theme='drjova'
+endfunction
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Disable Colours
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 function! Off()
@@ -512,8 +541,5 @@ endfunction
 " Call Default Colourscheme
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-if has('gui_running')
-  call Colorsbox()
-else
-  call Termschool()
-endif
+" gvimrc sets its own!
+call Termschool()
