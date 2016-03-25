@@ -2,6 +2,8 @@
 " GUI Options
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+call Colorsbox()
+
 " Disable audible bells.
 set noerrorbells visualbell
 
