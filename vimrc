@@ -456,8 +456,24 @@ endfunction
 " Term first theme!
 
 function! Termschool()
-  " FIXME TODO
-  " colors termschool
+  colors termschool
+
+  " Tweaks.
+  call ResetGG()
+  hi LineNr ctermfg=250 ctermbg=none guifg=#bcbcbc guibg=none
+  hi CursorLine ctermfg=none ctermbg=238 guifg=none guibg=#444444
+
+  " Airline.
+  let g:airline_theme='drjova'
+endfunction
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Oxeded
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Term first theme!
+
+function! Oxeded()
   colorscheme oxeded
 
   " Tweaks.
@@ -482,7 +498,7 @@ function! Hybrid()
   call ResetGG()
   set background=dark
   hi LineNr ctermfg=247 guifg=#9e9e9e
-  hi CursorLine ctermbg=238 guibg=#444444
+  hi CursorLine ctermbg=239 guibg=#444444
 
   " Airline.
   if has('gui_running')
@@ -542,4 +558,5 @@ endfunction
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " gvimrc sets its own!
-call Termschool()
+" call Termschool()
+call Oxeded()
