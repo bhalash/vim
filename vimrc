@@ -24,7 +24,7 @@ Plugin 'mkarmona/colorsbox'
 Plugin 'pbrisbin/vim-colors-off'
 
 " Temp terminal colorscheme.
-Plugin 'bhalash/oxeded.vim'
+Plugin 'bhalash/caconym.vim'
 
 Plugin 'jonathanfilip/vim-lucius'
 Plugin 'sjl/badwolf'
@@ -468,13 +468,13 @@ function! Termschool()
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Oxeded
+" Caconym
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Term first theme!
 
-function! Oxeded()
-  colorscheme oxeded
+function! Caconym()
+  colorscheme caconym
 
   " Tweaks.
   call ResetGG()
@@ -559,4 +559,4 @@ endfunction
 
 " gvimrc sets its own!
 " call Termschool()
-call Oxeded()
+call Caconym()
