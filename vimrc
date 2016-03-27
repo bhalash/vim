@@ -60,6 +60,10 @@ Plugin 'ervandew/supertab'
 " HTML and CSS auto-completion.
 Plugin 'mattn/emmet-vim'
 
+" Markdown.
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+
 " JSON parse plugin.
 Plugin 'elzr/vim-json'
 
