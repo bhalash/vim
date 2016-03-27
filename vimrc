@@ -284,6 +284,9 @@ nmap <leader>gg :GitGutterToggle<CR>
 " CtrlP
 nmap <leader>5 :CtrlPClearCache<CR>
 
+" Goyo
+nmap <silent><leader>gy :Goyo<CR>
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Shorthand Colorcolumn Option
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
