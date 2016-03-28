@@ -42,9 +42,6 @@ Plugin 'dsawardekar/wordpress.vim'
 " Vundle plugins.
 Plugin 'VundleVim/Vundle.vim'
 
-" Distraction-free writing.
-Plugin 'junegunn/goyo.vim'
-
 " Better SCSS markup.
 Plugin 'cakebaker/scss-syntax.vim'
 
@@ -60,9 +57,10 @@ Plugin 'ervandew/supertab'
 " HTML and CSS auto-completion.
 Plugin 'mattn/emmet-vim'
 
-" Markdown.
+" Markdown and distraction-free writing.
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'junegunn/goyo.vim'
 
 " JSON parse plugin.
 Plugin 'elzr/vim-json'
