@@ -319,6 +319,7 @@ let g:rooter_silent_chdir = 1
 
 let g:goyo_width = 160
 let g:goyo_height = 90
+let g:goyo_linenr = 1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " CtrlP
