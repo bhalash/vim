@@ -431,10 +431,10 @@ set cul
 function! ResetGG()
   " For GitGutter.
   hi clear SignColumn
-  hi GitGutterAdd ctermfg=green
-  hi GitGutterDelete ctermfg=red
-  hi GitGutterChange ctermfg=yellow
-  hi GitGutterChangeDelete ctermfg=yellow
+  hi GitGutterAdd           cterm=none    ctermbg=none    ctermfg=46      gui=none      guifg=#00ff00
+  hi GitGutterChange        cterm=none    ctermbg=none    ctermfg=45      gui=none      guifg=#00d7ff
+  hi GitGutterChangeDelete  cterm=none    ctermbg=none    ctermfg=11      gui=none      guifg=#ffff00
+  hi GitGutterDelete        cterm=none    ctermbg=none    ctermfg=196     gui=none      guifg=#ff0000
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
