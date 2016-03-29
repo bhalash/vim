@@ -281,7 +281,7 @@ nmap <leader>gg :GitGutterToggle<CR>
 nmap <leader>5 :CtrlPClearCache<CR>
 
 " Goyo
-nmap <silent><leader>gy :Goyo<CR>
+nmap <silent><leader>go :Goyo<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Shorthand Colorcolumn Option
@@ -313,7 +313,7 @@ let g:rooter_silent_chdir = 1
 " Goyo
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-let g:goyo_width = 160
+let g:goyo_width = 170
 let g:goyo_height = 90
 let g:goyo_linenr = 1
 
