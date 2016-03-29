@@ -473,10 +473,11 @@ function! Elysian()
 
   " Tweaks.
   call ResetGG()
-  hi Pmenu      ctermbg=233  ctermfg=244
-  hi PmenuSel   ctermbg=244  ctermfg=233
-  hi PmenuSbar  ctermbg=none ctermfg=none
-  hi PmenuThumb ctermbg=244  ctermfg=233
+  hi Normal ctermbg=none
+  hi Pmenu ctermbg=233 ctermfg=244
+  hi PmenuSel ctermbg=244 ctermfg=233
+  hi PmenuSbar ctermbg=none ctermfg=none
+  hi PmenuThumb ctermbg=244 ctermfg=233
   let g:airline_theme='drjova'
 endfunction
 
