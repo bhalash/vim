@@ -15,19 +15,13 @@ call vundle#begin()
 
 " Colours for terminal vim.
 Plugin 'marcopaganini/termschool-vim-theme'
-Plugin 'scwood/vim-hybrid'
 
 " Colours for gvim/MacVim.
 Plugin 'mkarmona/colorsbox'
 
-" Turn off all the things.
-Plugin 'pbrisbin/vim-colors-off'
-
 " Temp terminal colorscheme.
 Plugin 'bhalash/caconym.vim'
-
-Plugin 'jonathanfilip/vim-lucius'
-Plugin 'sjl/badwolf'
+Plugin 'nhooyr/elysian.vim'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugins
@@ -428,6 +422,7 @@ set cul
 
 function! ResetGG()
   " For GitGutter.
+  hi clear LineNr
   hi clear SignColumn
   hi GitGutterAdd           cterm=none    ctermbg=none    ctermfg=46      gui=none      guifg=#00ff00
   hi GitGutterChange        cterm=none    ctermbg=none    ctermfg=45      gui=none      guifg=#00d7ff
@@ -436,7 +431,7 @@ function! ResetGG()
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Colorsbox
+" Colorsbox // gui-first
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " GUI first theme!
@@ -454,10 +449,8 @@ function! Colorsbox()
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Termschool
+" Termschool // term-first
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" Term first theme!
 
 function! Termschool()
   colors termschool
@@ -472,89 +465,19 @@ function! Termschool()
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Caconym
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" Term first theme!
-
-function! Caconym()
-  colorscheme caconym
-
-  " Tweaks.
-  call ResetGG()
-  hi LineNr ctermfg=250 ctermbg=none guifg=#bcbcbc guibg=none
-  hi CursorLine ctermfg=none ctermbg=238 guifg=none guibg=#444444
-
-  " Airline.
-  let g:airline_theme='drjova'
-endfunction
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Hybrid
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" GUI first theme!
-
-function! Hybrid()
-  colors hybrid
-
-  " Tweaks.
-  call ResetGG()
-  set background=dark
-  hi LineNr ctermfg=247 guifg=#9e9e9e
-  hi CursorLine ctermbg=239 guibg=#444444
-
-  " Airline.
-  if has('gui_running')
-    let g:airline_theme='jellybeans'
-  else
-    let g:airline_theme='distinguished'
-  endif
-endfunction
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Lucius
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-function! Lucius()
-    colorscheme lucius
-    LuciusBlackHighContrast
-
-    " Tweaks
-    call ResetGG()
-    hi LineNr ctermfg=245 ctermbg=none guifg=#bcbcbc guibg=none
-    hi CursorLineNr ctermbg=none ctermfg=255
-    hi CursorLine ctermfg=none ctermbg=240 guifg=none guibg=#444444
-    hi Comment ctermbg=none ctermfg=250
-    hi clear SignColumn
-    hi GitGutterAdd ctermfg=green ctermbg=none
-    hi GitGutterDelete ctermfg=red ctermbg=none
-    hi GitGutterChange ctermfg=yellow ctermbg=none
-    hi GitGutterChangeDelete ctermfg=yellow ctermbg=none
-
-    " Airline
-    let g:airline_theme='drjova'
-endfunction
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Disable Colours
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-function! Off()
-  colors off
+function! Elysian()
+  colors elysian
 
   " Tweaks.
   call ResetGG()
-  set background=dark
-  hi LineNr ctermfg=250 ctermbg=none guifg=#bcbcbc guibg=none
-  hi CursorLine ctermfg=none ctermbg=238 guifg=none guibg=#444444
-
-  " Airline.
-  if has('gui_running')
-    let g:airline_theme='distinguished'
-  else
-    let g:airline_theme='drjova'
-  endif
+  hi Pmenu      ctermbg=233  ctermfg=244
+  hi PmenuSel   ctermbg=244  ctermfg=233
+  hi PmenuSbar  ctermbg=none ctermfg=none
+  hi PmenuThumb ctermbg=244  ctermfg=233
+  let g:airline_theme='drjova'
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -562,5 +485,4 @@ endfunction
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " gvimrc sets its own!
-" call Termschool()
-call Caconym()
+call Elysian()
