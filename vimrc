@@ -86,12 +86,10 @@ Plugin 'airblade/vim-gitgutter'
 " Nicer welcome screen.
 Plugin 'mhinz/vim-startify'
 
-" Uber statusline.
+" Airline
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'drjova/airline-drjova'
-
-" Airline
 
 " ZSH syntax.
 Plugin 'clones/vim-zsh'
