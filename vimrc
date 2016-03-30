@@ -474,6 +474,7 @@ function! Elysian()
   " Tweaks.
   call ResetGG()
   hi Normal ctermbg=none
+  hi CursorLine ctermbg=237
   hi Pmenu ctermbg=233 ctermfg=244
   hi PmenuSel ctermbg=244 ctermfg=233
   hi PmenuSbar ctermbg=none ctermfg=none
