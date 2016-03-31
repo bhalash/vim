@@ -420,8 +420,7 @@ let g:startify_bookmarks = [
 " Highlight the current line and set the colour.
 set cul
 
-function! ResetGG()
-  " For GitGutter.
+function! s:gitgutter_reset()
   hi clear LineNr
   hi clear SignColumn
   hi GitGutterAdd           cterm=none    ctermbg=none    ctermfg=46      gui=none      guifg=#00ff00
@@ -436,15 +435,10 @@ endfunction
 
 " GUI first theme!
 
-function! Colorsbox()
-  colors colorsbox-stnight
-
-  " Tweaks.
-  call ResetGG()
+function! s:colorsbox_patch()
+  call s:gitgutter_reset()
   hi TabLineFill guifg=#ffffff guibg=#1d1f21
   hi TabLineSel guifg=#1d1f21 guibg=#ffffff
-
-  " Airline.
   let g:airline_theme='jellybeans'
 endfunction
 
@@ -452,27 +446,19 @@ endfunction
 " Termschool // term-first
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-function! Termschool()
-  colors termschool
-
-  " Tweaks.
-  call ResetGG()
+function! s:termschool_path()
+  call s:gitgutter_reset()
   hi LineNr ctermfg=250 ctermbg=none guifg=#bcbcbc guibg=none
   hi CursorLine ctermfg=none ctermbg=238 guifg=none guibg=#444444
-
-  " Airline.
   let g:airline_theme='drjova'
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Disable Colours
+" Elysian // term-first
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-function! Elysian()
-  colors elysian
-
-  " Tweaks.
-  call ResetGG()
+function! s:elysian_patch()
+  call s:gitgutter_reset()
   hi Normal ctermbg=none
   hi CursorLine ctermbg=237
   hi Pmenu ctermbg=233 ctermfg=244
@@ -483,8 +469,15 @@ function! Elysian()
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Colorscheme Autocmd
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+autocmd! ColorScheme elysian call s:elysian_patch()
+autocmd! ColorScheme termschool call s:termschool_patch()
+autocmd! ColorScheme colorsbox-stnight call s:colorsbox_patch()
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Call Default Colourscheme
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" gvimrc sets its own!
-call Elysian()
+colorscheme elysian

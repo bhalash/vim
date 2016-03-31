@@ -2,7 +2,8 @@
 " GUI Options
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-call Colorsbox()
+" Colorsbox
+colorscheme colorsbox-stnight
 
 " Disable audible bells.
 set noerrorbells visualbell
