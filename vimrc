@@ -433,8 +433,6 @@ endfunction
 " Colorsbox // gui-first
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" GUI first theme!
-
 function! s:colorsbox_patch()
   call s:gitgutter_reset()
   hi TabLineFill guifg=#ffffff guibg=#1d1f21
