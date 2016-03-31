@@ -15,13 +15,10 @@ call vundle#begin()
 
 " Colours for terminal vim.
 Plugin 'marcopaganini/termschool-vim-theme'
+Plugin 'nhooyr/elysian.vim'
 
 " Colours for gvim/MacVim.
 Plugin 'mkarmona/colorsbox'
-
-" Temp terminal colorscheme.
-Plugin 'bhalash/caconym.vim'
-Plugin 'nhooyr/elysian.vim'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugins
