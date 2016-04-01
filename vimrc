@@ -456,6 +456,7 @@ function! s:elysian_patch()
   call s:gitgutter_reset()
   hi Normal ctermbg=none
   hi CursorLine ctermbg=237
+  hi Comment ctermfg=244
   hi Pmenu ctermbg=233 ctermfg=244
   hi PmenuSel ctermbg=244 ctermfg=233
   hi PmenuSbar ctermbg=none ctermfg=none
