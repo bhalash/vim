@@ -20,6 +20,8 @@ Plugin 'nhooyr/elysian.vim'
 " Colours for gvim/MacVim.
 Plugin 'mkarmona/colorsbox'
 
+Plugin 'morhetz/gruvbox'
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -465,10 +467,21 @@ function! s:elysian_patch()
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Gruvbox // term-first
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+function! s:gruvbox_patch()
+  call s:gitgutter_reset()
+  hi Normal ctermbg=none
+  let g:airline_theme='drjova'
+endfunction
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colorscheme Autocmd
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 autocmd! ColorScheme elysian call s:elysian_patch()
+autocmd! ColorScheme gruvbox call s:gruvbox_patch()
 autocmd! ColorScheme termschool call s:termschool_patch()
 autocmd! ColorScheme colorsbox-stnight call s:colorsbox_patch()
 
@@ -476,4 +489,6 @@ autocmd! ColorScheme colorsbox-stnight call s:colorsbox_patch()
 " Call Default Colourscheme
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-colorscheme elysian
+" colorscheme elysian
+
+colorscheme gruvbox
