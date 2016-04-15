@@ -20,7 +20,7 @@ Plugin 'nhooyr/elysian.vim'
 " Colours for gvim/MacVim.
 Plugin 'mkarmona/colorsbox'
 
-Plugin 'morhetz/gruvbox'
+Plugin 'andreasvc/vim-256noir'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugins
@@ -470,9 +470,11 @@ endfunction
 " Gruvbox // term-first
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-function! s:gruvbox_patch()
+function! s:256_noir_patch()
   call s:gitgutter_reset()
-  hi Normal ctermbg=none
+  hi CursorLine ctermbg=237 cterm=none
+  hi CursorLineNr ctermbg=237
+  hi Comment ctermfg=240
   let g:airline_theme='drjova'
 endfunction
 
@@ -481,7 +483,7 @@ endfunction
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 autocmd! ColorScheme elysian call s:elysian_patch()
-autocmd! ColorScheme gruvbox call s:gruvbox_patch()
+autocmd! ColorScheme 256_noir call s:256_noir_patch()
 autocmd! ColorScheme termschool call s:termschool_patch()
 autocmd! ColorScheme colorsbox-stnight call s:colorsbox_patch()
 
@@ -491,4 +493,4 @@ autocmd! ColorScheme colorsbox-stnight call s:colorsbox_patch()
 
 " colorscheme elysian
 
-colorscheme gruvbox
+colorscheme 256_noir
