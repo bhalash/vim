@@ -15,12 +15,10 @@ call vundle#begin()
 
 " Colours for terminal vim.
 Plugin 'marcopaganini/termschool-vim-theme'
-Plugin 'nhooyr/elysian.vim'
+Plugin 'w0ng/vim-hybrid'
 
 " Colours for gvim/MacVim.
 Plugin 'mkarmona/colorsbox'
-
-Plugin 'andreasvc/vim-256noir'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugins
@@ -491,6 +489,5 @@ autocmd! ColorScheme colorsbox-stnight call s:colorsbox_patch()
 " Call Default Colourscheme
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" colorscheme elysian
-
-colorscheme 256_noir
+" colorscheme 256_noir
+colorscheme hybrid
