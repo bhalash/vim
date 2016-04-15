@@ -16,6 +16,7 @@ call vundle#begin()
 " Colours for terminal vim.
 Plugin 'marcopaganini/termschool-vim-theme'
 Plugin 'w0ng/vim-hybrid'
+Plugin 'andreasvc/vim-256noir'
 
 " Colours for gvim/MacVim.
 Plugin 'mkarmona/colorsbox'
