@@ -450,38 +450,20 @@ function! s:termschool_path()
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Elysian // term-first
+" Hybrid // term-first
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-function! s:elysian_patch()
+function! s:hybrid_patch()
   call s:gitgutter_reset()
   hi Normal ctermbg=none
-  hi CursorLine ctermbg=237
-  hi Comment ctermfg=244
-  hi Pmenu ctermbg=233 ctermfg=244
-  hi PmenuSel ctermbg=244 ctermfg=233
-  hi PmenuSbar ctermbg=none ctermfg=none
-  hi PmenuThumb ctermbg=244 ctermfg=233
-  let g:airline_theme='drjova'
-endfunction
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Gruvbox // term-first
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-function! s:256_noir_patch()
-  call s:gitgutter_reset()
-  hi CursorLine ctermbg=237 cterm=none
-  hi CursorLineNr ctermbg=237
-  hi Comment ctermfg=240
-  let g:airline_theme='drjova'
+  hi LineNr ctermfg=239
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colorscheme Autocmd
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-autocmd! ColorScheme elysian call s:elysian_patch()
+autocmd! ColorScheme hybrid call s:hybrid_patch()
 autocmd! ColorScheme 256_noir call s:256_noir_patch()
 autocmd! ColorScheme termschool call s:termschool_patch()
 autocmd! ColorScheme colorsbox-stnight call s:colorsbox_patch()
