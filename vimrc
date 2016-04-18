@@ -456,6 +456,7 @@ endfunction
 function! s:hybrid_patch()
   call s:gitgutter_reset()
   hi Normal ctermbg=none
+  hi ColorColumn ctermbg=88
   hi LineNr ctermfg=239
 endfunction
 
