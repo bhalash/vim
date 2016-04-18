@@ -458,6 +458,8 @@ function! s:hybrid_patch()
   hi Normal ctermbg=none
   hi ColorColumn ctermbg=88
   hi LineNr ctermfg=239
+  hi CursorLine ctermbg=239
+  hi CursorLineNr ctermbg=239
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
