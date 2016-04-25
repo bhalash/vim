@@ -457,9 +457,9 @@ function! s:hybrid_patch()
   call s:gitgutter_reset()
   hi Normal ctermbg=none
   hi ColorColumn ctermbg=88
-  hi LineNr ctermfg=237
-  hi CursorLine ctermbg=237
-  hi CursorLineNr ctermbg=237
+  hi LineNr ctermfg=241
+  hi CursorLine ctermbg=238
+  hi CursorLineNr ctermbg=238
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
