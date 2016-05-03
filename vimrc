@@ -262,6 +262,9 @@ nmap <silent><leader>tw :tabclose<CR>
 nmap <silent><leader>r :prev<CR>
 nmap <silent><leader>n :n<CR>
 
+" Reset clever-f motions.
+nmap <leader>f <Plug>(clever-f-reset)
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin Keybinds
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
