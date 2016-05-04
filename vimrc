@@ -63,6 +63,9 @@ Plugin 'elzr/vim-json'
 " Fuzzy file matchng.
 Plugin 'ctrlpvim/ctrlp.vim'
 
+" CTAGS.
+Plugin 'szw/vim-tags'
+
 " Ruby and Rails utilities. Tim Pope is God.
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rails'
@@ -261,6 +264,9 @@ nmap <silent><leader>n :n<CR>
 
 " Reset clever-f motions.
 nmap <leader>f <Plug>(clever-f-reset)
+
+" Stop * searches jumping word.
+nnoremap * *``
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin Keybinds
