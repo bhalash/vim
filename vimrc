@@ -469,6 +469,7 @@ function! s:hybrid_patch()
   hi LineNr ctermfg=241
   hi CursorLine ctermbg=238
   hi CursorLineNr ctermbg=238
+  hi Search ctermbg=none ctermfg=227 cterm=bold,underline
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
