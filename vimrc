@@ -25,9 +25,6 @@ Plugin 'mkarmona/colorsbox'
 " Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Better FfTt handling.
-Plugin 'deris/vim-shot-f'
-
 " Auto CD to project root.
 Plugin 'airblade/vim-rooter'
 
