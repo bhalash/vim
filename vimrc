@@ -25,6 +25,9 @@ Plugin 'mkarmona/colorsbox'
 " Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" Better FfTt handling.
+Plugin 'deris/vim-shot-f'
+
 " Auto CD to project root.
 Plugin 'airblade/vim-rooter'
 
@@ -258,9 +261,6 @@ nmap <silent><leader>tw :tabclose<CR>
 " Progress forward and backwards with multiple panes open.
 nmap <silent><leader>r :prev<CR>
 nmap <silent><leader>n :n<CR>
-
-" Reset clever-f motions.
-nmap <leader>f <Plug>(clever-f-reset)
 
 " Stop * searches jumping word.
 nnoremap * *``
