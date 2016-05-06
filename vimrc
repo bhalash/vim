@@ -25,6 +25,9 @@ Plugin 'mkarmona/colorsbox'
 " Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" Better FfTt action. Again.
+Plugin 'deris/vim-shot-f'
+
 " Auto CD to project root.
 Plugin 'airblade/vim-rooter'
 
@@ -225,7 +228,7 @@ nmap <leader>sp :setlocal spell!<CR>
 nmap <silent><bs> :nohlsearch<CR>
 
 " Shorter global search.
-nmap S :%s//g<left><left>
+" nmap S :%s//g<left><left>
 
 " Toggle line numbering style.
 nmap <silent><leader>r :set relativenumber!<CR>
