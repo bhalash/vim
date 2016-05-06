@@ -28,6 +28,9 @@ Plugin 'mkarmona/colorsbox'
 " Better FfTt action. Again.
 Plugin 'deris/vim-shot-f'
 
+" Better JavaScript handling.
+Plugin 'jelera/vim-javascript-syntax'
+
 " Auto CD to project root.
 Plugin 'airblade/vim-rooter'
 
