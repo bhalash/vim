@@ -26,7 +26,8 @@ Plugin 'mkarmona/colorsbox'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Better FfTt action. Again.
-Plugin 'deris/vim-shot-f'
+" Plugin 'deris/vim-shot-f'
+Plugin 'unblevable/quick-scope'
 
 " Auto CD to project root.
 Plugin 'airblade/vim-rooter'
