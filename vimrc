@@ -28,20 +28,11 @@ Plugin 'mkarmona/colorsbox'
 " Better FfTt action. Again.
 Plugin 'deris/vim-shot-f'
 
-" Better JavaScript handling.
-Plugin 'jelera/vim-javascript-syntax'
-
 " Auto CD to project root.
 Plugin 'airblade/vim-rooter'
 
-" For WordPress development.
-Plugin 'dsawardekar/wordpress.vim'
-
 " Vundle plugins.
 Plugin 'VundleVim/Vundle.vim'
-
-" Better SCSS markup.
-Plugin 'cakebaker/scss-syntax.vim'
 
 " Slim syntax highlighting.
 Plugin 'slim-template/vim-slim'
@@ -57,11 +48,7 @@ Plugin 'mattn/emmet-vim'
 
 " Markdown and distraction-free writing.
 Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
 Plugin 'junegunn/goyo.vim'
-
-" JSON parse plugin.
-Plugin 'elzr/vim-json'
 
 " Fuzzy file matchng.
 Plugin 'ctrlpvim/ctrlp.vim'
@@ -89,8 +76,14 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'drjova/airline-drjova'
 
-" ZSH syntax.
+" Syntax
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'dsawardekar/wordpress.vim'
+Plugin 'cakebaker/scss-syntax.vim'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'stanangeloff/php.vim'
 Plugin 'clones/vim-zsh'
+Plugin 'elzr/vim-json'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " End Vundle Init
