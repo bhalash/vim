@@ -212,8 +212,8 @@ nmap <leader><space> <c-w>
 nnoremap Q <Nop>
 
 " Remap line-jump keys.
-nmap B ^
-nmap E $
+" nmap B ^
+" nmap E $
 
 " Split file.
 nmap <silent><leader>v <c-w>v<c-w>l
