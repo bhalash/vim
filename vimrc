@@ -84,6 +84,7 @@ Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'stanangeloff/php.vim'
 Plugin 'clones/vim-zsh'
+Plugin 'moll/vim-node'
 Plugin 'elzr/vim-json'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -210,10 +211,6 @@ nmap <leader><space> <c-w>
 
 " Disable the keybind to access ex mode.
 nnoremap Q <Nop>
-
-" Remap line-jump keys.
-nmap B ^
-nmap E $
 
 " Split file.
 nmap <silent><leader>v <c-w>v<c-w>l
