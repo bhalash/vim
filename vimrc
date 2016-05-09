@@ -224,6 +224,10 @@ nmap <silent><bs> :nohlsearch<CR>
 " Shorter global search.
 " nmap S :%s//g<left><left>
 
+" Quickly jump to start and end of line with less obtuse shortcuts.
+nmap $ E
+nmap ^ B
+
 " Toggle line numbering style.
 nmap <silent><leader>r :set relativenumber!<CR>
 
