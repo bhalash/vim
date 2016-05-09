@@ -257,7 +257,7 @@ nmap <silent><leader>r :prev<CR>
 nmap <silent><leader>n :n<CR>
 
 " Stop * searches jumping word.
-nnoremap * *``
+nnoremap * :keepjumps normal! mi*`i<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin Keybinds
