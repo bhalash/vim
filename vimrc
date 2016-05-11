@@ -26,7 +26,6 @@ Plugin 'mkarmona/colorsbox'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Better FfTt action. Again.
-" Plugin 'deris/vim-shot-f'
 Plugin 'unblevable/quick-scope'
 
 " Auto CD to project root.
@@ -471,6 +470,17 @@ function! s:hybrid_patch()
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" 256 Noir // term-first
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+function! s:256_noir_patch()
+  call s:gitgutter_reset()
+  hi CursorLine ctermbg=235 cterm=none
+  hi Search ctermbg=none ctermbg=22 ctermfg=250
+  let g:airline_theme='hybrid'
+endfunction
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colorscheme Autocmd
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -483,5 +493,5 @@ autocmd! ColorScheme colorsbox-stnight call s:colorsbox_patch()
 " Call Default Colourscheme
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" colorscheme 256_noir
+" clorscheme 256_noir
 colorscheme hybrid
