@@ -25,6 +25,9 @@ Plugin 'mkarmona/colorsbox'
 " Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" Metric tracking.
+Plugin 'wakatime/vim-wakatime'
+
 " Better FfTt action. Again.
 Plugin 'unblevable/quick-scope'
 
