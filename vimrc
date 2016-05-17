@@ -25,6 +25,9 @@ Plugin 'mkarmona/colorsbox'
 " Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+Plugin 'wellle/targets.vim'
+Plugin 'christoomey/vim-sort-motion'
+
 " Metric tracking.
 Plugin 'wakatime/vim-wakatime'
 
