@@ -480,7 +480,8 @@ function! s:hybrid_patch()
   hi LineNr ctermfg=241
   hi CursorLine ctermbg=238
   hi CursorLineNr ctermbg=238
-  hi Search ctermbg=26 ctermfg=87 cterm=underline
+  hi Search ctermbg=179 ctermfg=232
+  hi IncSearch ctermfg=179 ctermbg=232
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
