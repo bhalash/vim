@@ -14,7 +14,6 @@ call vundle#begin()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Colours for terminal vim.
-Plugin 'marcopaganini/termschool-vim-theme'
 Plugin 'w0ng/vim-hybrid'
 Plugin 'andreasvc/vim-256noir'
 
@@ -25,38 +24,38 @@ Plugin 'mkarmona/colorsbox'
 " Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" Provide additional text targets for di/a<char>:
+" , . ; : + - = ~ _ * # / | \ & $
 Plugin 'wellle/targets.vim'
+
+" Provide motion keyed to gs<motion> to sort stuff.
 Plugin 'christoomey/vim-sort-motion'
 
 " Metric tracking.
 Plugin 'wakatime/vim-wakatime'
 
-" Better FfTt action. Again.
+" Better FfTt action.
 Plugin 'unblevable/quick-scope'
 
 " Auto CD to project root.
 Plugin 'airblade/vim-rooter'
 
-" Vundle plugins.
+" Vundle.
 Plugin 'VundleVim/Vundle.vim'
 
-" Slim syntax highlighting.
-Plugin 'slim-template/vim-slim'
-
-" Quickly change wrapping characters.
+" Quickly change wrapping characters with cs<char>.
 Plugin 'tpope/vim-surround'
 
 " Supertab.
 Plugin 'ervandew/supertab'
 
-" HTML and CSS auto-completion.
-Plugin 'mattn/emmet-vim'
-
-" Markdown and distraction-free writing.
+" Tabulate content.
 Plugin 'godlygeek/tabular'
+
+" Distraction-free authoring.
 Plugin 'junegunn/goyo.vim'
 
-" Fuzzy file matchng.
+" Quickly search for and open files in the current buffer, new split or tab.
 Plugin 'ctrlpvim/ctrlp.vim'
 
 " CTAGS.
@@ -82,7 +81,12 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'drjova/airline-drjova'
 
-" Syntax
+" Generate HTML boilerplate.
+" http://docs.emmet.io/cheat-sheet/
+Plugin 'mattn/emmet-vim'
+
+" Syntax highlighting.
+Plugin 'slim-template/vim-slim'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'dsawardekar/wordpress.vim'
 Plugin 'cakebaker/scss-syntax.vim'
@@ -210,8 +214,12 @@ set directory=~/.vim/.tmp,~/tmp,/tmp
 
 let mapleader = "\<space>"
 
+" Use <Tab> to cycle back and forth through windows.
+nnoremap <Tab> <C-W>w
+nnoremap <S-Tab> <C-W>W
+
 " <c-w> is difficult for me to reach given my handedness and keyboard.
-nmap <leader><space> <c-w>
+nmap <leader><space> <C-w>
 
 " Disable the keybind to access ex mode.
 nnoremap Q <Nop>
@@ -225,8 +233,9 @@ nmap <leader>sp :setlocal spell!<CR>
 " Toggle highlighted results.
 nmap <silent><bs> :nohlsearch<CR>
 
-" Shorter global search.
-" nmap S :%s//g<left><left>
+" Use s and S to quickly search and replace in content: sfoo/bar Sfoo/bar.
+nmap s :s//<left>
+nmap S :%s//<left>
 
 " Quickly jump to start and end of line with less obtuse shortcuts.
 nmap E $
