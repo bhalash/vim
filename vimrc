@@ -277,6 +277,9 @@ nmap <silent><leader>n :n<CR>
 " Stop * searches jumping word.
 nnoremap * :keepjumps normal! mi*`i<CR>
 
+" Format JSON in buffer.
+nmap <silent><leader>js :%!python -m json.tool<CR>
+
 " Highlight the current line and set the colour.
 set cul
 
