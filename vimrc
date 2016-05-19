@@ -276,6 +276,9 @@ nmap <silent><leader>n :n<CR>
 " Stop * searches jumping word.
 nnoremap * :keepjumps normal! mi*`i<CR>
 
+" Highlight the current line and set the colour.
+set cul
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin Keybinds
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -435,9 +438,6 @@ let g:startify_bookmarks = [
 " Appearance
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Highlight the current line and set the colour.
-set cul
-
 function! s:gitgutter_reset()
   hi clear LineNr
   hi clear SignColumn
@@ -480,7 +480,7 @@ function! s:hybrid_patch()
   hi LineNr ctermfg=241
   hi CursorLine ctermbg=238
   hi CursorLineNr ctermbg=238
-  hi Search ctermbg=none ctermfg=226 cterm=bold,underline
+  hi Search ctermbg=26 ctermfg=87 cterm=underline
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -490,7 +490,7 @@ endfunction
 function! s:256_noir_patch()
   call s:gitgutter_reset()
   hi CursorLine ctermbg=235 cterm=none
-  hi Search ctermbg=none ctermbg=22 ctermfg=250
+  hi Search ctermbg=33 ctermfg=250
   let g:airline_theme='hybrid'
 endfunction
 
