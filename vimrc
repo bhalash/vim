@@ -67,6 +67,9 @@ Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-bundler'
 
+" Better file manager.
+Plugin 'tpope/vim-vinegar'
+
 " Toggle comments.
 Plugin 'tomtom/tcomment_vim'
 
