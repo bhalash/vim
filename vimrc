@@ -91,6 +91,7 @@ Plugin 'mattn/emmet-vim'
 " Syntax highlighting.
 Plugin 'slim-template/vim-slim'
 Plugin 'jelera/vim-javascript-syntax'
+Plugin 'evanmiller/nginx-vim-syntax'
 Plugin 'dsawardekar/wordpress.vim'
 Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'plasticboy/vim-markdown'
