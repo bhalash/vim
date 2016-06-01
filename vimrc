@@ -2,9 +2,9 @@
 " Load External Dependencies
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-source conf/vundle.vim
-source conf/plugins.vim
-source conf/themes.vim
+source $HOME/.vim/conf/vundle.vim
+source $HOME/.vim/conf/plugins.vim
+source $HOME/.vim/conf/themes.vim
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Core Vim Configuration
