@@ -1,7 +1,10 @@
-" Initialize all Vundle configurations.
-source ~/.vim/conf/vundle.vim
-source ~/.vim/conf/plugins.vim
-source ~/.vim/conf/themes.vim
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Load External Dependencies
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+source conf/vundle.vim
+source conf/plugins.vim
+source conf/themes.vim
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Core Vim Configuration
