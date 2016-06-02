@@ -141,8 +141,8 @@ nmap <leader>sp :setlocal spell!<CR>
 nmap <silent><bs> :nohlsearch<CR>
 
 " Use s and S to quickly search and replace in content: sfoo/bar Sfoo/bar.
-nmap s :s//<left>
-nmap S :%s//<left>
+nmap s :s,,<left>
+nmap S :%s,,<left>
 
 " Quickly jump to start and end of line with less obtuse shortcuts.
 nmap E $
