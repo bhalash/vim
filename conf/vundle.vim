@@ -38,9 +38,6 @@ call vundle#begin()
   " Supertab.
   Plugin 'ervandew/supertab'
 
-  " Tabulate content.
-  Plugin 'godlygeek/tabular'
-
   " Distraction-free authoring.
   Plugin 'junegunn/goyo.vim'
 
@@ -54,10 +51,6 @@ call vundle#begin()
   Plugin 'tpope/vim-fugitive'
   Plugin 'tpope/vim-rails'
   Plugin 'tpope/vim-endwise'
-  Plugin 'tpope/vim-bundler'
-
-  " Better file manager.
-  Plugin 'tpope/vim-vinegar'
 
   " Toggle comments.
   Plugin 'tomtom/tcomment_vim'
