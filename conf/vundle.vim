@@ -9,6 +9,7 @@ call vundle#begin()
   " Colours for terminal vim.
   Plugin 'w0ng/vim-hybrid'
   Plugin 'andreasvc/vim-256noir'
+  Plugin 'nanotech/jellybeans.vim'
 
   " Colours for gvim/MacVim.
   Plugin 'mkarmona/colorsbox'
