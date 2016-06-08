@@ -42,7 +42,7 @@ set ffs=unix,dos
 set autoindent
 
 " Wrap lines outside of words.
-set wrap linebreak nolist
+set nowrap linebreak nolist
 
 " Enable line numbers.
 set nu
