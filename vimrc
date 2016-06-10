@@ -3,7 +3,6 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 source $HOME/.vim/conf/vundle.vim
-source $HOME/.vim/conf/plugins.vim
 source $HOME/.vim/conf/themes.vim
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -15,6 +14,7 @@ set t_Co=256 background=dark
 
 " Set colorcheme for terminal (MacVim/gvim theme is set in gvimrc).
 " clorscheme 256_noir
+" colorscheme jellybeans
 colorscheme hybrid
 
 " No need to be vi compatible. I mean, it's 2016.
@@ -198,3 +198,9 @@ function! RightRuler(...)
 endfunction
 
 command! -nargs=? CC call RightRuler(<f-args>)
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugin Configurations
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+source $HOME/.vim/conf/plugins.vim
