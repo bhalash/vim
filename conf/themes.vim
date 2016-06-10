@@ -67,4 +67,3 @@ autocmd! ColorScheme hybrid call s:hybrid_patch()
 autocmd! ColorScheme 256_noir call s:256_noir_patch()
 autocmd! ColorScheme termschool call s:termschool_patch()
 autocmd! ColorScheme colorsbox-stnight call s:colorsbox_patch()
-
