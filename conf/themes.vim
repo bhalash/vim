@@ -34,7 +34,7 @@ function! s:off_patch()
   hi LineNr ctermfg=240
   hi CursorLineNr ctermbg=none ctermfg=15
   hi Search ctermbg=185 ctermfg=232
-  let g:airline_theme='jellybeans'
+  let g:airline_theme='raven'
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -48,7 +48,7 @@ function! s:hybrid_patch()
   hi LineNr ctermfg=241
   hi CursorLine ctermbg=238
   hi CursorLineNr ctermbg=238
-  hi Search ctermbg=179 ctermfg=232
+  hi Search ctermbg=185 ctermfg=232
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
