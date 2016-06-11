@@ -23,14 +23,18 @@ function! s:colorsbox_patch()
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Termschool // term-first
+" Off // term-first
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-function! s:termschool_path()
+function! s:off_patch()
   call s:gitgutter_reset()
-  hi LineNr ctermfg=250 ctermbg=none guifg=#bcbcbc guibg=none
-  hi CursorLine ctermfg=none ctermbg=238 guifg=none guibg=#444444
-  let g:airline_theme='drjova'
+  hi Normal ctermbg=none
+  hi ColorColumn ctermbg=88
+  hi CursorLine ctermbg=238
+  hi LineNr ctermfg=240
+  hi CursorLineNr ctermbg=none ctermfg=15
+  hi Search ctermbg=185 ctermfg=232
+  let g:airline_theme='jellybeans'
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -45,7 +49,6 @@ function! s:hybrid_patch()
   hi CursorLine ctermbg=238
   hi CursorLineNr ctermbg=238
   hi Search ctermbg=179 ctermfg=232
-  " hi IncSearch ctermfg=179 ctermbg=232
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -63,6 +66,7 @@ endfunction
 " Colorscheme Autocmd
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+autocmd! ColorScheme off call s:off_patch()
 autocmd! ColorScheme hybrid call s:hybrid_patch()
 autocmd! ColorScheme 256_noir call s:256_noir_patch()
 autocmd! ColorScheme termschool call s:termschool_patch()
