@@ -49,6 +49,7 @@ function! s:hybrid_patch()
   hi CursorLine ctermbg=238
   hi CursorLineNr ctermbg=238
   hi Search ctermbg=185 ctermfg=232
+  let g:airline_theme='hybrid'
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
