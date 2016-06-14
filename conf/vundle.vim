@@ -24,6 +24,9 @@ call vundle#begin()
   " Metric tracking.
   Plugin 'wakatime/vim-wakatime'
 
+  " Better search highlighting.
+  Plugin 'timakro/vim-searchant'
+
   " Better FfTt action.
   Plugin 'unblevable/quick-scope'
 
