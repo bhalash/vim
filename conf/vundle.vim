@@ -79,7 +79,6 @@ call vundle#begin()
   Plugin 'slim-template/vim-slim'
   Plugin 'jelera/vim-javascript-syntax'
   Plugin 'evanmiller/nginx-vim-syntax'
-  Plugin 'dsawardekar/wordpress.vim'
   Plugin 'cakebaker/scss-syntax.vim'
   Plugin 'plasticboy/vim-markdown'
   Plugin 'noprompt/vim-yardoc'
