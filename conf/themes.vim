@@ -23,47 +23,6 @@ function! s:colorsbox_patch()
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Off // term-first
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-function! s:off_patch()
-  call s:gitgutter_reset()
-  hi Normal ctermbg=none
-  hi ColorColumn ctermbg=88
-  hi CursorLine ctermbg=238
-  hi LineNr ctermfg=240
-  hi CursorLineNr ctermbg=none ctermfg=15
-  hi Search ctermbg=185 ctermfg=232
-  let g:airline_theme='raven'
-endfunction
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Hybrid // term-first
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-function! s:hybrid_patch()
-  call s:gitgutter_reset()
-  hi Normal ctermbg=none
-  hi ColorColumn ctermbg=88
-  hi LineNr ctermfg=241
-  hi CursorLine ctermbg=238
-  hi CursorLineNr ctermbg=238
-  hi Search ctermbg=185 ctermfg=232
-  let g:airline_theme='hybrid'
-endfunction
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" 256 Noir // term-first
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-function! s:256_noir_patch()
-  call s:gitgutter_reset()
-  hi CursorLine ctermbg=235 cterm=none
-  hi Search ctermbg=33 ctermfg=250
-  let g:airline_theme='hybrid'
-endfunction
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Tender Patch
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 function! s:tender_patch()
@@ -71,6 +30,7 @@ function! s:tender_patch()
   let g:tender_lightline = 1
   let g:lightline = { 'colorscheme': 'tender' }
   hi Visual cterm=bold ctermbg=241
+  hi Search ctermbg=185 ctermfg=232
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -78,8 +38,5 @@ endfunction
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 autocmd! ColorScheme off call s:off_patch()
-autocmd! ColorScheme hybrid call s:hybrid_patch()
-autocmd! ColorScheme 256_noir call s:256_noir_patch()
 autocmd! ColorScheme tendercontrast call s:tender_patch()
-autocmd! ColorScheme termschool call s:termschool_patch()
 autocmd! ColorScheme colorsbox-stnight call s:colorsbox_patch()
