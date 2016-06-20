@@ -12,9 +12,6 @@ source $HOME/.vim/conf/themes.vim
 " Set term colours.
 set t_Co=256 background=dark
 
-" Set colorcheme for terminal (MacVim/gvim theme is set in gvimrc).
-colorscheme tendercontrast
-
 " No need to be vi compatible. I mean, it's 2016.
 set nocompatible
 
@@ -202,3 +199,9 @@ command! -nargs=? CC call RightRuler(<f-args>)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 source $HOME/.vim/conf/plugins.vim
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Set Theme
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+colorscheme tendercontrast
