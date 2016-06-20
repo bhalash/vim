@@ -29,3 +29,6 @@ session/
 
 spell/
 after/
+colors/
+syntax/
+ftdetect/
