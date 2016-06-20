@@ -64,11 +64,21 @@ function! s:256_noir_patch()
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Tender Patch
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+function! s:tender_patch()
+  call s:gitgutter_reset()
+  let g:tender_lightline = 1
+  let g:lightline = { 'colorscheme': 'tender' }
+endfunction
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colorscheme Autocmd
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 autocmd! ColorScheme off call s:off_patch()
 autocmd! ColorScheme hybrid call s:hybrid_patch()
 autocmd! ColorScheme 256_noir call s:256_noir_patch()
+autocmd! ColorScheme tendercontrast call s:tender_patch()
 autocmd! ColorScheme termschool call s:termschool_patch()
 autocmd! ColorScheme colorsbox-stnight call s:colorsbox_patch()

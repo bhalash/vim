@@ -10,6 +10,7 @@ call vundle#begin()
   Plugin 'w0ng/vim-hybrid'
   Plugin 'andreasvc/vim-256noir'
   Plugin 'pbrisbin/vim-colors-off'
+  Plugin 'jacoborus/tender.vim'
 
   " Colours for gvim/MacVim.
   Plugin 'mkarmona/colorsbox'
@@ -68,10 +69,8 @@ call vundle#begin()
   " Nicer welcome screen.
   Plugin 'mhinz/vim-startify'
 
-  " Airline
-  Plugin 'vim-airline/vim-airline'
-  Plugin 'vim-airline/vim-airline-themes'
-  Plugin 'drjova/airline-drjova'
+  " Lightline
+  Plugin 'itchyny/lightline.vim'
 
   " Generate HTML boilerplate.
   " http://docs.emmet.io/cheat-sheet/

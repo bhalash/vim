@@ -13,8 +13,7 @@ source $HOME/.vim/conf/themes.vim
 set t_Co=256 background=dark
 
 " Set colorcheme for terminal (MacVim/gvim theme is set in gvimrc).
-colorscheme hybrid
-" colorscheme off
+colorscheme tendercontrast
 
 " No need to be vi compatible. I mean, it's 2016.
 set nocompatible
