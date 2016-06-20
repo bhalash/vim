@@ -70,6 +70,7 @@ function! s:tender_patch()
   call s:gitgutter_reset()
   let g:tender_lightline = 1
   let g:lightline = { 'colorscheme': 'tender' }
+  hi Visual cterm=bold ctermbg=241
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
