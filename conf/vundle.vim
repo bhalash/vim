@@ -83,6 +83,7 @@ call vundle#begin()
   Plugin 'clones/vim-zsh'
   Plugin 'moll/vim-node'
   Plugin 'elzr/vim-json'
+  Plugin 'HerringtonDarkholme/yats.vim'
 call vundle#end()
 
 filetype plugin indent on
