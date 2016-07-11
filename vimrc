@@ -110,6 +110,9 @@ set nobackup noswapfile
 " Set a directory in case they *are* turned on.
 set directory=~/.vim/.tmp,~/tmp,/tmp
 
+" Highlight the current line and set the colour.
+set cul
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Keybinds
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -181,8 +184,8 @@ nnoremap * :keepjumps normal! mi*`i<CR>
 " Format JSON in buffer.
 nmap <silent><leader>js :%!python -m json.tool<CR>
 
-" Highlight the current line and set the colour.
-set cul
+" Toggle quickfix window.
+nnoremap <leader>q :call QuickfixToggle()<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Shorthand Colorcolumn Option
@@ -193,6 +196,22 @@ function! RightRuler(...)
 endfunction
 
 command! -nargs=? CC call RightRuler(<f-args>)
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Toggle Quickfix Window
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+let g:quickfix_is_open = 0
+
+function! QuickfixToggle()
+  if g:quickfix_is_open
+    cclose
+    let g:quickfix_is_open = 0
+  else
+    copen
+    let g:quickfix_is_open = 1
+  endif
+endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin Configurations
