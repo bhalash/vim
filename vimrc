@@ -184,6 +184,9 @@ nnoremap * :keepjumps normal! mi*`i<CR>
 " Format JSON in buffer.
 nmap <silent><leader>js :%!python -m json.tool<CR>
 
+" Replace rocket-style (=>) hash keys in Ruby with :
+nmap <leader>rr :%s/:\([^=,'"]*\) =>/\1:/ <CR>
+
 " Toggle quickfix window.
 nnoremap <leader>q :call QuickfixToggle()<cr>
 
