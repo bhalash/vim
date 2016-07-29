@@ -74,16 +74,17 @@ call vundle#begin()
   Plugin 'mattn/emmet-vim'
 
   " Syntax highlighting.
-  Plugin 'slim-template/vim-slim'
-  Plugin 'jelera/vim-javascript-syntax'
-  Plugin 'evanmiller/nginx-vim-syntax'
-  Plugin 'cakebaker/scss-syntax.vim'
-  Plugin 'plasticboy/vim-markdown'
-  Plugin 'noprompt/vim-yardoc'
-  Plugin 'clones/vim-zsh'
-  Plugin 'moll/vim-node'
-  Plugin 'elzr/vim-json'
   Plugin 'HerringtonDarkholme/yats.vim'
+  Plugin 'cakebaker/scss-syntax.vim'
+  Plugin 'clones/vim-zsh'
+  Plugin 'elzr/vim-json'
+  Plugin 'evanmiller/nginx-vim-syntax'
+  Plugin 'jelera/vim-javascript-syntax'
+  Plugin 'leafgarland/typescript-vim'
+  Plugin 'moll/vim-node'
+  Plugin 'noprompt/vim-yardoc'
+  Plugin 'plasticboy/vim-markdown'
+  Plugin 'slim-template/vim-slim'
 call vundle#end()
 
 filetype plugin indent on
