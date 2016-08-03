@@ -9,7 +9,7 @@ colorscheme colorsbox-stnight
 set noerrorbells visualbell
 
 " Font family.
-set guifont=Source\ Code\ Pro\ for\ Powerline:h10,Source\ Code\ Pro:h10
+set guifont=Source\ Code\ Pro\ for\ Powerline:h11,Source\ Code\ Pro:h11
 
 " 1. Hide scrollbars (LlRr).
 set guioptions-=r
