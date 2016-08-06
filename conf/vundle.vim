@@ -42,8 +42,6 @@ call vundle#begin()
 
   " Authoring.
   Plugin 'junegunn/goyo.vim'
-  Plugin 'Shougo/unite.vim'
-  Plugin 'rhysd/unite-redpen.vim'
 
   " Quickly search for and open files in the current buffer, new split or tab.
   Plugin 'ctrlpvim/ctrlp.vim'
