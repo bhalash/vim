@@ -9,4 +9,7 @@ augroup pencil
   autocmd FileType text         call pencil#init()
 augroup END
 
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight!
+
 set wrap
