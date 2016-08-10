@@ -70,10 +70,6 @@ call vundle#begin()
   " Lightline
   Plugin 'itchyny/lightline.vim'
 
-  " Generate HTML boilerplate.
-  " http://docs.emmet.io/cheat-sheet/
-  Plugin 'mattn/emmet-vim'
-
   " Syntax highlighting.
   Plugin 'HerringtonDarkholme/yats.vim'
   Plugin 'cakebaker/scss-syntax.vim'
