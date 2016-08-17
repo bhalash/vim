@@ -18,7 +18,6 @@ call vundle#begin()
 
   " Provide motion keyed to gs<motion> to sort stuff.
   Plugin 'christoomey/vim-sort-motion'
-  Plugin 'kana/vim-textobj-indent'
 
   " Metric tracking.
   Plugin 'wakatime/vim-wakatime'
