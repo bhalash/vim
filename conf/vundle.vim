@@ -70,13 +70,16 @@ call vundle#begin()
   " Lightline
   Plugin 'itchyny/lightline.vim'
 
+  " JavaScript syntax and error checking.
+  Plugin 'Shutnik/jshint2.vim'
+  Plugin 'jelera/vim-javascript-syntax'
+
   " Syntax highlighting.
   Plugin 'HerringtonDarkholme/yats.vim'
   Plugin 'cakebaker/scss-syntax.vim'
   Plugin 'clones/vim-zsh'
   Plugin 'elzr/vim-json'
   Plugin 'evanmiller/nginx-vim-syntax'
-  Plugin 'jelera/vim-javascript-syntax'
   Plugin 'leafgarland/typescript-vim'
   Plugin 'moll/vim-node'
   Plugin 'noprompt/vim-yardoc'
