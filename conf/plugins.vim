@@ -85,9 +85,10 @@ endif
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " JSHint
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 nnoremap <silent><leader>n :lnext<CR>
 nnoremap <silent><leader>b :lprevious<CR>
-nnoremap <silent><leader>r :JSHint<CR>
+nnoremap <silent><leader>j :JSHint<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Supertab
