@@ -71,9 +71,8 @@ call vundle#begin()
   " Lightline
   Plugin 'itchyny/lightline.vim'
 
-  " JavaScript syntax and error checking.
-  Plugin 'Shutnik/jshint2.vim'
-  Plugin 'jelera/vim-javascript-syntax'
+  " All glory to fantastic Syntastic.
+  Plugin 'scrooloose/syntastic'
 
   " Syntax highlighting.
   Plugin 'HerringtonDarkholme/yats.vim'
@@ -81,6 +80,7 @@ call vundle#begin()
   Plugin 'clones/vim-zsh'
   Plugin 'elzr/vim-json'
   Plugin 'evanmiller/nginx-vim-syntax'
+  Plugin 'jelera/vim-javascript-syntax'
   Plugin 'leafgarland/typescript-vim'
   Plugin 'moll/vim-node'
   Plugin 'noprompt/vim-yardoc'

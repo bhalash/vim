@@ -92,12 +92,12 @@ let g:easytags_dynamic_files = 2
 let g:easytags_async = 1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" JSHint
+" Syntastic
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 nnoremap <silent><leader>n :lnext<CR>
 nnoremap <silent><leader>b :lprevious<CR>
-nnoremap <silent><leader>j :JSHint<CR>
+nnoremap <silent><leader>j :SyntasticCheck<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Supertab
