@@ -1,34 +1,12 @@
-#################
-## Plugin Folders
-#################
+/*
 
-bundle/*/
+!conf/
+!ftplugin/
 !bundle/Vundle.vim/
 
-#################
-## Session Folder
-#################
-
-session/
-
-#################
-## Plugin-generated Files
-#################
-
-.netrwhist
-
-#################
-## vim
-#################
-
-*.swp
-
-#################
-## Misc. Files
-#################
-
-spell/
-after/
-colors/
-syntax/
-ftdetect/
+!.gitignore
+!LICENSE
+!README.md
+!gvimrc
+!vimrc
+!screenshot.png
