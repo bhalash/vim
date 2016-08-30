@@ -102,7 +102,7 @@ let g:syntastic_always_populate_loc_list = 1
 
 nnoremap <silent><leader>n :lnext<CR>
 nnoremap <silent><leader>b :lprevious<CR>
-nnoremap <silent><leader>j :SyntasticCheck<CR> :SyntasticToggleMode<CR>
+nnoremap <silent><leader>j :SyntasticCheck<CR> :Errors<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Supertab
