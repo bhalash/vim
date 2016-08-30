@@ -95,19 +95,15 @@ let g:easytags_async = 1
 " Syntastic
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-let g:syntastic_mode_map = {
-      \ 'mode': 'passive',
-      \ 'active_filetypes': [],
-      \ 'passive_filetypes': []
-      \ }
-
-let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_check_on_open = 1
+let g:syntastic_aggregate_errors = 1
 let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_javascript_checkers = ['eslint']
 
 nnoremap <silent><leader>n :lnext<CR>
 nnoremap <silent><leader>b :lprevious<CR>
-nnoremap <silent><leader>j :SyntasticCheck<CR> :Errors<CR>
 nnoremap <silent><leader>k :SyntasticToggleMode<CR>
+nnoremap <silent><leader>j :SyntasticCheck<CR> :Errors<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Supertab
