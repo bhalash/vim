@@ -50,8 +50,8 @@ call vundle#begin()
   Plugin 'ctrlpvim/ctrlp.vim'
 
   " CTAGS.
-  Plugin 'xolox/vim-misc'
-  Plugin 'xolox/vim-easytags'
+  " Plugin 'xolox/vim-misc'
+  " Plugin 'xolox/vim-easytags'
 
   " Ruby and Rails utilities. Tim Pope is God.
   Plugin 'tpope/vim-fugitive'
