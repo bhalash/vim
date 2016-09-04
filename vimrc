@@ -119,10 +119,6 @@ set cul
 
 let mapleader = "\<space>"
 
-" Use <Tab> to cycle back and forth through windows.
-nnoremap <Tab> <C-W>w
-nnoremap <S-Tab> <C-W>W
-
 " <c-w> is difficult for me to reach given my handedness and keyboard.
 nmap <leader><space> <C-w>
 
