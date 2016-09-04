@@ -8,6 +8,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
   " Colours for terminal vim.
   Plugin 'jacoborus/tender.vim'
+  Plugin 'Junza/Spink'
 
   " Colours for gvim/MacVim.
   Plugin 'mkarmona/colorsbox'
