@@ -1,0 +1,33 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+*	/Users/mark/.vim/vimrc	/^nnoremap * :keepjumps normal! mi*`i<CR>$/;"	m	language:Vim
+<bs>	/Users/mark/.vim/vimrc	/^nmap <silent><bs> :nohlsearch<CR>$/;"	m	language:Vim
+<leader><space>	/Users/mark/.vim/vimrc	/^nmap <leader><space> <C-w> $/;"	m	language:Vim
+<leader>d<space>	/Users/mark/.vim/vimrc	/^nmap <silent><leader>d<space> :s\/^\\s\\+\/\/<CR> :noh<CR>$/;"	m	language:Vim
+<leader>dl	/Users/mark/.vim/vimrc	/^nmap <leader>dl :s\/.*\/\/<CR> :noh<CR>$/;"	m	language:Vim
+<leader>gr	/Users/mark/.vim/vimrc	/^nmap <leader>gr :!git checkout %<CR>$/;"	m	language:Vim
+<leader>ind	/Users/mark/.vim/vimrc	/^nmap <leader>ind gg=G$/;"	m	language:Vim
+<leader>js	/Users/mark/.vim/vimrc	/^nmap <silent><leader>js :%!python -m json.tool<CR>$/;"	m	language:Vim
+<leader>n	/Users/mark/.vim/vimrc	/^nmap <silent><leader>n :n<CR>$/;"	m	language:Vim
+<leader>q	/Users/mark/.vim/vimrc	/^nnoremap <leader>q :call QuickfixToggle()<cr>$/;"	m	language:Vim
+<leader>r	/Users/mark/.vim/vimrc	/^nmap <silent><leader>r :prev<CR>$/;"	m	language:Vim
+<leader>r	/Users/mark/.vim/vimrc	/^nmap <silent><leader>r :set relativenumber!<CR>$/;"	m	language:Vim
+<leader>rp	/Users/mark/.vim/vimrc	/^nmap <silent><leader>rp gg"_dGVp$/;"	m	language:Vim
+<leader>rr	/Users/mark/.vim/vimrc	/^nmap <leader>rr :%s\/:\\([^=,'"]*\\) =>\/\\1:\/ <CR>$/;"	m	language:Vim
+<leader>sp	/Users/mark/.vim/vimrc	/^nmap <leader>sp :setlocal spell!<CR>$/;"	m	language:Vim
+<leader>tt	/Users/mark/.vim/vimrc	/^nmap <silent><leader>tt :tabnew<CR>:Startify<CR>$/;"	m	language:Vim
+<leader>tw	/Users/mark/.vim/vimrc	/^nmap <silent><leader>tw :tabclose<CR>$/;"	m	language:Vim
+<leader>v	/Users/mark/.vim/vimrc	/^nmap <silent><leader>v <c-w>v<c-w>l$/;"	m	language:Vim
+<leader>W	/Users/mark/.vim/vimrc	/^nmap <leader>W :%s\/\\s\\+$\/\/<CR>:let @\/=''<CR> :noh<CR>$/;"	m	language:Vim
+<leader>yy	/Users/mark/.vim/vimrc	/^nmap <leader>yy :%y+<CR>$/;"	m	language:Vim
+<S-Tab>	/Users/mark/.vim/vimrc	/^nnoremap <S-Tab> <C-W>W$/;"	m	language:Vim
+<Tab>	/Users/mark/.vim/vimrc	/^nnoremap <Tab> <C-W>w$/;"	m	language:Vim
+B	/Users/mark/.vim/vimrc	/^nmap B ^$/;"	m	language:Vim
+CC	/Users/mark/.vim/vimrc	/^command! -nargs=? CC call RightRuler(<f-args>)$/;"	c	language:Vim
+E	/Users/mark/.vim/vimrc	/^nmap E \$$/;"	m	language:Vim
+g:quickfix_is_open	/Users/mark/.vim/vimrc	/^let g:quickfix_is_open = 0$/;"	v	language:Vim
+mapleader	/Users/mark/.vim/vimrc	/^let mapleader = "\\<space>"$/;"	v	language:Vim
+Q	/Users/mark/.vim/vimrc	/^nnoremap Q <Nop>$/;"	m	language:Vim
+QuickfixToggle	/Users/mark/.vim/vimrc	/^function! QuickfixToggle()$/;"	f	language:Vim
+RightRuler	/Users/mark/.vim/vimrc	/^function! RightRuler(...)$/;"	f	language:Vim
+S	/Users/mark/.vim/vimrc	/^nmap S :%s,,<left>$/;"	m	language:Vim
+s	/Users/mark/.vim/vimrc	/^nmap s :s,,<left>$/;"	m	language:Vim

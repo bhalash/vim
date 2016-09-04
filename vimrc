@@ -1,8 +1,8 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Load External Dependencies
+" External Configurations (Plugins and Themes)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-source $HOME/.vim/conf/vundle.vim
+source $HOME/.vim/conf/plugins.vim
 source $HOME/.vim/conf/themes.vim
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -188,14 +188,21 @@ nmap <silent><leader>js :%!python -m json.tool<CR>
 nmap <leader>rr :%s/:\([^=,'"]*\) =>/\1:/ <CR>
 
 " Toggle quickfix window.
-nnoremap <leader>q :call QuickfixToggle()<cr>
+nnoremap <leader>q :call QuickfixToggle()<CR>
+
+" Escape < and > in HTML
+nnoremap <leader>es :s/</\&lt;/e \| :s/>/\&gt;/e <CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Shorthand Colorcolumn Option
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 function! RightRuler(...)
-  let &l:colorcolumn = a:0 > 0 ? 0 + a:1 : 0
+  if a:0 == 0
+    let &l:colorcolumn = col('.')
+  else 
+    let &l:colorcolumn = 0 + a:1
+  end
 endfunction
 
 command! -nargs=? CC call RightRuler(<f-args>)
@@ -215,12 +222,6 @@ function! QuickfixToggle()
     let g:quickfix_is_open = 1
   endif
 endfunction
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Plugin Configurations
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-source $HOME/.vim/conf/plugins.vim
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set Theme
