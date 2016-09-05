@@ -199,6 +199,8 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_aggregate_errors = 1
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_javascript_checkers = ['eslint']
+" https://github.com/scrooloose/syntastic/issues/1631#issuecomment-223774310
+" 'lint': 'eslint src/. -c .eslintrc.json --ext .jsx'
 
 nnoremap <silent><leader>n :lnext<CR>
 nnoremap <silent><leader>b :lprevious<CR>
