@@ -23,12 +23,24 @@ function! s:colorsbox_patch()
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" happy_hacking Patch
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+function! s:happy_hacking_patch()
+  call s:gitgutter_reset()
+  let g:lightline = { 'colorscheme': 'hybrid' }
+  let g:lightline_hybrid_style = 'plain'
+endfunction
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Tender Patch
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 function! s:tender_patch()
   call s:gitgutter_reset()
   let g:tender_lightline = 1
-  let g:lightline = { 'colorscheme': 'tender' }
+  let g:tender_airline = 1
+  let g:airline_theme = 'tender'
   hi Visual cterm=bold ctermbg=241
   hi Search ctermbg=185 ctermfg=232
 endfunction
@@ -37,6 +49,6 @@ endfunction
 " Colorscheme Autocmd
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-autocmd! ColorScheme off call s:off_patch()
 autocmd! ColorScheme tendercontrast call s:tender_patch()
 autocmd! ColorScheme colorsbox-stnight call s:colorsbox_patch()
+autocmd! ColorScheme happy_hacking call s:happy_hacking_patch()

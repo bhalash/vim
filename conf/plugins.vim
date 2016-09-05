@@ -71,6 +71,7 @@ call vundle#begin()
 
   " Lightline
   Plugin 'itchyny/lightline.vim'
+  Plugin 'cocopon/lightline-hybrid.vim'
 
   " All glory to fantastic Syntastic.
   Plugin 'scrooloose/syntastic'
