@@ -1,4 +1,4 @@
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " External Configurations (Plugins and Themes)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -142,10 +142,6 @@ nmap <silent><bs> :nohlsearch<CR>
 nmap s :s,,<left>
 nmap S :%s,,<left>
 
-" Quickly jump to start and end of line with less obtuse shortcuts.
-nmap E $
-nmap B ^
-
 " Toggle line numbering style.
 nmap <silent><leader>r :set relativenumber!<CR>
 
@@ -193,19 +189,14 @@ nnoremap <leader>q :call QuickfixToggle()<CR>
 " Escape < and > in HTML
 nnoremap <leader>es :s/</\&lt;/e \| :s/>/\&gt;/e <CR>
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Shorthand Colorcolumn Option
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Set colorcolumn at current cursor column.
+nnoremap <silent><leader>ch :execute 'set colorcolumn=' . col('.')<CR>
 
-function! RightRuler(...)
-  if a:0 == 0
-    let &l:colorcolumn = col('.')
-  else 
-    let &l:colorcolumn = 0 + a:1
-  end
-endfunction
-
-command! -nargs=? CC call RightRuler(<f-args>)
+" Set and clear colorcolumn.
+nnoremap <silent><leader>cc :set colorcolumn=<CR>
+nnoremap <silent><leader>c0 :set colorcolumn=<CR>
+nnoremap <silent><leader>c8 :set colorcolumn=80<CR>
+nnoremap <silent><leader>c1 :set colorcolumn=120<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Toggle Quickfix Window
