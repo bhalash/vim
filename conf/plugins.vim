@@ -83,6 +83,7 @@ call vundle#begin()
   Plugin 'elzr/vim-json'
   Plugin 'evanmiller/nginx-vim-syntax'
   Plugin 'jelera/vim-javascript-syntax'
+  Plugin 'lambdatoast/elm.vim'
   Plugin 'leafgarland/typescript-vim'
   Plugin 'moll/vim-node'
   Plugin 'noprompt/vim-yardoc'
