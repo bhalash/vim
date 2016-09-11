@@ -1,7 +1,8 @@
 /*
+/**/tags
 
-!conf/*vim
-!ftplugin/*vim
+!conf/
+!ftplugin/
 !bundle/Vundle.vim/
 
 !.gitignore
