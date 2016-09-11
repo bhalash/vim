@@ -98,13 +98,13 @@ filetype plugin indent on
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Startify
-nmap <silent><leader>ss :Startify<CR>
+nmap <silent><leader>st :Startify<CR>
 
 " GitGutter
 nmap <leader>gg :GitGutterToggle<CR>
 
 " CtrlP
-nmap <leader>5 :CtrlPClearCache<CR>
+nmap <leader>f :CtrlPClearCache<CR>
 
 " Goyo
 nmap <silent><leader>go :Goyo<CR>
