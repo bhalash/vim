@@ -19,7 +19,8 @@ function! s:colorsbox_patch()
   call s:gitgutter_reset()
   hi TabLineFill guifg=#ffffff guibg=#1d1f21
   hi TabLineSel guifg=#1d1f21 guibg=#ffffff
-  let g:airline_theme='jellybeans'
+  let g:lightline = { 'colorscheme': 'hybrid' }
+  let g:lightline_hybrid_style = 'plain'
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
