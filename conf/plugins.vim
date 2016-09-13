@@ -94,22 +94,6 @@ call vundle#end()
 filetype plugin indent on
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Plugin Keybinds
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" Startify
-nmap <silent><leader>st :Startify<CR>
-
-" GitGutter
-nmap <leader>gg :GitGutterToggle<CR>
-
-" CtrlP
-nmap <leader>f :CtrlPClearCache<CR>
-
-" Goyo
-nmap <silent><leader>go :Goyo<CR>
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General Plugin Configuration
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -202,11 +186,6 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_javascript_checkers = ['eslint']
 " https://github.com/scrooloose/syntastic/issues/1631#issuecomment-223774310
 " 'lint': 'eslint src/. -c .eslintrc.json --ext .jsx'
-
-nnoremap <silent><leader>n :lnext<CR>
-nnoremap <silent><leader>b :lprevious<CR>
-nnoremap <silent><leader>k :SyntasticToggleMode<CR>
-nnoremap <silent><leader>j :SyntasticCheck<CR> :Errors<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Supertab

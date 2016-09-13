@@ -200,6 +200,31 @@ nnoremap <silent><leader>c8 :set colorcolumn=80<CR>
 nnoremap <silent><leader>c1 :set colorcolumn=120<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugin Keybinds
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Startify
+nmap <silent><leader>st :Startify<CR>
+
+" GitGutter
+nmap <leader>gg :GitGutterToggle<CR>
+
+" CtrlP
+nmap <leader>5 :CtrlPClearCache<CR>
+
+" Goyo
+nmap <silent><leader>go :Goyo<CR>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Syntastic
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+nnoremap <silent><leader>n :lnext<CR>
+nnoremap <silent><leader>b :lprevious<CR>
+nnoremap <silent><leader>k :SyntasticToggleMode<CR>
+nnoremap <silent><leader>j :SyntasticCheck<CR> :Errors<CR>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Toggle Quickfix Window
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
