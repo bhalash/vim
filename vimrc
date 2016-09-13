@@ -10,7 +10,8 @@ source $HOME/.vim/conf/themes.vim
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Set term colours.
-set t_Co=256 background=dark
+" set t_Co=256 background=dark
+set termguicolors background=dark
 
 " No need to be vi compatible. I mean, it's 2016.
 set nocompatible
