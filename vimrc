@@ -220,4 +220,5 @@ endfunction
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " colorscheme tendercontrast
-colorscheme happy_hacking
+" colorscheme happy_hacking
+colorscheme colorsbox-stnight
