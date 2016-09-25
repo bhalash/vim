@@ -11,4 +11,4 @@ setlocal indentexpr=scss_indent#GetIndent(v:lnum)
 setlocal formatoptions+=ro
 
 " SCSS comments are either /* */ or //
-setlocal comments=s1:/*,mb:*,ex:*/,://
+setlocal comments=s1:/*,mb:*,ex:*/,://,:///

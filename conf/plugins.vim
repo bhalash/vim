@@ -73,8 +73,8 @@ call vundle#begin()
   Plugin 'itchyny/lightline.vim'
   Plugin 'cocopon/lightline-hybrid.vim'
 
-  " All glory to fantastic Syntastic.
-  Plugin 'scrooloose/syntastic'
+  " Syntax checking and linting.
+  Plugin 'w0rp/ale'
 
   " Syntax highlighting.
   Plugin 'HerringtonDarkholme/yats.vim'
@@ -89,6 +89,7 @@ call vundle#begin()
   Plugin 'noprompt/vim-yardoc'
   Plugin 'plasticboy/vim-markdown'
   Plugin 'slim-template/vim-slim'
+  Plugin 'mxw/vim-jsx'
 call vundle#end()
 
 filetype plugin indent on
@@ -171,7 +172,7 @@ let g:easytags_dynamic_files = 2
 let g:easytags_async = 1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Syntastic
+" Syntastic (Unused)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 let g:syntastic_mode_map = {
@@ -186,6 +187,14 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_javascript_checkers = ['eslint']
 " https://github.com/scrooloose/syntastic/issues/1631#issuecomment-223774310
 " 'lint': 'eslint src/. -c .eslintrc.json --ext .jsx'
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Ale
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+let g:ale_linters = {
+      \ 'javascript': ['eslint'],
+      \ }
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Supertab
