@@ -74,7 +74,8 @@ call vundle#begin()
   Plugin 'cocopon/lightline-hybrid.vim'
 
   " Syntax checking and linting.
-  Plugin 'w0rp/ale'
+  " Plugin 'w0rp/ale'
+  Plugin 'maralla/validator.vim'
 
   " Syntax highlighting.
   Plugin 'HerringtonDarkholme/yats.vim'
@@ -195,6 +196,10 @@ let g:syntastic_javascript_checkers = ['eslint']
 let g:ale_linters = {
       \ 'javascript': ['eslint'],
       \ }
+
+let g:validator_javascript_checkers = ['eslint']
+let g:validator_auto_open_quickfix = 1
+let g:validator_permament_sign = 1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Supertab
