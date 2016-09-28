@@ -69,9 +69,9 @@ call vundle#begin()
   " Nicer welcome screen.
   Plugin 'mhinz/vim-startify'
 
-  " Lightline
-  Plugin 'itchyny/lightline.vim'
-  Plugin 'cocopon/lightline-hybrid.vim'
+  " Airline
+  Plugin 'vim-airline/vim-airline'
+  Plugin 'vim-airline/vim-airline-themes'
 
   " Syntax checking and linting.
   " Plugin 'w0rp/ale'

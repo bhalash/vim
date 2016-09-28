@@ -21,6 +21,7 @@ function! s:colorsbox_patch()
   hi TabLineSel guifg=#1d1f21 guibg=#ffffff
   let g:lightline = { 'colorscheme': 'hybrid' }
   let g:lightline_hybrid_style = 'plain'
+  let g:airline_theme = 'hybridline'
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
