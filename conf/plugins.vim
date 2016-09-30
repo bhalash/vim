@@ -190,16 +190,16 @@ let g:syntastic_javascript_checkers = ['eslint']
 " 'lint': 'eslint src/. -c .eslintrc.json --ext .jsx'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Ale
+" Validator
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-let g:ale_linters = {
-      \ 'javascript': ['eslint'],
-      \ }
+" let g:ale_linters = {
+"       \ 'javascript': ['eslint'],
+"       \ }
 
 let g:validator_javascript_checkers = ['eslint']
-let g:validator_auto_open_quickfix = 1
-let g:validator_permament_sign = 1
+let g:validator_auto_open_quickfix = 0
+let g:validator_permament_sign = 0
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Supertab
