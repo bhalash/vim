@@ -70,7 +70,7 @@ set ttymouse=xterm2 mouse=i
 set ttyfast
 
 " Change how buffer is redrawn. /Should/ increase scroll speed.
-set lazyredraw showmatch
+set lazyredraw
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Completion and Indentation
