@@ -6,6 +6,9 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
+  " Multi-language asynchronous REPL.
+  Plugin 'metakirby5/codi.vim'
+
   " Colours for terminal vim.
   Plugin 'jacoborus/tender.vim'
   Plugin 'YorickPeterse/happy_hacking.vim'
