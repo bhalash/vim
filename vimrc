@@ -244,6 +244,5 @@ endfunction
 " Set Theme
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" colorscheme tendercontrast
-" colorscheme happy_hacking
-colorscheme colorsbox-stnight
+" colorscheme colorsbox-stnight
+colorscheme hybrid

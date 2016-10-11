@@ -10,8 +10,7 @@ call vundle#begin()
   Plugin 'metakirby5/codi.vim'
 
   " Colours for terminal vim.
-  Plugin 'jacoborus/tender.vim'
-  Plugin 'YorickPeterse/happy_hacking.vim'
+  Plugin 'scwood/vim-hybrid'
 
   " Colours for gvim/MacVim.
   Plugin 'mkarmona/colorsbox'
