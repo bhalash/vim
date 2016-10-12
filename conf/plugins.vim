@@ -6,9 +6,6 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
-  " Multi-language asynchronous REPL.
-  Plugin 'metakirby5/codi.vim'
-
   " Colours for terminal vim.
   Plugin 'scwood/vim-hybrid'
 
@@ -52,10 +49,6 @@ call vundle#begin()
   " Quickly search for and open files in the current buffer, new split or tab.
   Plugin 'ctrlpvim/ctrlp.vim'
 
-  " CTAGS.
-  " Plugin 'xolox/vim-misc'
-  " Plugin 'xolox/vim-easytags'
-
   " Ruby and Rails utilities. Tim Pope is God.
   Plugin 'tpope/vim-fugitive'
   Plugin 'tpope/vim-rails'
@@ -76,8 +69,10 @@ call vundle#begin()
   Plugin 'vim-airline/vim-airline-themes'
 
   " Syntax checking and linting.
-  " Plugin 'w0rp/ale'
-  Plugin 'maralla/validator.vim'
+  Plugin 'w0rp/ale'
+
+  " Multi-language asynchronous REPL.
+  Plugin 'metakirby5/codi.vim'
 
   " Syntax highlighting.
   Plugin 'HerringtonDarkholme/yats.vim'
