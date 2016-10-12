@@ -176,33 +176,10 @@ let g:easytags_dynamic_files = 2
 let g:easytags_async = 1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Syntastic (Unused)
+" Ale
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-let g:syntastic_mode_map = {
-      \ 'mode': 'passive',
-      \ 'active_filetypes': [],
-      \ 'passive_filetypes': []
-      \ }
-
-let g:syntastic_check_on_wq = 0
-let g:syntastic_aggregate_errors = 1
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_javascript_checkers = ['eslint']
-" https://github.com/scrooloose/syntastic/issues/1631#issuecomment-223774310
-" 'lint': 'eslint src/. -c .eslintrc.json --ext .jsx'
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Validator
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" let g:ale_linters = {
-"       \ 'javascript': ['eslint'],
-"       \ }
-
-let g:validator_javascript_checkers = ['eslint']
-let g:validator_auto_open_quickfix = 0
-let g:validator_permament_sign = 0
+let g:ale_lint_on_enter	= 1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Supertab

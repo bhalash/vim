@@ -216,13 +216,13 @@ nmap <leader>5 :CtrlPClearCache<CR>
 nmap <silent><leader>go :Goyo<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Syntastic
+" Ale
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-nnoremap <silent><leader>n :lnext<CR>
-nnoremap <silent><leader>b :lprevious<CR>
-nnoremap <silent><leader>k :SyntasticToggleMode<CR>
-nnoremap <silent><leader>j :SyntasticCheck<CR> :Errors<CR>
+nnoremap <silent><leader>n :lne<CR>
+nnoremap <silent><leader>b :lpr<CR>
+nnoremap <silent><leader>l :lop<CR>
+nnoremap <silent><leader>j :lcl<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Toggle Quickfix Window
