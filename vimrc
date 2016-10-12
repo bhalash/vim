@@ -244,5 +244,5 @@ endfunction
 " Set Theme
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" colorscheme colorsbox-stnight
-colorscheme hybrid
+colorscheme colorsbox-stnight
+" colorscheme hybrid
