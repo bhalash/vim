@@ -23,7 +23,7 @@ call vundle#begin()
   Plugin 'wakatime/vim-wakatime'
 
   " Better search highlighting.
-  Plugin 'timakro/vim-searchant'
+  " Plugin 'timakro/vim-searchant'
 
   " Better FfTt action.
   Plugin 'unblevable/quick-scope'
