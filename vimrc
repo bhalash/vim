@@ -2,8 +2,8 @@
 " External Configurations (Plugins and Themes)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-source $HOME/.vim/conf/plugins.vim
-source $HOME/.vim/conf/themes.vim
+runtime conf/plugins.vim
+runtime conf/themes.vim
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Core Vim Configuration
