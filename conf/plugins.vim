@@ -40,6 +40,9 @@ call vundle#begin()
   " Supertab.
   Plugin 'ervandew/supertab'
 
+  " Tabular
+  Plugin 'godlygeek/tabular'
+
   " Authoring.
   Plugin 'junegunn/goyo.vim'
   Plugin 'reedes/vim-pencil'
