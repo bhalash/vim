@@ -17,7 +17,7 @@ endfunction
 
 function! s:colorsbox_patch()
   call s:gitgutter_reset()
-  hi SpellBad guifg=#000000 guibg=#e542f4 gui=underline
+  hi SpellBad gui=underline,bold guifg=#ff6a6a
   hi TabLineFill guifg=#ffffff guibg=#1d1f21 gui=underline
   hi TabLineSel guifg=#1d1f21 guibg=#ffffff
   let g:lightline = { 'colorscheme': 'hybrid' }
