@@ -83,6 +83,9 @@ nnoremap <silent><leader>c0 :set colorcolumn=<CR>
 nnoremap <silent><leader>c8 :set colorcolumn=80<CR>
 nnoremap <silent><leader>c1 :set colorcolumn=120<CR>
 
+" Close all buffers and tabs and open Startify.
+nnoremap <silent><leader>ca :only \| :tabonly \| :Startify<CR>
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin Keybinds
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
