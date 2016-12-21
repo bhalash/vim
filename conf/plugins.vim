@@ -192,33 +192,33 @@ let g:ale_linters = {
 " Supertab
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-let g:SuperTabContextDefaultCompletionType = '<c-p>'
-let g:SuperTabLongestHighlight = 1
-let g:SuperTabLongestEnhanced = 1
-
-" Supertab.
-let g:SuperTabDefaultCompletionType = 'context'
-
-let g:SuperTabCompletionContexts = [
-      \ 's:ContextText',
-      \ 's:ContextDiscover'
-      \ ]
-
-let g:SuperTabContextTextOmniPrecedence = [
-      \ '&completefunc',
-      \ '&omnifunc'
-      \ ]
-
-let g:SuperTabContextDiscoverDiscovery = [
-      \ '&completefunc:<c-x><c-u>',
-      \ '&omnifunc:<c-x><c-o>'
-      \ ]
-
-autocmd FileType *
-      \ if &omnifunc != '' |
-      \ call SuperTabChain(&omnifunc, '<c-p>') |
-      \ call SuperTabSetDefaultCompletionType('<c-x><c-u>') |
-      \ endif
+" let g:SuperTabContextDefaultCompletionType = '<c-p>'
+" let g:SuperTabLongestHighlight = 1
+" let g:SuperTabLongestEnhanced = 1
+"
+" " Supertab.
+" let g:SuperTabDefaultCompletionType = 'context'
+"
+" let g:SuperTabCompletionContexts = [
+"       \ 's:ContextText',
+"       \ 's:ContextDiscover'
+"       \ ]
+"
+" let g:SuperTabContextTextOmniPrecedence = [
+"       \ '&completefunc',
+"       \ '&omnifunc'
+"       \ ]
+"
+" let g:SuperTabContextDiscoverDiscovery = [
+"       \ '&completefunc:<c-x><c-u>',
+"       \ '&omnifunc:<c-x><c-o>'
+"       \ ]
+"
+" autocmd FileType *
+"       \ if &omnifunc != '' |
+"       \ call SuperTabChain(&omnifunc, '<c-p>') |
+"       \ call SuperTabSetDefaultCompletionType('<c-x><c-u>') |
+"       \ endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Startify
