@@ -9,12 +9,6 @@ set re=1
 " May boost performance when operating under rbenv.
 let g:ruby_path = system('echo $HOME/.rbenv/shims')
 
-" Insert dated FIXME notice.
-" nmap <leader>fm :exe ':normal O# FIXME ' . strftime('%Y-%m-%d') . ':  '<CR>i
-
-nmap <leader>fm O# FIXME<space>
-nmap <leader>fd I# FIXME DEPRECATED<space><esc>
-
 if has("autocmd")
   " Assists with supertab functioning.
   autocmd FileType ruby set omnifunc=rubycomplete#Complete
