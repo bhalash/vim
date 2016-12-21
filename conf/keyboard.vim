@@ -110,4 +110,3 @@ nnoremap <silent><leader>n :lne<CR>
 nnoremap <silent><leader>b :lpr<CR>
 nnoremap <silent><leader>l :lop<CR>
 nnoremap <silent><leader>j :lcl<CR>
-
