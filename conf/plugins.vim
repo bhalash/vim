@@ -94,6 +94,7 @@ call vundle#begin()
   Plugin 'plasticboy/vim-markdown'
   Plugin 'slim-template/vim-slim'
   Plugin 'mxw/vim-jsx'
+  Plugin 'kchmck/vim-coffee-script'
 call vundle#end()
 
 filetype plugin indent on
