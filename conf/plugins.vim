@@ -40,7 +40,7 @@ call vundle#begin()
   Plugin 'tpope/vim-surround'
 
   " Supertab.
-  Plugin 'ervandew/supertab'
+  " Plugin 'ervandew/supertab'
 
   " Tabular
   Plugin 'godlygeek/tabular'
