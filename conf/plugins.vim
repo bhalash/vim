@@ -12,6 +12,7 @@ call vundle#begin()
   " Colours for gvim/MacVim.
   Plugin 'mkarmona/colorsbox'
 
+  " Black and white colourscheme.
   Plugin 'zaki/zazen'
 
   " Provide additional text targets for di/a<char>:
