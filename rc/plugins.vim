@@ -74,6 +74,9 @@ call vundle#begin()
   Plugin 'vim-airline/vim-airline'
   Plugin 'vim-airline/vim-airline-themes'
 
+  " Simplenote integration.
+  Plugin 'mrtazz/simplenote.vim'
+
   " Syntax checking and linting.
   Plugin 'w0rp/ale'
 
