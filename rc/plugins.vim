@@ -67,9 +67,6 @@ call vundle#begin()
   " Diff git files live.
   Plugin 'airblade/vim-gitgutter'
 
-  " Nicer welcome screen.
-  Plugin 'mhinz/vim-startify'
-
   " Airline
   Plugin 'vim-airline/vim-airline'
   Plugin 'vim-airline/vim-airline-themes'
@@ -145,10 +142,6 @@ let g:ctrlp_map = '<leader>p'
 " Permits us to change working directory in CtrlP while vim is open.
 let g:ctrlp_working_path_mode = 0
 
-" Reuse the Startify window when files are opened with CtrlP, instead of
-" opening them inside a split.
-let g:ctrlp_reuse_window  = 'startify'
-
 " Ignore Rails temp and documentation files.
 let g:ctrlp_custom_ignore = {
       \ 'dir': '\v[\/](tmp|doc)$',
@@ -223,32 +216,3 @@ let g:ale_linters = {
 "       \ call SuperTabChain(&omnifunc, '<c-p>') |
 "       \ call SuperTabSetDefaultCompletionType('<c-x><c-u>') |
 "       \ endif
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Startify
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-let g:startify_custom_header = [
-      \ '             __                  ',
-      \ '    __  __  /\_\     ___ ___     ',
-      \ '   /\ \/\ \ \/\ \  /` __` __`\   ',
-      \ '   \ \ \_/ | \ \ \ /\ \/\ \/\ \  ',
-      \ '    \ \___/   \ \_\\ \_\ \_\ \_\ ',
-      \ '     \/__/     \/_/ \/_/\/_/\/_/ v.' . version,
-      \ '   -----------------------------------',
-      \ '   ' . system('echo -n "${USERNAME}@$(hostname -s) in ${PWD}"'),
-      \ ''
-      \ ]
-
-let g:startify_custom_footer = [
-      \ '',
-      \ "   Vim is charityware. Please read ':help uganda'.",
-      \ '',
-      \ ''
-      \ ]
-
-let g:startify_bookmarks = [
-      \ {'v': '~/.vim/vimrc'},
-      \ {'g': '~/.vim/gvimrc'},
-      \ {'z': '~/.zsh/zshrc'}
-      \ ]
