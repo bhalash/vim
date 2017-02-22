@@ -9,6 +9,9 @@ set termguicolors background=dark
 " No need to be vi compatible. I mean, it's 2016.
 set nocompatible
 
+" Fix for pasting issues in iTerm.
+set t_BE=0
+
 " Yank to system clipboard.
 set clipboard=unnamed
 
@@ -135,6 +138,8 @@ runtime rc/simplenote.vim
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set Theme
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+au BufNewFile,BufRead *.es6 set filetype=javascript
 
 colorscheme colorsbox-stnight
 " colorscheme hybrid
