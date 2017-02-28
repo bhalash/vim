@@ -136,10 +136,9 @@ runtime rc/keyboard.vim
 runtime rc/simplenote.vim
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Set Theme
+" Set Highlighting
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" Set proper filetype for .es6 files.
 au BufNewFile,BufRead *.es6 set filetype=javascript
-
 colorscheme colorsbox-stnight
-" colorscheme hybrid
