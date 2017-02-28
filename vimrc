@@ -141,4 +141,6 @@ runtime rc/simplenote.vim
 
 " Set proper filetype for .es6 files.
 au BufNewFile,BufRead *.es6 set filetype=javascript
+
+" Awesome theme.
 colorscheme colorsbox-stnight
