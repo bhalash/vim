@@ -182,7 +182,7 @@ let g:ale_lint_on_enter	= 1
 let g:ale_linters = {
       \   'javascript': ['eslint'],
       \   'ruby': ['rubocop'],
-      \   'slim': ['rubocop'],
+      \   'slim': ['slim-lint'],
       \ }
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
