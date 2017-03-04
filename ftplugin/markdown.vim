@@ -13,3 +13,8 @@ autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
 
 set wrap
+
+" Use mouse scroll wheel to navigate history.
+set mouse=a
+nnoremap <ScrollWheelUp> u
+nnoremap <ScrollWheelDown> <C-R>
