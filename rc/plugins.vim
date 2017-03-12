@@ -46,6 +46,9 @@ call vundle#begin()
   " Tabular
   Plugin 'godlygeek/tabular'
 
+  " Completion
+  Plugin 'Valloric/YouCompleteMe'
+
   " Authoring.
   Plugin 'junegunn/goyo.vim'
   Plugin 'reedes/vim-pencil'
@@ -81,6 +84,7 @@ call vundle#begin()
   Plugin 'metakirby5/codi.vim'
 
   " Syntax highlighting.
+  Plugin 'vim-ruby/vim-ruby'
   Plugin 'HerringtonDarkholme/yats.vim'
   Plugin 'cakebaker/scss-syntax.vim'
   Plugin 'clones/vim-zsh'
