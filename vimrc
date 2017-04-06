@@ -9,9 +9,6 @@ set termguicolors background=dark
 " No need to be vi compatible. I mean, it's 2016.
 set nocompatible
 
-" Fix for pasting issues in iTerm.
-set t_BE=0
-
 " Yank to system clipboard.
 set clipboard=unnamed
 
