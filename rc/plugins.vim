@@ -46,6 +46,9 @@ call vundle#begin()
   " Tabular
   Plugin 'godlygeek/tabular'
 
+  " Case-insensitive replacement
+  Plugin 'tpope/vim-abolish'
+
   " Completion
   Plugin 'Valloric/YouCompleteMe'
 
