@@ -140,4 +140,5 @@ runtime rc/simplenote.vim
 au BufNewFile,BufRead *.es6 set filetype=javascript
 
 " Awesome theme.
-colorscheme colorsbox-stnight
+" colorscheme colorsbox-stnight
+colorscheme sidonia

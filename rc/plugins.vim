@@ -7,7 +7,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
   " Colours for terminal vim.
-  Plugin 'scwood/vim-hybrid'
+  Plugin 'AlessandroYorba/Sidonia'
 
   " Colours for gvim/MacVim.
   Plugin 'mkarmona/colorsbox'
