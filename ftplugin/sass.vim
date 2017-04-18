@@ -12,3 +12,6 @@ setlocal formatoptions+=ro
 
 " SCSS comments are either /* */ or //
 setlocal comments=s1:/*,mb:*,ex:*/,://,:///
+
+" Correctly mark hyphenated keywords.
+autocmd FileType scss set iskeyword+=-
