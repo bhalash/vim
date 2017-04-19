@@ -20,9 +20,15 @@ function! s:colorsbox_patch()
   hi SpellBad gui=underline,bold guifg=#ff6a6a
   hi TabLineFill guifg=#ffffff guibg=#1d1f21 gui=underline
   hi TabLineSel guifg=#1d1f21 guibg=#ffffff
-  let g:lightline = { 'colorscheme': 'hybrid' }
-  let g:lightline_hybrid_style = 'plain'
   let g:airline_theme = 'lucius'
+endfunction
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" sidonia Patch
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+function! s:sidonia_patch()
+  hi Comment term=bold ctermfg=8 guifg=#8899B5
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -31,8 +37,6 @@ endfunction
 
 function! s:happy_hacking_patch()
   call s:gitgutter_reset()
-  let g:lightline = { 'colorscheme': 'hybrid' }
-  let g:lightline_hybrid_style = 'plain'
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -41,7 +45,6 @@ endfunction
 
 function! s:tender_patch()
   call s:gitgutter_reset()
-  let g:tender_lightline = 1
   let g:tender_airline = 1
   let g:airline_theme = 'tender'
   hi Visual cterm=bold ctermbg=241
@@ -55,3 +58,4 @@ endfunction
 autocmd! ColorScheme tendercontrast call s:tender_patch()
 autocmd! ColorScheme colorsbox-stnight call s:colorsbox_patch()
 autocmd! ColorScheme happy_hacking call s:happy_hacking_patch()
+autocmd! ColorScheme sidonia call s:sidonia_patch()
