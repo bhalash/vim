@@ -29,6 +29,7 @@ endfunction
 
 function! s:sidonia_patch()
   hi Comment term=bold ctermfg=8 guifg=#8899B5
+  let g:airline_theme = 'hybrid'
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
