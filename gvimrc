@@ -3,8 +3,8 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Colorsbox
-" colorscheme colorsbox-stnight
-colorscheme sidonia
+colorscheme colorsbox-stnight
+" colorscheme sidonia
 
 " Disable audible bells.
 set noerrorbells visualbell
