@@ -3,13 +3,14 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Colorsbox
-colorscheme colorsbox-stnight
+" colorscheme colorsbox-stnight
+colorscheme sidonia
 
 " Disable audible bells.
 set noerrorbells visualbell
 
 " Font family.
-set guifont=Source\ Code\ Pro\ for\ Powerline:h10,Source\ Code\ Pro:h10
+set guifont=Ubuntu\ Mono\ derivative\ Powerline:h12,Ubuntu\ Mono:h12
 
 " 1. Hide scrollbars (LlRr).
 set guioptions-=r
