@@ -86,6 +86,9 @@ nnoremap <silent><leader>c1 :set colorcolumn=120<CR>
 " Close all buffers and tabs and open Startify.
 nnoremap <silent><leader>ca :only \| :tabonly \| :Startify<CR>
 
+" Fix missing cursor.
+nnoremap <silent><leader>fc :!printf '\e[?25h'<CR>
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin Keybinds
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
