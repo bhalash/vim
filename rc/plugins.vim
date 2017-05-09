@@ -6,9 +6,6 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
-  " Colours for terminal vim.
-  Plugin 'AlessandroYorba/Sidonia'
-
   " Colours for gvim/MacVim.
   Plugin 'mkarmona/colorsbox'
 
@@ -26,7 +23,7 @@ call vundle#begin()
   Plugin 'wakatime/vim-wakatime'
 
   " Better search highlighting.
-  " Plugin 'timakro/vim-searchant'
+  Plugin 'timakro/vim-searchant'
 
   " Better FfTt action.
   Plugin 'unblevable/quick-scope'
@@ -48,9 +45,6 @@ call vundle#begin()
 
   " Case-insensitive replacement
   Plugin 'tpope/vim-abolish'
-
-  " Completion
-  Plugin 'Valloric/YouCompleteMe'
 
   " Authoring.
   Plugin 'junegunn/goyo.vim'
@@ -77,30 +71,19 @@ call vundle#begin()
   Plugin 'vim-airline/vim-airline'
   Plugin 'vim-airline/vim-airline-themes'
 
-  " Simplenote integration.
-  Plugin 'mrtazz/simplenote.vim'
-
   " Syntax checking and linting.
   Plugin 'w0rp/ale'
 
-  " Multi-language asynchronous REPL.
-  Plugin 'metakirby5/codi.vim'
-
   " Syntax highlighting.
   Plugin 'vim-ruby/vim-ruby'
-  Plugin 'HerringtonDarkholme/yats.vim'
   Plugin 'cakebaker/scss-syntax.vim'
   Plugin 'clones/vim-zsh'
   Plugin 'elzr/vim-json'
-  Plugin 'evanmiller/nginx-vim-syntax'
   Plugin 'jelera/vim-javascript-syntax'
-  Plugin 'lambdatoast/elm.vim'
-  Plugin 'leafgarland/typescript-vim'
   Plugin 'moll/vim-node'
   Plugin 'noprompt/vim-yardoc'
   Plugin 'plasticboy/vim-markdown'
   Plugin 'slim-template/vim-slim'
-  Plugin 'mxw/vim-jsx'
   Plugin 'kchmck/vim-coffee-script'
 call vundle#end()
 
