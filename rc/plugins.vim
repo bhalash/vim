@@ -37,7 +37,7 @@ call vundle#begin()
   " Quickly change wrapping characters with cs<char>.
   Plugin 'tpope/vim-surround'
 
-  " Supertab.
+  " Tab completion.
   " Plugin 'ervandew/supertab'
 
   " Tabular
@@ -46,16 +46,17 @@ call vundle#begin()
   " Case-insensitive replacement
   Plugin 'tpope/vim-abolish'
 
-  " Authoring.
+  " Authoring (Markdown and article writing).
   Plugin 'junegunn/goyo.vim'
   Plugin 'reedes/vim-pencil'
   Plugin 'junegunn/limelight.vim'
   Plugin 'reedes/vim-wordy'
+  Plugin 'plasticboy/vim-markdown'
 
   " Quickly search for and open files in the current buffer, new split or tab.
   Plugin 'ctrlpvim/ctrlp.vim'
 
-  " Ruby and Rails utilities. Tim Pope is God.
+  " Ruby and Rails utilities. Tim Pope is God. God.
   Plugin 'tpope/vim-fugitive'
   Plugin 'tpope/vim-rails'
   Plugin 'tpope/vim-endwise'
@@ -72,6 +73,7 @@ call vundle#begin()
   Plugin 'vim-airline/vim-airline-themes'
 
   " Syntax checking and linting.
+  " Plugin 'vim-syntastic/syntastic'
   Plugin 'w0rp/ale'
 
   " Syntax highlighting.
@@ -82,7 +84,6 @@ call vundle#begin()
   Plugin 'jelera/vim-javascript-syntax'
   Plugin 'moll/vim-node'
   Plugin 'noprompt/vim-yardoc'
-  Plugin 'plasticboy/vim-markdown'
   Plugin 'slim-template/vim-slim'
   Plugin 'kchmck/vim-coffee-script'
 call vundle#end()
@@ -155,17 +156,9 @@ if !exists('g:airline_symbols')
 endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" vim-easytags
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-set tags+=~/.vim/tags
-let g:easytags_file = '~/.vim/tags'
-let g:easytags_dynamic_files = 2
-let g:easytags_async = 1
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Ale
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 let g:ale_lint_on_enter	= 1
 
 let g:ale_linters = {
@@ -173,6 +166,19 @@ let g:ale_linters = {
       \   'ruby': ['rubocop'],
       \   'slim': ['slim-lint'],
       \ }
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Syntastic
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
+"
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Supertab
