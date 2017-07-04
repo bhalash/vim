@@ -26,6 +26,7 @@ nmap <silent><bs> :nohlsearch<CR>
 " Use s and S to quickly search and replace in content: sfoo/bar Sfoo/bar.
 nmap s :s,,<left>
 nmap S :%s,,<left>
+nmap <leader>S :%S,,<left>
 
 " Toggle line numbering style.
 nmap <silent><leader>r :set relativenumber!<CR>
