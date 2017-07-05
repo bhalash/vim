@@ -91,7 +91,7 @@ nnoremap <silent><leader>ca :only \| :tabonly \| :Startify<CR>
 nnoremap <silent><leader>fc :!printf '\e[?25h'<CR>
 
 " Remove fucky characters from pasted text snippets.
-nnoremap <silent><leader>cj :%s/[‘’]/'/e \| %s/[”“]/"/e<CR>
+nnoremap <silent><leader>cj :%s/[‘’]/'/e \| %s/[“”]/"/e<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin Keybinds
