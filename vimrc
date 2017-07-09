@@ -139,6 +139,9 @@ runtime rc/simplenote.vim
 " Set proper filetype for .es6 files.
 au BufNewFile,BufRead *.es6 set filetype=javascript
 
+" Set filetype for Elastic Beanstalk .config files
+autocmd BufNewFile,BufRead *.config set filetype=yaml
+
 " Awesome theme.
 colorscheme colorsbox-stnight
 " colorscheme sidonia
