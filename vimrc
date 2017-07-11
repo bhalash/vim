@@ -30,8 +30,8 @@ set ffs=unix,dos
 " Follow auto indent.
 set autoindent
 
-" Wrap lines outside of words.
-set wrap breakindent linebreak nolist
+" Don't wrap lines outside of words.
+set nowrap breakindent linebreak nolist
 
 " Enable line numbers.
 set nu
