@@ -42,8 +42,8 @@ set ruler
 " Enable statusbar.
 set laststatus=2
 
-" ex mode reads the top n lines of a file.
-set modelines=0
+" Accept instructions from the top n lines of a file.
+set modelines=1
 
 " Stop annoying problem on OS X.
 " Arrow keybinds cause a status popup to appear when I tab back to vim.
