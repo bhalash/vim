@@ -130,10 +130,13 @@ let g:ctrlp_map = '<leader>p'
 " Permits us to change working directory in CtrlP while vim is open.
 let g:ctrlp_working_path_mode = 0
 
-" Ignore Rails temp and documentation files.
+" Enable hidden files, then later ignore stuff like git folders.
+let g:ctrlp_dotfiles = 1
+
+" Paths and filed to ignore.
 let g:ctrlp_custom_ignore = {
-      \ 'dir': '\v[\/](tmp|doc)$',
-      \ 'file': '\v\.(cache)$'
+      \ 'dir': '\v[\/](\.)?(tmp|doc|git|idea)$',
+      \ 'file': '\v\.(cache|DS_Store)$'
       \ }
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
