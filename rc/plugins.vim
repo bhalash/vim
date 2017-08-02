@@ -19,9 +19,6 @@ call vundle#begin()
   " Provide motion keyed to gs<motion> to sort stuff.
   Plugin 'christoomey/vim-sort-motion'
 
-  " Metric tracking.
-  Plugin 'wakatime/vim-wakatime'
-
   " Better search highlighting.
   Plugin 'timakro/vim-searchant'
 
