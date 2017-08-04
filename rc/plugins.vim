@@ -83,6 +83,7 @@ call vundle#begin()
   Plugin 'noprompt/vim-yardoc'
   Plugin 'slim-template/vim-slim'
   Plugin 'kchmck/vim-coffee-script'
+  Plugin 'ElmCast/elm-vim'
 call vundle#end()
 
 filetype plugin indent on
