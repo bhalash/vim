@@ -127,10 +127,10 @@ endfunction
 " External Configurations (Plugins and Themes)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-runtime rc/plugins.vim
-runtime rc/themes.vim
-runtime rc/keyboard.vim
-runtime rc/simplenote.vim
+runtime configuration/plugins.vim
+runtime configuration/themes.vim
+runtime configuration/keyboard.vim
+runtime configuration/simplenote.vim
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set Highlighting

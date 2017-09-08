@@ -84,6 +84,7 @@ call vundle#begin()
   Plugin 'slim-template/vim-slim'
   Plugin 'kchmck/vim-coffee-script'
   Plugin 'ElmCast/elm-vim'
+  Plugin 'othree/html5.vim'
 call vundle#end()
 
 filetype plugin indent on
