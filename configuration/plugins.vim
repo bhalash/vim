@@ -137,7 +137,7 @@ let g:ctrlp_dotfiles = 1
 " Paths and filed to ignore.
 let g:ctrlp_custom_ignore = {
       \ 'dir': '\v[\/](\.)?(tmp|doc|git|idea)$',
-      \ 'file': '\v\.(cache|DS_Store)$'
+      \ 'file': '\v\.(cache|DS_Store|keep)$'
       \ }
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

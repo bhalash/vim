@@ -2,7 +2,7 @@
 tags
 /**/tags
 
-!rc/
+!config/
 !ftplugin/
 !bundle/Vundle.vim/
 
