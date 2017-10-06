@@ -10,7 +10,9 @@ colorscheme colorsbox-stnight
 set noerrorbells visualbell
 
 " Font family.
-set guifont=Ubuntu\ Mono\ derivative\ Powerline:h12,Ubuntu\ Mono:h12
+" set guifont=Ubuntu\ Mono\ derivative\ Powerline:h12,Ubuntu\ Mono:h12
+set macligatures
+set guifont=Fira\ Mono\ Medium\ for\ Powerline:h12
 
 " 1. Hide scrollbars (LlRr).
 set guioptions-=r
