@@ -18,3 +18,6 @@ set wrap
 set mouse=a
 nnoremap <ScrollWheelUp> u
 nnoremap <ScrollWheelDown> <C-R>
+
+" Set indentation.
+setlocal expandtab ts=4 sw=4 sts=4

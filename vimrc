@@ -72,6 +72,7 @@ set lazyredraw
 " Ignore common temp files and directories.
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.cache,*.bak,*.pyc,*.class
 set wildignore+=node_modules
+set wildignore+=*public/packs*
 
 " Menu display output.
 set wildmenu wildmode=list:full
