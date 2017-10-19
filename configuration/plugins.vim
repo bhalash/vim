@@ -129,20 +129,8 @@ let g:ctrlp_custom_ignore = {
       \ }
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Airline
+" Lightline
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" Enable Airline for buffers in the tablike.
-" let g:airline#extensions#tabline#enabled = 1
-" let g:airline#extensions#tabline#tab_nr_type = 1
-" let g:airline#extensions#branch#format = 0
-
-" " Enable powerline fonts.
-" let g:airline_powerline_fonts = 1
-
-" if !exists('g:airline_symbols')
-"   let g:airline_symbols = {}
-" endif
 
 let g:lightline = { 'colorscheme': 'jellybeans' }
 
@@ -151,35 +139,3 @@ let g:lightline = { 'colorscheme': 'jellybeans' }
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 let g:ale_lint_on_enter	= 1
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Supertab
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" let g:SuperTabContextDefaultCompletionType = '<c-p>'
-" let g:SuperTabLongestHighlight = 1
-" let g:SuperTabLongestEnhanced = 1
-"
-" " Supertab.
-" let g:SuperTabDefaultCompletionType = 'context'
-"
-" let g:SuperTabCompletionContexts = [
-"       \ 's:ContextText',
-"       \ 's:ContextDiscover'
-"       \ ]
-"
-" let g:SuperTabContextTextOmniPrecedence = [
-"       \ '&completefunc',
-"       \ '&omnifunc'
-"       \ ]
-"
-" let g:SuperTabContextDiscoverDiscovery = [
-"       \ '&completefunc:<c-x><c-u>',
-"       \ '&omnifunc:<c-x><c-o>'
-"       \ ]
-"
-" autocmd FileType *
-"       \ if &omnifunc != '' |
-"       \ call SuperTabChain(&omnifunc, '<c-p>') |
-"       \ call SuperTabSetDefaultCompletionType('<c-x><c-u>') |
-"       \ endif
