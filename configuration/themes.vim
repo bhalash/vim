@@ -24,35 +24,6 @@ function! s:colorsbox_patch()
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" sidonia Patch
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-function! s:sidonia_patch()
-  hi Comment term=bold ctermfg=8 guifg=#8899B5
-  let g:airline_theme = 'hybrid'
-endfunction
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" happy_hacking Patch
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-function! s:happy_hacking_patch()
-  call s:gitgutter_reset()
-endfunction
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Tender Patch
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-function! s:tender_patch()
-  call s:gitgutter_reset()
-  let g:tender_airline = 1
-  let g:airline_theme = 'tender'
-  hi Visual cterm=bold ctermbg=241
-  hi Search ctermbg=185 ctermfg=232
-endfunction
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colorscheme Autocmd
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 

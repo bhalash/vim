@@ -9,9 +9,6 @@ call vundle#begin()
   " Colours for gvim/MacVim.
   Plugin 'mkarmona/colorsbox'
 
-  " Black and white colourscheme.
-  Plugin 'zaki/zazen'
-
   " Provide additional text targets for di/a<char>:
   " , . ; : + - = ~ _ * # / | \ & $
   Plugin 'wellle/targets.vim'
@@ -20,7 +17,7 @@ call vundle#begin()
   Plugin 'christoomey/vim-sort-motion'
 
   " Better search highlighting.
-  Plugin 'timakro/vim-searchant'
+  " Plugin 'timakro/vim-searchant'
 
   " Better FfTt action.
   Plugin 'unblevable/quick-scope'
@@ -34,24 +31,15 @@ call vundle#begin()
   " Quickly change wrapping characters with cs<char>.
   Plugin 'tpope/vim-surround'
 
-  " Tab completion.
-  " Plugin 'ervandew/supertab'
-
-  " Tabular
-  Plugin 'godlygeek/tabular'
-
   " Case-insensitive replacement
   Plugin 'tpope/vim-abolish'
 
   " Authoring (Markdown and article writing).
   Plugin 'junegunn/goyo.vim'
-  Plugin 'reedes/vim-pencil'
-  Plugin 'junegunn/limelight.vim'
-  Plugin 'reedes/vim-wordy'
-  Plugin 'plasticboy/vim-markdown'
 
   " Quickly search for and open files in the current buffer, new split or tab.
-  Plugin 'ctrlpvim/ctrlp.vim'
+  " Plugin 'ctrlpvim/ctrlp.vim'
+  Plugin 'junegunn/fzf.vim'
 
   " Ruby and Rails utilities. Tim Pope is God. God.
   Plugin 'tpope/vim-fugitive'
@@ -60,9 +48,9 @@ call vundle#begin()
   Plugin 'ngmy/vim-rubocop'
 
   " Toggle comments.
-  Plugin 'tomtom/tcomment_vim'
+  Plugin 'tpope/vim-commentary'
 
-  " Diff git files live.
+  " Show git diffs in the gutter.
   Plugin 'airblade/vim-gitgutter'
 
   " Airline
@@ -70,20 +58,10 @@ call vundle#begin()
   Plugin 'vim-airline/vim-airline-themes'
 
   " Syntax checking and linting.
-  " Plugin 'vim-syntastic/syntastic'
   Plugin 'w0rp/ale'
 
   " Syntax highlighting.
-  Plugin 'vim-ruby/vim-ruby'
-  Plugin 'cakebaker/scss-syntax.vim'
-  Plugin 'clones/vim-zsh'
-  Plugin 'elzr/vim-json'
-  Plugin 'jelera/vim-javascript-syntax'
-  Plugin 'moll/vim-node'
-  Plugin 'noprompt/vim-yardoc'
-  Plugin 'slim-template/vim-slim'
-  Plugin 'kchmck/vim-coffee-script'
-  Plugin 'ElmCast/elm-vim'
+  Plugin 'sheerun/vim-polyglot'
 call vundle#end()
 
 filetype plugin indent on
@@ -167,19 +145,6 @@ let g:ale_linters = {
       \   'ruby': ['rubocop'],
       \   'slim': ['slim-lint'],
       \ }
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Syntastic
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" set statusline+=%#warningmsg#
-" set statusline+=%{SyntasticStatuslineFlag()}
-" set statusline+=%*
-"
-" let g:syntastic_always_populate_loc_list = 1
-" let g:syntastic_auto_loc_list = 1
-" let g:syntastic_check_on_open = 1
-" let g:syntastic_check_on_wq = 0
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Supertab
