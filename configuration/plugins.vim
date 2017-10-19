@@ -3,65 +3,75 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 filetype off
+
 set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=/usr/local/opt/fzf
 
 call vundle#begin()
-  " Colours for gvim/MacVim.
-  Plugin 'mkarmona/colorsbox'
 
-  " Provide additional text targets for di/a<char>:
-  " , . ; : + - = ~ _ * # / | \ & $
-  Plugin 'wellle/targets.vim'
+" Colours for gvim/MacVim.
+Plugin 'mkarmona/colorsbox'
 
-  " Provide motion keyed to gs<motion> to sort stuff.
-  Plugin 'christoomey/vim-sort-motion'
+" Asynchronous syntax checking and linting.
+Plugin 'w0rp/ale'
 
-  " Better search highlighting.
-  " Plugin 'timakro/vim-searchant'
+" RAWEAJEFLSEFASLefSJEFSefsef
+Plugin 'bronson/vim-trailing-whitespace'
 
-  " Better FfTt action.
-  Plugin 'unblevable/quick-scope'
+" Provide additional text targets for di/a<char>:
+" , . ; : + - = ~ _ * # / | \ & $
+Plugin 'wellle/targets.vim'
 
-  " Auto CD to project root.
-  Plugin 'airblade/vim-rooter'
+" Provide motion keyed to gs<motion> to sort stuff.
+Plugin 'christoomey/vim-sort-motion'
 
-  " Vundle.
-  Plugin 'VundleVim/Vundle.vim'
+" Better search highlighting.
+" Plugin 'timakro/vim-searchant'
 
-  " Quickly change wrapping characters with cs<char>.
-  Plugin 'tpope/vim-surround'
+" Better FfTt action.
+Plugin 'unblevable/quick-scope'
 
-  " Case-insensitive replacement
-  Plugin 'tpope/vim-abolish'
+" Auto CD to project root.
+Plugin 'airblade/vim-rooter'
 
-  " Authoring (Markdown and article writing).
-  Plugin 'junegunn/goyo.vim'
+" Vundle.
+Plugin 'VundleVim/Vundle.vim'
 
-  " Quickly search for and open files in the current buffer, new split or tab.
-  " Plugin 'ctrlpvim/ctrlp.vim'
-  Plugin 'junegunn/fzf.vim'
+" Quickly change wrapping characters with cs<char>.
+Plugin 'tpope/vim-surround'
 
-  " Ruby and Rails utilities. Tim Pope is God. God.
-  Plugin 'tpope/vim-fugitive'
-  Plugin 'tpope/vim-rails'
-  Plugin 'tpope/vim-endwise'
-  Plugin 'ngmy/vim-rubocop'
+" Case-insensitive replacement
+Plugin 'tpope/vim-abolish'
 
-  " Toggle comments.
-  Plugin 'tpope/vim-commentary'
+" Authoring (Markdown and article writing).
+Plugin 'junegunn/goyo.vim'
 
-  " Show git diffs in the gutter.
-  Plugin 'airblade/vim-gitgutter'
+" Quickly search for and open files in the current buffer, new split or tab.
+" Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'junegunn/fzf.vim'
 
-  " Airline
-  Plugin 'vim-airline/vim-airline'
-  Plugin 'vim-airline/vim-airline-themes'
+" Ruby and Rails utilities. Tim Pope is God. God.
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-endwise'
+Plugin 'ngmy/vim-rubocop'
 
-  " Syntax checking and linting.
-  Plugin 'w0rp/ale'
+" Toggle comments.
+Plugin 'tpope/vim-commentary'
 
-  " Syntax highlighting.
-  Plugin 'sheerun/vim-polyglot'
+" Show git diffs in the gutter.
+Plugin 'airblade/vim-gitgutter'
+
+" Lightline
+Plugin 'itchyny/lightline.vim'
+
+" Airline
+" Plugin 'vim-airline/vim-airline'
+" Plugin 'vim-airline/vim-airline-themes'
+
+" Syntax highlighting.
+Plugin 'sheerun/vim-polyglot'
+
 call vundle#end()
 
 filetype plugin indent on
@@ -123,28 +133,24 @@ let g:ctrlp_custom_ignore = {
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Enable Airline for buffers in the tablike.
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#tab_nr_type = 1
-let g:airline#extensions#branch#format = 0
+" let g:airline#extensions#tabline#enabled = 1
+" let g:airline#extensions#tabline#tab_nr_type = 1
+" let g:airline#extensions#branch#format = 0
 
-" Enable powerline fonts.
-let g:airline_powerline_fonts = 1
+" " Enable powerline fonts.
+" let g:airline_powerline_fonts = 1
 
-if !exists('g:airline_symbols')
-  let g:airline_symbols = {}
-endif
+" if !exists('g:airline_symbols')
+"   let g:airline_symbols = {}
+" endif
+
+let g:lightline = { 'colorscheme': 'jellybeans' }
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Ale
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 let g:ale_lint_on_enter	= 1
-
-let g:ale_linters = {
-      \   'javascript': ['eslint'],
-      \   'ruby': ['rubocop'],
-      \   'slim': ['slim-lint'],
-      \ }
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Supertab
