@@ -12,7 +12,7 @@ set noerrorbells visualbell
 " Font family.
 " set guifont=Ubuntu\ Mono\ derivative\ Powerline:h12,Ubuntu\ Mono:h12
 set macligatures
-set guifont=Fira\ Code\ Medium:h13
+set guifont=Fira\ Code\ Light:h13
 
 " 1. Hide scrollbars (LlRr).
 set guioptions-=r
