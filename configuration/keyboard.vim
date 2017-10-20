@@ -103,8 +103,10 @@ nmap <silent><leader>st :Startify<CR>
 " GitGutter
 nmap <leader>gg :GitGutterToggle<CR>
 
-" CtrlP
-nmap <leader>5 :CtrlPClearCache<CR>
+" Fuzzy Finders
+nmap <leader>p :Files<CR>
+nmap <leader>b :Buffers<CR>
+nmap <leader>t :Tags<CR>
 
 " Goyo
 nmap <silent><leader>go :Goyo<CR>

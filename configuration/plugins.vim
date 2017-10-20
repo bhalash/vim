@@ -47,8 +47,10 @@ Plugin 'tpope/vim-abolish'
 Plugin 'junegunn/goyo.vim'
 
 " Quickly search for and open files in the current buffer, new split or tab.
-" Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'junegunn/fzf.vim'
+
+" Grep through and open files.
+Plugin 'mileszs/ack.vim'
 
 " Ruby and Rails utilities. Tim Pope is God. God.
 Plugin 'tpope/vim-fugitive'
@@ -64,10 +66,6 @@ Plugin 'airblade/vim-gitgutter'
 
 " Lightline
 Plugin 'itchyny/lightline.vim'
-
-" Airline
-" Plugin 'vim-airline/vim-airline'
-" Plugin 'vim-airline/vim-airline-themes'
 
 " Syntax highlighting.
 Plugin 'sheerun/vim-polyglot'
@@ -127,6 +125,13 @@ let g:ctrlp_custom_ignore = {
       \ 'dir': '\v[\/](\.)?(tmp|doc|git|idea)$',
       \ 'file': '\v\.(cache|DS_Store|keep)$'
       \ }
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Ag/Ack/FZF
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+let g:ackprg = 'ag --vimgrep'
+let g:RootIgnoreAgignore = 1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Lightline
