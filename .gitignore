@@ -1,14 +1,15 @@
-/*
-tags
-/**/tags
+# OS and Editor Junk
 
-!config/
-!ftplugin/
-!bundle/Vundle.vim/
+**/*.swp
+**/.DS_STORE
+**/tags
 
-!.gitignore
-!LICENSE
-!README.md
-!gvimrc
-!vimrc
-!screenshot.png
+# Folders
+
+/bundle
+/session
+/spell
+
+# Other Files
+
+.netrwhist
