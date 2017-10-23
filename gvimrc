@@ -1,16 +1,14 @@
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " GUI Options
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Colorsbox
 colorscheme colorsbox-stnight
-" colorscheme sidonia
 
 " Disable audible bells.
 set noerrorbells visualbell
 
 " Font family.
-" set guifont=Ubuntu\ Mono\ derivative\ Powerline:h12,Ubuntu\ Mono:h12
 set macligatures
 set guifont=Fira\ Code\ Light:h13
 
@@ -26,3 +24,6 @@ set guioptions=c
 
 " Highlight current search result.
 highlight SearchCurrent ctermbg=9 ctermfg=0 guibg=#ff0000 guifg=#000000
+
+" Make fzf respect my .gitignore. Grumble
+let $FZF_DEFAULT_COMMAND = 'ag -g ""'
