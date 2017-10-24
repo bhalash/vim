@@ -24,6 +24,3 @@ set guioptions=c
 
 " Highlight current search result.
 highlight SearchCurrent ctermbg=9 ctermfg=0 guibg=#ff0000 guifg=#000000
-
-" Make fzf respect my .gitignore. Grumble
-let $FZF_DEFAULT_COMMAND = 'ag -g ""'

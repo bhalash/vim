@@ -5,7 +5,6 @@
 filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
-set rtp+=/usr/local/opt/fzf
 
 call vundle#begin()
 
@@ -47,7 +46,7 @@ Plugin 'tpope/vim-abolish'
 Plugin 'junegunn/goyo.vim'
 
 " Quickly search for and open files in the current buffer, new split or tab.
-Plugin 'junegunn/fzf.vim'
+Plugin 'kien/ctrlp.vim'
 
 " Grep through and open files.
 Plugin 'mileszs/ack.vim'
@@ -105,12 +104,6 @@ let g:goyo_linenr = 1
 " CtrlP
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-if exists('g:ctrl_user_command')
-  " Remove any blockers which prevent wildignore from not working.
-  " May lead to a dramatic increase in CtrlP performance.
-  unlet g:ctrlp_user_command
-endif
-
 " Bind CtrlP to <leader>
 let g:ctrlp_map = '<leader>p'
 
@@ -120,11 +113,10 @@ let g:ctrlp_working_path_mode = 0
 " Enable hidden files, then later ignore stuff like git folders.
 let g:ctrlp_dotfiles = 1
 
-" Paths and filed to ignore.
-let g:ctrlp_custom_ignore = {
-      \ 'dir': '\v[\/](\.)?(tmp|doc|git|idea)$',
-      \ 'file': '\v\.(cache|DS_Store|keep)$'
-      \ }
+" Override default finder to make it respect .gitignore
+let g:ctrlp_user_command = [
+      \ '.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f'
+      \ ]
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Ag/Ack/FZF
