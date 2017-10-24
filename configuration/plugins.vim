@@ -58,7 +58,7 @@ Plugin 'tpope/vim-endwise'
 Plugin 'ngmy/vim-rubocop'
 
 " Toggle comments.
-Plugin 'tpope/vim-commentary'
+Plugin 'tomtom/tcomment_vim'
 
 " Show git diffs in the gutter.
 Plugin 'airblade/vim-gitgutter'
