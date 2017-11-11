@@ -6,9 +6,6 @@
 " set t_Co=256 background=dark
 set termguicolors background=dark
 
-" No need to be vi compatible. I mean, it's 2016.
-set nocompatible
-
 " Yank to system clipboard.
 set clipboard=unnamed
 
@@ -100,7 +97,7 @@ set updatecount=50 history=2000 undolevels=2000
 set undofile undodir=.undo,~/tmp,/tmp
 
 " Disable swap files.
-set nobackup noswapfile
+set noswapfile
 
 " Set a directory in case they *are* turned on.
 set directory=~/.vim/.tmp,~/tmp,/tmp
@@ -125,20 +122,16 @@ function! QuickfixToggle()
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" External Configurations (Plugins and Themes)
+" External Configurations (Plugins)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-runtime configuration/plugins.vim
-runtime configuration/themes.vim
-runtime configuration/keyboard.vim
-runtime configuration/simplenote.vim
+runtime plugin/plugins.vim
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set Highlighting
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Set proper filetype for .es6 files.
-au BufNewFile,BufRead *.es6 set filetype=javascript
-
-" Awesome theme.
-colorscheme colorsbox-stnight
+augroup es6
+  au BufNewFile,BufRead *.es6 set filetype=javascript
+augroup END

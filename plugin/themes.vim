@@ -12,7 +12,7 @@ function! s:gitgutter_reset()
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Colorsbox // gui-first
+" Colorsbox
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 function! s:colorsbox_patch()
@@ -24,10 +24,10 @@ function! s:colorsbox_patch()
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Colorscheme Autocmd
+" Set Preferred Theme
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-autocmd! ColorScheme tendercontrast call s:tender_patch()
-autocmd! ColorScheme colorsbox-stnight call s:colorsbox_patch()
-autocmd! ColorScheme happy_hacking call s:happy_hacking_patch()
-autocmd! ColorScheme sidonia call s:sidonia_patch()
+augroup themes
+  autocmd! ColorScheme colorsbox-stnight call s:colorsbox_patch()
+  colorscheme colorsbox-stnight
+augroup END
