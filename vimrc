@@ -125,7 +125,7 @@ endfunction
 " External Configurations (Plugins)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-runtime plugin/plugins.vim
+runtime plugin/vundle.vim
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set Highlighting
