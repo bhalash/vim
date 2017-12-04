@@ -118,6 +118,8 @@ let g:ctrlp_user_command = [
       \ '.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f'
       \ ]
 
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Ag/Ack/FZF
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
