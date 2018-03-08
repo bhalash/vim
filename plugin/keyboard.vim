@@ -113,7 +113,5 @@ nnoremap <silent><leader>go :Goyo<CR>
 " Ale
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-nnoremap <silent><leader>n :lne<CR>
-nnoremap <silent><leader>b :lpr<CR>
-nnoremap <silent><leader>l :lop<CR>
-nnoremap <silent><leader>j :lcl<CR>
+nnoremap <silent><leader>[ <Plug>(ale_previous_wrap)
+nnoremap <silent><leader>] <Plug>(ale_next_wrap)
