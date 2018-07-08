@@ -10,6 +10,11 @@ call vundle#begin()
 
 " Colours for gvim/MacVim.
 Plugin 'mkarmona/colorsbox'
+Plugin 'phanviet/Sidonia'
+" Plugin 'nightsense/snow'
+" Plugin 'nightsense/vrunchbang'
+" Plugin 'nightsense/vrunchbang'
+" Plugin 'kadekillary/skull-vim'
 
 " Asynchronous syntax checking and linting.
 Plugin 'w0rp/ale'
