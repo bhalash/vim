@@ -28,7 +28,7 @@ endfunction
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 augroup themes
-  " autocmd! ColorScheme colorsbox-stnight call s:colorsbox_patch()
-  " colorscheme colorsbox-stnight
-  colorscheme sidonia
+  autocmd! ColorScheme colorsbox-stnight call s:colorsbox_patch()
+  colorscheme colorsbox-stnight
+  " colorscheme sidonia
 augroup END
