@@ -4,9 +4,8 @@
 
 filetype off
 
-set rtp+=~/.vim/bundle/Vundle.vim
-
-call vundle#begin()
+set rtp+=~/.config/nvim/bundle/Vundle.vim
+call vundle#begin('~/.config/nvim/bundle')
 
 " Colours for gvim/MacVim.
 Plugin 'mkarmona/colorsbox'

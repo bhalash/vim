@@ -1,1 +1,2 @@
-source vimrc
+let &packpath = &runtimepath
+runtime vimrc
