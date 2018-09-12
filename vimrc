@@ -54,7 +54,7 @@ set shortmess=a
 set scrolloff=10 sidescrolloff=10
 
 " Scroll with mouse in insert mode.
-set ttymouse=xterm2 mouse=i
+set mouse=i
 
 " Increase scroll speed.
 set ttyfast
