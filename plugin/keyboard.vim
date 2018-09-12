@@ -110,9 +110,7 @@ nnoremap <leader>5 :CtrlPClearCache<CR>
 " Goyo
 nnoremap <silent><leader>go :Goyo<CR>
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Ale
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 nnoremap <silent><leader>[ <Plug>(ale_previous_wrap)
 nnoremap <silent><leader>] <Plug>(ale_next_wrap)
+nnoremap <silent><leader>at :ALEToggle<CR>
