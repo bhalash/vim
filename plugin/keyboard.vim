@@ -82,7 +82,6 @@ nnoremap <silent><leader>ch :execute 'set colorcolumn=' . col('.')<CR>
 nnoremap <silent><leader>cc :set colorcolumn=<CR>
 nnoremap <silent><leader>c0 :set colorcolumn=<CR>
 nnoremap <silent><leader>c1 :set colorcolumn=120<CR>
-nnoremap <silent><leader>c7 :set colorcolumn=70<CR>
 nnoremap <silent><leader>c8 :set colorcolumn=80<CR>
 
 " Close all buffers and tabs and open Startify.
