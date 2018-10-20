@@ -67,6 +67,9 @@ Plugin 'tomtom/tcomment_vim'
 " Show git diffs in the gutter.
 Plugin 'airblade/vim-gitgutter'
 
+" Tabbbing...
+Plugin 'ervandew/supertab'
+
 " Lightline
 Plugin 'itchyny/lightline.vim'
 
