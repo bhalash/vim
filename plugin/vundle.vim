@@ -76,6 +76,9 @@ Plugin 'itchyny/lightline.vim'
 " Syntax highlighting.
 Plugin 'sheerun/vim-polyglot'
 
+" HTML expansion.
+Plugin 'mattn/emmet-vim'
+
 call vundle#end()
 
 filetype plugin indent on
