@@ -10,8 +10,8 @@ call vundle#begin('~/.config/nvim/bundle')
 " Colours for gvim/MacVim.
 Plugin 'mkarmona/colorsbox'
 Plugin 'phanviet/Sidonia'
+Plugin 'arcticicestudio/nord-vim'
 " Plugin 'nightsense/snow'
-" Plugin 'nightsense/vrunchbang'
 " Plugin 'nightsense/vrunchbang'
 " Plugin 'kadekillary/skull-vim'
 
@@ -125,7 +125,9 @@ let g:ctrlp_dotfiles = 1
 
 " Override default finder to make it respect .gitignore
 let g:ctrlp_user_command = [
-      \ '.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f'
+      \ '.git',
+      \ 'cd %s && git ls-files . -co --exclude-standard',
+      \ 'find %s -type f'
       \ ]
 
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
