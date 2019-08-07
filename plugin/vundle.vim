@@ -55,6 +55,9 @@ Plugin 'kien/ctrlp.vim'
 " Grep through and open files.
 Plugin 'mileszs/ack.vim'
 
+" Auto pair brackets, like.
+Plugin 'jiangmiao/auto-pairs'
+
 " Ruby and Rails utilities. Tim Pope is God. God.
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rails'
