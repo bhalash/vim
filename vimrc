@@ -3,11 +3,7 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Set term colours.
-" set t_Co=256 background=dark
 set termguicolors background=dark
-
-" Yank to system clipboard.
-set clipboard=unnamed
 
 " Enable syntax highlighting.
 syntax on
@@ -21,7 +17,7 @@ set relativenumber
 " Open split below and to the right instead of up and to the left.
 set splitbelow splitright
 
-" Something I set in git changed line-endings to be DOS-only. Bad Mark!
+" Force order of line endings.
 set ffs=unix,dos
 
 " Follow auto indent.
@@ -126,12 +122,3 @@ endfunction
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 runtime plugin/vundle.vim
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Set Highlighting
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" Set proper filetype for .es6 files.
-augroup es6
-  au BufNewFile,BufRead *.es6 set filetype=javascript
-augroup END

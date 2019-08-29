@@ -4,15 +4,9 @@
 
 let mapleader = "\<space>"
 
-" Use <Tab> to cycle back and forth through windows.
+" Use <Tab> to cycle through buffers.
 nnoremap <Tab> <C-W>w
 nnoremap <S-Tab> <C-W>W
-
-" <c-w> is difficult for me to reach given my handedness and keyboard.
-nnoremap <leader><space> <C-w>
-
-" Disable the keybind to access ex mode.
-nnoremap Q <Nop>
 
 " Split file.
 nnoremap <silent><leader>v <c-w>v<c-w>l
@@ -28,10 +22,7 @@ nnoremap s :s,,<left>
 nnoremap S :%s,,<left>
 nnoremap <leader>S :%S,,<left>
 
-" Toggle line numbering style.
-nnoremap <silent><leader>r :set relativenumber!<CR>
-
-" Reset current file to its last committed state.
+" git checkout the currently edited file. Useful for scratch work.
 nnoremap <leader>gr :!git checkout %<CR>
 
 " Empty line of content without removing line ending.
@@ -49,9 +40,6 @@ nnoremap <leader>yy :%y+<CR>
 " Replace all lines in the file with the contents of the clipboard.
 nnoremap <silent><leader>rp gg"_dGVp
 
-" Fix the entire indentation of a file according to your tab rules.
-nnoremap <leader>ind gg=G
-
 " Open and close new tab.
 nnoremap <silent><leader>tt :tabnew<CR>:Startify<CR>
 nnoremap <silent><leader>tw :tabclose<CR>
@@ -65,9 +53,6 @@ nnoremap * :keepjumps normal! mi*`i<CR>
 
 " Format JSON in buffer.
 nnoremap <silent><leader>js :%!python -m json.tool<CR>
-
-" Replace rocket-style (=>) hash keys in Ruby with :
-nnoremap <leader>rr :%s/:\([^=,'"]*\) =>/\1:/ <CR>
 
 " Toggle quickfix window.
 nnoremap <leader>q :call QuickfixToggle()<CR>
@@ -84,26 +69,20 @@ nnoremap <silent><leader>c0 :set colorcolumn=<CR>
 nnoremap <silent><leader>c1 :set colorcolumn=120<CR>
 nnoremap <silent><leader>c8 :set colorcolumn=80<CR>
 
-" Close all buffers and tabs and open Startify.
-nnoremap <silent><leader>ca :only \| :tabonly \| :Startify<CR>
-
 " Fix missing cursor.
 nnoremap <silent><leader>fc :!printf '\e[?25h'<CR>
 
-" Remove fucky characters from pasted text snippets.
+" Remove fucky quote characters in snippets pasted from Microsoft Word/HTML.
 nnoremap <silent><leader>cj :%s/[‘’]/'/e \| %s/[“”]/"/e<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin Keybinds
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Startify
-nnoremap <silent><leader>st :Startify<CR>
-
 " GitGutter
 nnoremap <leader>gg :GitGutterToggle<CR>
 
-" CtrlP
+" CtrlP: Clear cache.
 nnoremap <leader>5 :CtrlPClearCache<CR>
 
 " Goyo
