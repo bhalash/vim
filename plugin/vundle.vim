@@ -4,19 +4,29 @@
 
 filetype off
 
-set rtp+=~/.config/nvim/bundle/Vundle.vim
-call vundle#begin('~/.config/nvim/bundle')
+if has('nvim')
+  " nvim on any platform
+  set rtp+=~/.config/nvim/bundle/Vundle.vim
+  call vundle#begin('~/.config/nvim/bundle')
+else
+  " vim/windows
+  " See: https://github.com/VundleVim/Vundle.vim/wiki/Vundle-for-Windows
+  set rtp+=$HOME/.vim/bundle/Vundle.vim
+  call vundle#begin('$HOME/.vim/bundle')
+end
 
 " Colours for gvim/MacVim.
 Plugin 'mkarmona/colorsbox'
-Plugin 'phanviet/Sidonia'
-Plugin 'arcticicestudio/nord-vim'
-" Plugin 'nightsense/snow'
-" Plugin 'nightsense/vrunchbang'
-" Plugin 'kadekillary/skull-vim'
 
-" Asynchronous syntax checking and linting.
-Plugin 'w0rp/ale'
+" Colours for terminal.
+Plugin 'zefei/simple-dark'
+Plugin 'nightsense/snow'
+Plugin 'kadekillary/skull-vim'
+" Grab-bag theme.
+Plugin 'rafi/awesome-vim-colorschemes'
+
+" Asynchronous syntax checking and linting (formerly w0rp/ale).
+Plugin 'dense-analysis/ale'
 
 " RAWEAJEFLSEFASLefSJEFSefsef
 Plugin 'bronson/vim-trailing-whitespace'
@@ -50,7 +60,7 @@ Plugin 'tpope/vim-abolish'
 Plugin 'junegunn/goyo.vim'
 
 " Quickly search for and open files in the current buffer, new split or tab.
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 " Grep through and open files.
 Plugin 'mileszs/ack.vim'

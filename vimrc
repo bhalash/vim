@@ -42,6 +42,10 @@ set modelines=1
 " Arrow keybinds cause a status popup to appear when I tab back to vim.
 set shortmess=a
 
+" Disable visual bell. It's annoying as crap in git bash on Windows.
+set visualbell
+set t_vb=
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Scrolling and Mice
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

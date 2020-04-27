@@ -29,6 +29,10 @@ endfunction
 
 augroup themes
   autocmd! ColorScheme colorsbox-stnight call s:colorsbox_patch()
-  colorscheme colorsbox-stnight
-  " colorscheme sidonia
+
+  if has('nvim')
+    colorscheme colorsbox-stnight
+  else
+    colorscheme OceanicNext
+  endif
 augroup END
