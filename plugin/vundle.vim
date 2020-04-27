@@ -15,6 +15,9 @@ else
   call vundle#begin('$HOME/.vim/bundle')
 end
 
+" Vundle.
+Plugin 'VundleVim/Vundle.vim'
+
 " Colours for gvim/MacVim.
 Plugin 'mkarmona/colorsbox'
 
@@ -28,7 +31,7 @@ Plugin 'rafi/awesome-vim-colorschemes'
 " Asynchronous syntax checking and linting (formerly w0rp/ale).
 Plugin 'dense-analysis/ale'
 
-" RAWEAJEFLSEFASLefSJEFSefsef
+" RAWEAJEFLSEFASLefSJEFSefsef DEATH TO WHITESPACES
 Plugin 'bronson/vim-trailing-whitespace'
 
 " Provide additional text targets for di/a<char>:
@@ -38,17 +41,11 @@ Plugin 'wellle/targets.vim'
 " Provide motion keyed to gs<motion> to sort stuff.
 Plugin 'christoomey/vim-sort-motion'
 
-" Better search highlighting.
-" Plugin 'timakro/vim-searchant'
-
 " Better FfTt action.
 Plugin 'unblevable/quick-scope'
 
 " Auto CD to project root.
 Plugin 'airblade/vim-rooter'
-
-" Vundle.
-Plugin 'VundleVim/Vundle.vim'
 
 " Quickly change wrapping characters with cs<char>.
 Plugin 'tpope/vim-surround'
@@ -69,10 +66,10 @@ Plugin 'mileszs/ack.vim'
 Plugin 'jiangmiao/auto-pairs'
 
 " Ruby and Rails utilities. Tim Pope is God. God.
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-endwise'
-Plugin 'ngmy/vim-rubocop'
+" Plugin 'tpope/vim-fugitive'
+" Plugin 'tpope/vim-rails'
+" Plugin 'tpope/vim-endwise'
+" Plugin 'ngmy/vim-rubocop'
 
 " Toggle comments.
 Plugin 'tomtom/tcomment_vim'
@@ -83,8 +80,12 @@ Plugin 'airblade/vim-gitgutter'
 " Tabbbing...
 Plugin 'ervandew/supertab'
 
-" Lightline
-Plugin 'itchyny/lightline.vim'
+" Status bar.
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
+" Better search highlighting.
+" Plugin 'timakro/vim-searchant'
 
 " Syntax highlighting.
 Plugin 'sheerun/vim-polyglot'
@@ -151,12 +152,6 @@ let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
 let g:ackprg = 'ag --vimgrep'
 let g:RootIgnoreAgignore = 1
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Lightline
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-let g:lightline = { 'colorscheme': 'jellybeans' }
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Ale

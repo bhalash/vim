@@ -1,5 +1,14 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Appearance
+" Force cursor to be a line in insert mode.
+" See: https://vim.fandom.com/wiki/Change_cursor_shape_in_different_modes
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+let &t_SR = "\<Esc>]50;CursorShape=2\x7"
+let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Patch: Gitgutter. I like this style for all themes.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 function! s:gitgutter_reset()
@@ -12,7 +21,7 @@ function! s:gitgutter_reset()
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Colorsbox
+" Patch: Colorsbox Theme
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 function! s:colorsbox_patch()
@@ -20,7 +29,25 @@ function! s:colorsbox_patch()
   hi SpellBad gui=underline,bold guifg=#ff6a6a
   hi TabLineFill guifg=#ffffff guibg=#1d1f21 gui=underline
   hi TabLineSel guifg=#1d1f21 guibg=#ffffff
-  let g:airline_theme = 'lucius'
+  let g:airline_theme = 'colorsbox'
+endfunction
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Patch: Hybrid Theme
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+function! s:hybrid_patch()
+  call s:gitgutter_reset()
+  let g:airline_theme = 'hybrid'
+endfunction
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Patch: 256 Noir Theme
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+function! s:noir_patch()
+  call s:gitgutter_reset()
+  let g:airline_theme = 'github'
 endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -29,10 +56,13 @@ endfunction
 
 augroup themes
   autocmd! ColorScheme colorsbox-stnight call s:colorsbox_patch()
+  autocmd! ColorScheme 256_noir call s:noir_patch()
 
   if has('nvim')
     colorscheme colorsbox-stnight
   else
-    colorscheme OceanicNext
+    colorscheme 256_noir
+    " colorscheme colorsbox-stnight
+    " colorscheme hybrid
   endif
 augroup END
